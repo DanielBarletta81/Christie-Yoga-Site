@@ -1,3 +1,5 @@
+'use client';
+
 export default function SplitSection() {
   return (
     <section className="split-section">

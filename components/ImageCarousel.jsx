@@ -113,29 +113,57 @@ export default function ImageCarousel({ images = [] }) {
                 transition: isDragging ? 'none' : 'transform 0.6s ease'
               }}
             >
-              {images.map((image, index) => (
-                <div
-                  key={`${image.src}-${index}`}
-                  className="relative h-full min-w-full overflow-hidden"
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    draggable="false"
-                    className={`h-full w-full object-cover transition duration-700 ${
-                      index === currentIndex ? 'scale-105 grayscale-[35%]' : 'grayscale'
-                    }`}
-                  />
-                  <div
-                    className={`absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent px-6 py-6 text-white transition duration-500 ${
-                      index === currentIndex ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
-                    }`}
+              {images.map((image, index) => {
+                const content = (
+                  <>
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      draggable="false"
+                      className={`h-full w-full object-cover transition duration-700 ${
+                        index === currentIndex ? 'scale-105 grayscale-[35%]' : 'grayscale'
+                      }`}
+                    />
+                    <div
+                      className={`absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent px-6 py-6 text-white transition duration-500 ${
+                        index === currentIndex ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
+                      }`}
+                    >
+                      <p className="text-xs uppercase tracking-[0.3em] text-white/70">Research</p>
+                      <h3 className="mt-2 text-2xl font-light">{image.title}</h3>
+                      <p className="mt-2 text-sm text-white/80">{image.description}</p>
+                      {image.source && (
+                        <div className="mt-3 flex items-center gap-3">
+                          <span className="rounded-full bg-white/15 px-3 py-1 text-xs text-white/90">
+                            {image.source}
+                          </span>
+                          {image.href && (
+                            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/80">
+                              Tap to read
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  </>
+                );
+
+                return image.href ? (
+                  <a
+                    key={`${image.src}-${index}`}
+                    href={image.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="relative h-full min-w-full overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
                   >
-                    <h3 className="text-2xl font-light">{image.title}</h3>
-                    <p className="mt-2 text-sm text-white/80">{image.description}</p>
+                    {content}
+                  </a>
+                ) : (
+                  <div key={`${image.src}-${index}`} className="relative h-full min-w-full overflow-hidden">
+                    {content}
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 

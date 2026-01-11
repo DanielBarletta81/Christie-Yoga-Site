@@ -13,6 +13,11 @@ export default function HeroSection() {
           <p className="mb-4 text-xs uppercase tracking-[0.4em] text-white/80">
             Soma Living
           </p>
+          <img
+            src="/images/cards/art-release.JPEG"
+            alt="Wellness retreat"
+            className="mx-auto mb-6 h-48 w-full max-w-lg rounded-[32px] object-cover object-center shadow-2xl ring-1 ring-white/20"
+          />
           <h1 className="text-[clamp(2.6rem,6vw,4.6rem)] font-light leading-[1.05] tracking-tight">
             Find Your Inner Peace
           </h1>

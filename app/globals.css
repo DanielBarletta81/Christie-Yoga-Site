@@ -8,6 +8,9 @@
   --ink: #1f1a16;
   --ink-soft: #473e35;
   --accent: #8b7355;
+  --accent-soft: #c3ad93;
+  --radius: 32px;
+  --shadow-soft: 0 12px 35px rgba(0, 0, 0, 0.08);
 }
 
 @layer base {
@@ -20,7 +23,8 @@
   }
 
   body {
-    @apply min-h-screen overflow-x-hidden bg-stone-50 text-stone-900 antialiased font-sans;
+    @apply min-h-screen overflow-x-hidden text-stone-900 antialiased;
+    font-family: var(--font-sans), 'Inter', system-ui, -apple-system, sans-serif;
     background-image:
       radial-gradient(circle at top left, rgba(139, 115, 85, 0.18), transparent 55%),
       radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.85), transparent 45%),
@@ -33,11 +37,14 @@
   h4,
   h5,
   h6 {
-    @apply font-display text-stone-900;
+    @apply text-stone-900;
+    font-family: var(--font-display), 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
   }
 
   a {
-    @apply no-underline;
+    @apply no-underline transition duration-200;
+    color: var(--ink);
   }
 
   img {
@@ -46,6 +53,11 @@
 
   button {
     @apply font-sans;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: #fffaf4;
   }
 }
 
@@ -56,6 +68,29 @@
 
   .soft-ring {
     @apply ring-1 ring-black/5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium uppercase tracking-[0.2em] transition;
+    background: linear-gradient(120deg, var(--accent), var(--accent-soft));
+    color: #fff;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .btn-primary:hover {
+    filter: brightness(1.05);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium uppercase tracking-[0.2em] transition;
+    background: rgba(255, 255, 255, 0.65);
+    color: var(--ink);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .card-elevated {
+    @apply rounded-3xl bg-white/70 backdrop-blur-xl ring-1 ring-white/60;
+    box-shadow: var(--shadow-soft);
   }
 }
 
@@ -78,5 +113,9 @@
 
   .text-accent {
     color: var(--accent);
+  }
+
+  .section-shell {
+    @apply mx-auto max-w-6xl px-6;
   }
 }

@@ -1,3 +1,5 @@
+'use client';
+
 import HeroSection from '../components/HeroSection';
 import ImageCarousel from '../components/ImageCarousel';
 import SplitSection from '../components/SplitSection';

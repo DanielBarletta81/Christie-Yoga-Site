@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface-warm: #f7f1ea;
+  --surface-cream: #fffaf4;
+  --ink: #1f1a16;
+  --ink-soft: #473e35;
+  --accent: #8b7355;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen overflow-x-hidden bg-stone-50 text-stone-900 antialiased font-sans;
+    background-image:
+      radial-gradient(circle at top left, rgba(139, 115, 85, 0.18), transparent 55%),
+      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.85), transparent 45%),
+      linear-gradient(120deg, rgba(247, 241, 234, 0.95), rgba(255, 250, 244, 0.6));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-stone-900;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+
+  button {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/65 backdrop-blur-xl border border-white/40 shadow-xl;
+  }
+
+  .soft-ring {
+    @apply ring-1 ring-black/5;
+  }
+}
+
+@layer utilities {
+  .text-ink {
+    color: var(--ink);
+  }
+
+  .text-ink-soft {
+    color: var(--ink-soft);
+  }
+
+  .bg-surface-warm {
+    background-color: var(--surface-warm);
+  }
+
+  .bg-surface-cream {
+    background-color: var(--surface-cream);
+  }
+
+  .text-accent {
+    color: var(--accent);
+  }
+}

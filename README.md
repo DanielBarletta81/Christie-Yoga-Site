@@ -40,3 +40,4 @@ vercel
 ```
 
 Make sure to add your environment variables in the Vercel dashboard.
+# Christie-Yoga-Site

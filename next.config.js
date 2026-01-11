@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['your-wordpress-domain.com'], // Add your WordPress domain here
+    domains: ['somalivingwellness.com'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**',
-      },
-    ],
-  },
-}
+        hostname: '**'
+      }
+    ]
+  }
+};
 
-module.exports = nextConfig
+export default nextConfig;

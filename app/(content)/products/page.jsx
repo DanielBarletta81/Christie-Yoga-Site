@@ -1,6 +1,6 @@
 import Container from '../../../components/ui/Container';
 import ProductCarousel from '../../../components/products/ProductCarousel';
-import { CDN_BASE } from '@/lib/media/cdn';
+import { CDN_BASE } from '../../../lib/media/cdn';
 
 const featured = [
   {

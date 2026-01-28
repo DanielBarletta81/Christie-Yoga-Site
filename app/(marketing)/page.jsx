@@ -3,7 +3,7 @@
 import HeroSection from '../../components/marketing/HeroSection';
 import ImageCarousel from '../../components/marketing/ImageCarousel';
 import SplitSection from '../../components/marketing/SplitSection';
-import { CDN_BASE } from '@/lib/media/cdn';
+import { CDN_BASE } from '../../lib/media/cdn';
 
 // Sample carousel images - replace with your actual images
 const carouselImages = [

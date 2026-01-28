@@ -1,6 +1,6 @@
 'use client';
 
-import { CDN_BASE } from '@/lib/media/cdn';
+import { CDN_BASE } from '../../lib/media/cdn';
 
 export default function SplitSection() {
   return (

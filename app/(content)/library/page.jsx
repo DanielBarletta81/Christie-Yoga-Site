@@ -1,5 +1,5 @@
 import Container from '../../../components/ui/Container';
-import { CDN_BASE } from '@/lib/media/cdn';
+import { CDN_BASE } from '../../../lib/media/cdn';
 
 const filters = ['Dosha', 'Season', 'Duration', 'Type', 'Intention'];
 const placeholders = [

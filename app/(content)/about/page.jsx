@@ -1,5 +1,5 @@
 import Container from '../../../components/ui/Container';
-import { CDN_BASE } from '@/lib/media/cdn';
+import { CDN_BASE } from '../../../lib/media/cdn';
 
 export default function AboutPage() {
   return (

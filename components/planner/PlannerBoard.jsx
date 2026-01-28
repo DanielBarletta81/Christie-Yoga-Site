@@ -22,7 +22,7 @@ import { ritualTemplates } from '../../lib/content/ritual-templates';
 import { ritualRoutines } from '../../lib/content/ritual-routines';
 import { loadSavedRoutines, saveSavedRoutines } from '../../lib/planner/saved-routines';
 import { loadSavedDailyRoutines, saveSavedDailyRoutines } from '../../lib/planner/saved-daily-routines';
-import { CDN_BASE } from '@/lib/media/cdn';
+import { CDN_BASE } from '../../lib/media/cdn';
 
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const SLOTS = [

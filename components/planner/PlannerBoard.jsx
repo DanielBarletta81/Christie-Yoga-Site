@@ -22,6 +22,7 @@ import { ritualTemplates } from '../../lib/content/ritual-templates';
 import { ritualRoutines } from '../../lib/content/ritual-routines';
 import { loadSavedRoutines, saveSavedRoutines } from '../../lib/planner/saved-routines';
 import { loadSavedDailyRoutines, saveSavedDailyRoutines } from '../../lib/planner/saved-daily-routines';
+import { CDN_BASE } from '@/lib/media/cdn';
 
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const SLOTS = [
@@ -600,8 +601,8 @@ export default function PlannerBoard({ catalog }) {
     <main
       className="ambient-page grain-layer pb-20 pt-28"
       style={{
-        '--ambient-image-1': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/neuro-fascial.jpeg')",
-        '--ambient-image-2': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/healthy-start.jpeg')",
+        '--ambient-image-1': `url('${CDN_BASE}/neuro-fascial.jpeg')`,
+        '--ambient-image-2': `url('${CDN_BASE}/healthy-start.jpeg')`,
       }}
     >
       <Container>
@@ -619,7 +620,7 @@ export default function PlannerBoard({ catalog }) {
           <div
             className="soft-frame flex flex-col gap-4 rounded-3xl border border-stone-200 bg-white/70 p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between"
             style={{
-              '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/ayurveda.jpg')",
+              '--accent-image': `url('${CDN_BASE}/ayurveda.jpg')`,
             }}
           >
             <div>
@@ -757,7 +758,7 @@ export default function PlannerBoard({ catalog }) {
                 <div
                   className="soft-frame rounded-[32px]"
                   style={{
-                    '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/hero-background.jpg')",
+                    '--accent-image': `url('${CDN_BASE}/hero-background.jpg')`,
                   }}
                 >
                   <RitualLibrary
@@ -777,7 +778,7 @@ export default function PlannerBoard({ catalog }) {
               <div
                 className="soft-frame overflow-x-auto rounded-[32px] bg-white/70 p-4 shadow-glow"
                 style={{
-                  '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/wellness.jpg')",
+                  '--accent-image': `url('${CDN_BASE}/wellness.jpg')`,
                 }}
               >
                 {viewMode === 'daily' ? (
@@ -899,7 +900,7 @@ export default function PlannerBoard({ catalog }) {
                 <aside
                   className="soft-frame hidden rounded-3xl border border-white/60 bg-white/70 p-5 shadow-glow lg:block"
                   style={{
-                    '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/healthy-start.jpeg')",
+                    '--accent-image': `url('${CDN_BASE}/healthy-start.jpeg')`,
                   }}
                 >
                   <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-700">Templates</h3>

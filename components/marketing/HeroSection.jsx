@@ -1,12 +1,17 @@
 'use client';
 
+import { CDN_BASE } from '@/lib/media/cdn';
+
 export default function HeroSection() {
   return (
     <section
       id="home"
       className="relative flex min-h-[70vh] items-center overflow-hidden pt-24 md:min-h-[85vh]"
     >
-      <div className="absolute inset-0 bg-[url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/hero-background.jpg')] bg-cover bg-center" />
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url('${CDN_BASE}/hero-background.jpg')` }}
+      />
       <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/60" />
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 text-white">
         <p className="text-xs uppercase tracking-[0.5em] text-white/80">Welcome</p>

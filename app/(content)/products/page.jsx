@@ -1,7 +1,6 @@
 import Container from '../../../components/ui/Container';
 import ProductCarousel from '../../../components/products/ProductCarousel';
-
-const CDN_BASE = 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img';
+import { CDN_BASE } from '@/lib/media/cdn';
 
 const featured = [
   {
@@ -110,8 +109,8 @@ export default function ProductsPage() {
     <main
       className="ambient-page grain-layer pb-20 pt-28"
       style={{
-        '--ambient-image-1': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/carousel-4.jpg')",
-        '--ambient-image-2': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/Rock_RiverNh.png')",
+        '--ambient-image-1': `url('${CDN_BASE}/carousel-4.jpg')`,
+        '--ambient-image-2': `url('${CDN_BASE}/Rock_RiverNh.png')`,
       }}
     >
       <Container>
@@ -129,7 +128,7 @@ export default function ProductsPage() {
           <div
             className="soft-frame rounded-[32px]"
             style={{
-              '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/carousel-2.jpg')",
+              '--accent-image': `url('${CDN_BASE}/carousel-2.jpg')`,
             }}
           >
             <ProductCarousel items={featured} intervalMs={9000} />
@@ -138,7 +137,7 @@ export default function ProductsPage() {
           <div
             className="soft-frame rounded-[32px] bg-white/70 p-4 shadow-glow"
             style={{
-              '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/carousel-3.jpg')",
+              '--accent-image': `url('${CDN_BASE}/carousel-3.jpg')`,
             }}
           >
             <div className="grid gap-6 lg:grid-cols-2">

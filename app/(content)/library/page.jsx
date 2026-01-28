@@ -1,4 +1,5 @@
 import Container from '../../../components/ui/Container';
+import { CDN_BASE } from '@/lib/media/cdn';
 
 const filters = ['Dosha', 'Season', 'Duration', 'Type', 'Intention'];
 const placeholders = [
@@ -29,8 +30,8 @@ export default function LibraryPage() {
     <main
       className="ambient-page grain-layer pb-20 pt-28"
       style={{
-        '--ambient-image-1': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/ayurveda.jpg')",
-        '--ambient-image-2': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/still-waterfall.png')",
+        '--ambient-image-1': `url('${CDN_BASE}/ayurveda.jpg')`,
+        '--ambient-image-2': `url('${CDN_BASE}/still-waterfall.png')`,
       }}
     >
       <Container>
@@ -46,7 +47,7 @@ export default function LibraryPage() {
             </p>
           </div>
 
-          <div className="soft-frame rounded-[32px] bg-white/70 p-4 shadow-glow" style={{ '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/healthy-start.jpeg')" }}>
+          <div className="soft-frame rounded-[32px] bg-white/70 p-4 shadow-glow" style={{ '--accent-image': `url('${CDN_BASE}/healthy-start.jpeg')` }}>
             <div className="flex flex-wrap gap-3">
             {filters.map((filter) => (
               <button
@@ -60,7 +61,7 @@ export default function LibraryPage() {
             </div>
           </div>
 
-          <div className="soft-frame rounded-[32px] bg-white/70 p-4 shadow-glow" style={{ '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/neuro-fascial.jpeg')" }}>
+          <div className="soft-frame rounded-[32px] bg-white/70 p-4 shadow-glow" style={{ '--accent-image': `url('${CDN_BASE}/neuro-fascial.jpeg')` }}>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {placeholders.map((item) => (
               <article

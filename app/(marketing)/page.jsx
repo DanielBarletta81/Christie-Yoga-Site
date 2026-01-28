@@ -3,11 +3,12 @@
 import HeroSection from '../../components/marketing/HeroSection';
 import ImageCarousel from '../../components/marketing/ImageCarousel';
 import SplitSection from '../../components/marketing/SplitSection';
+import { CDN_BASE } from '@/lib/media/cdn';
 
 // Sample carousel images - replace with your actual images
 const carouselImages = [
   {
-    src: 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/wellness.jpg',
+    src: `${CDN_BASE}/wellness.jpg`,
     alt: 'Wellness studio with natural light',
     title: 'Yoga improves sleep quality',
     description: 'Research shows yoga practice can improve sleep efficiency and reduce insomnia severity.',
@@ -15,7 +16,7 @@ const carouselImages = [
     source: 'PubMed'
   },
   {
-    src: 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/ayurveda.jpg',
+    src: `${CDN_BASE}/ayurveda.jpg`,
     alt: 'Ayurvedic herbs and mortar',
     title: 'Ayurveda reduces stress markers',
     description: 'Trials suggest adaptogens like ashwagandha can lower cortisol and perceived stress.',
@@ -23,7 +24,7 @@ const carouselImages = [
     source: 'PubMed'
   },
   {
-    src: 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/neuro-fascial.jpeg',
+    src: `${CDN_BASE}/neuro-fascial.jpeg`,
     alt: 'Person practicing calm breathwork',
     title: 'Breathwork calms the nervous system',
     description: 'Slow diaphragmatic breathing can improve heart rate variability and emotional regulation.',
@@ -31,7 +32,7 @@ const carouselImages = [
     source: 'Frontiers in Human Neuroscience'
   },
   {
-    src: 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/art-release.JPEG',
+    src: `${CDN_BASE}/art-release.JPEG`,
     alt: 'Person journaling outdoors',
     title: 'Mindfulness eases anxiety',
     description: 'Mindfulness programs are associated with reduced anxiety and depressive symptoms.',
@@ -45,8 +46,8 @@ export default function Home() {
     <main
       className="ambient-page grain-layer pb-20"
       style={{
-        '--ambient-image-1': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/hero-background.jpg')",
-        '--ambient-image-2': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/wellness.jpg')",
+        '--ambient-image-1': `url('${CDN_BASE}/hero-background.jpg')`,
+        '--ambient-image-2': `url('${CDN_BASE}/wellness.jpg')`,
       }}
     >
       <HeroSection />

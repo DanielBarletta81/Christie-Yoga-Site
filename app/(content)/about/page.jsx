@@ -1,12 +1,13 @@
 import Container from '../../../components/ui/Container';
+import { CDN_BASE } from '@/lib/media/cdn';
 
 export default function AboutPage() {
   return (
     <main
       className="ambient-page grain-layer pb-20 pt-28"
       style={{
-        '--ambient-image-1': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/still-waterfall.png')",
-        '--ambient-image-2': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/hero-background.jpg')",
+        '--ambient-image-1': `url('${CDN_BASE}/still-waterfall.png')`,
+        '--ambient-image-2': `url('${CDN_BASE}/hero-background.jpg')`,
       }}
     >
       <Container>
@@ -25,7 +26,7 @@ export default function AboutPage() {
           <div
             className="soft-frame rounded-[32px] bg-white/70 p-6 shadow-glow"
             style={{
-              '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/ayurveda.jpg')",
+              '--accent-image': `url('${CDN_BASE}/ayurveda.jpg')`,
             }}
           >
             <h2 className="text-xl font-semibold text-stone-900">What to expect</h2>

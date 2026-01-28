@@ -1,4 +1,5 @@
 import Container from '../../../components/ui/Container';
+import { CDN_BASE } from '@/lib/media/cdn';
 
 const sections = [
   {
@@ -24,8 +25,8 @@ export default function AyurvedaPage() {
     <main
       className="ambient-page grain-layer pb-20 pt-28"
       style={{
-        '--ambient-image-1': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/ayurveda.jpg')",
-        '--ambient-image-2': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/healthy-start.jpeg')",
+        '--ambient-image-1': `url('${CDN_BASE}/ayurveda.jpg')`,
+        '--ambient-image-2': `url('${CDN_BASE}/healthy-start.jpeg')`,
       }}
     >
       <Container>
@@ -43,7 +44,7 @@ export default function AyurvedaPage() {
           <div
             className="soft-frame rounded-[32px] bg-white/70 p-6 shadow-glow"
             style={{
-              '--accent-image': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/wellness.jpg')",
+              '--accent-image': `url('${CDN_BASE}/wellness.jpg')`,
             }}
           >
             <div className="grid gap-6 md:grid-cols-2">

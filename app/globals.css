@@ -26,9 +26,9 @@
     @apply min-h-screen overflow-x-hidden text-stone-900 antialiased;
     font-family: var(--font-sans), 'Inter', system-ui, -apple-system, sans-serif;
     background-image:
-      radial-gradient(circle at top left, rgba(139, 115, 85, 0.18), transparent 55%),
-      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.85), transparent 45%),
-      linear-gradient(120deg, rgba(247, 241, 234, 0.95), rgba(255, 250, 244, 0.6));
+      radial-gradient(circle at top left, rgba(139, 115, 85, 0.16), transparent 55%),
+      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.75), transparent 45%),
+      linear-gradient(120deg, rgba(247, 241, 234, 0.95), rgba(255, 250, 244, 0.75));
   }
 
   h1,
@@ -117,5 +117,62 @@
 
   .section-shell {
     @apply mx-auto max-w-6xl px-6;
+  }
+
+  .ambient-page {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .ambient-page::before,
+  .ambient-page::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .ambient-page::before {
+    background-image: var(--ambient-image-1), var(--ambient-image-2);
+    background-size: 55% auto, 45% auto;
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    opacity: 0.16;
+    filter: blur(4px) saturate(0.9);
+  }
+
+  .ambient-page::after {
+    background: linear-gradient(120deg, rgba(255, 250, 244, 0.92), rgba(247, 241, 234, 0.65));
+  }
+
+  .grain-layer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.03;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+    background-size: 260px 260px;
+  }
+
+  .soft-frame {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .soft-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 32px;
+    background: var(--accent-image);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.12;
+    filter: blur(6px) saturate(0.9);
   }
 }

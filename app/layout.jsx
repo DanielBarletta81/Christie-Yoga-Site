@@ -1,6 +1,5 @@
 import './globals.css';
 import { Manrope, Playfair_Display } from 'next/font/google';
-import Navigation from '../components/Navigation';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${playfair.variable}`}>
-        <Navigation />
         {children}
       </body>
     </html>

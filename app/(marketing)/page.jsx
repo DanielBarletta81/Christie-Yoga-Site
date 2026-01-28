@@ -1,13 +1,13 @@
 'use client';
 
-import HeroSection from '../components/HeroSection';
-import ImageCarousel from '../components/ImageCarousel';
-import SplitSection from '../components/SplitSection';
+import HeroSection from '../../components/marketing/HeroSection';
+import ImageCarousel from '../../components/marketing/ImageCarousel';
+import SplitSection from '../../components/marketing/SplitSection';
 
 // Sample carousel images - replace with your actual images
 const carouselImages = [
   {
-    src: '/images/wellness.jpg',
+    src: 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/wellness.jpg',
     alt: 'Wellness studio with natural light',
     title: 'Yoga improves sleep quality',
     description: 'Research shows yoga practice can improve sleep efficiency and reduce insomnia severity.',
@@ -15,7 +15,7 @@ const carouselImages = [
     source: 'PubMed'
   },
   {
-    src: '/images/ayurveda.jpg',
+    src: 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/ayurveda.jpg',
     alt: 'Ayurvedic herbs and mortar',
     title: 'Ayurveda reduces stress markers',
     description: 'Trials suggest adaptogens like ashwagandha can lower cortisol and perceived stress.',
@@ -23,7 +23,7 @@ const carouselImages = [
     source: 'PubMed'
   },
   {
-    src: '/images/cards/neuro-fascial.JPEG',
+    src: 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/neuro-fascial.jpeg',
     alt: 'Person practicing calm breathwork',
     title: 'Breathwork calms the nervous system',
     description: 'Slow diaphragmatic breathing can improve heart rate variability and emotional regulation.',
@@ -31,7 +31,7 @@ const carouselImages = [
     source: 'Frontiers in Human Neuroscience'
   },
   {
-    src: '/images/cards/art-release.JPEG',
+    src: 'https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/art-release.JPEG',
     alt: 'Person journaling outdoors',
     title: 'Mindfulness eases anxiety',
     description: 'Mindfulness programs are associated with reduced anxiety and depressive symptoms.',
@@ -42,7 +42,13 @@ const carouselImages = [
 
 export default function Home() {
   return (
-    <main className="pb-20">
+    <main
+      className="ambient-page grain-layer pb-20"
+      style={{
+        '--ambient-image-1': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/hero-background.jpg')",
+        '--ambient-image-2': "url('https://soma-website-static-s3.s3.us-east-1.amazonaws.com/img/wellness.jpg')",
+      }}
+    >
       <HeroSection />
       <ImageCarousel images={carouselImages} />
       <SplitSection />

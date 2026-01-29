@@ -1,0 +1,84 @@
+{
+  "title": "Chakra Energy",
+  "subtitle": "Subtle anatomy for everyday balance",
+  "summary": "Chakras are energy centers aligned along the spine and linked with emotional themes, elements, and practices. They offer a reflective framework for self-care and ritual.",
+  "chakras": [
+    {
+      "id": "root",
+      "name": "Root (Muladhara)",
+      "color": "#C62828",
+      "element": "Earth",
+      "themes": ["Safety", "Grounding", "Stability"],
+      "imbalances": ["Fear", "Insecurity", "Lower back tension"],
+      "practices": ["Grounding breath", "Slow squats", "Walking barefoot"],
+      "mantra": "I am safe. I belong.",
+      "image": "hero-background.jpg"
+    },
+    {
+      "id": "sacral",
+      "name": "Sacral (Svadhisthana)",
+      "color": "#EF6C00",
+      "element": "Water",
+      "themes": ["Creativity", "Emotion", "Pleasure"],
+      "imbalances": ["Numbness", "Guilt", "Creative blocks"],
+      "practices": ["Hip circles", "Gentle flow", "Journaling"],
+      "mantra": "I feel. I flow.",
+      "image": "wellness.jpg"
+    },
+    {
+      "id": "solar",
+      "name": "Solar Plexus (Manipura)",
+      "color": "#F9A825",
+      "element": "Fire",
+      "themes": ["Willpower", "Action", "Metabolism"],
+      "imbalances": ["Shame", "Anger", "Digestive discomfort"],
+      "practices": ["Core engagement", "Sun breath", "Clear boundaries"],
+      "mantra": "I can. I choose.",
+      "image": "healthy-start.jpeg"
+    },
+    {
+      "id": "heart",
+      "name": "Heart (Anahata)",
+      "color": "#2E7D32",
+      "element": "Air",
+      "themes": ["Love", "Connection", "Compassion"],
+      "imbalances": ["Grief", "Isolation", "Resentment"],
+      "practices": ["Chest opening", "Kindness meditation", "Forgiveness ritual"],
+      "mantra": "I love. I accept.",
+      "image": "still-waterfall.png"
+    },
+    {
+      "id": "throat",
+      "name": "Throat (Vishuddha)",
+      "color": "#1565C0",
+      "element": "Ether",
+      "themes": ["Truth", "Expression", "Clarity"],
+      "imbalances": ["Fear of speaking", "Tension", "Overthinking"],
+      "practices": ["Humming", "Neck release", "Write one clear sentence"],
+      "mantra": "I speak. I express.",
+      "image": "ayurveda.jpg"
+    },
+    {
+      "id": "third-eye",
+      "name": "Third Eye (Ajna)",
+      "color": "#4527A0",
+      "element": "Light",
+      "themes": ["Insight", "Imagination", "Vision"],
+      "imbalances": ["Brain fog", "Headaches", "Indecision"],
+      "practices": ["Candle gazing", "Visualization", "Quiet time"],
+      "mantra": "I see. I expand.",
+      "image": "neuro-fascial.jpeg"
+    },
+    {
+      "id": "crown",
+      "name": "Crown (Sahasrara)",
+      "color": "#6A1B9A",
+      "element": "Space",
+      "themes": ["Spirituality", "Connection", "Meaning"],
+      "imbalances": ["Cynicism", "Disconnection", "Rigid beliefs"],
+      "practices": ["Silent meditation", "Gratitude", "Rest"],
+      "mantra": "I am light.",
+      "image": "art-release.JPEG"
+    }
+  ]
+}

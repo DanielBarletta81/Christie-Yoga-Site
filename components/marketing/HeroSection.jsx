@@ -10,7 +10,7 @@ export default function HeroSection() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('${CDN_BASE}/hero-background.jpg')` }}
+        style={{ backgroundImage: `url('${CDN_BASE}/bg/browning-mill-waterfall.jpeg')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/60" />
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 text-white">

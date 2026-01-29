@@ -1,0 +1,47 @@
+{
+  "title": "Yoga",
+  "subtitle": "Therapeutic movement + nervous system care",
+  "summary": "Yoga is a complete system that blends ethical practice, breath, and movement to steady the mind and support circulation and lymphatic flow.",
+  "sections": [
+    {
+      "id": "eight-limbs",
+      "title": "Eight limbs (Ashtanga)",
+      "body": "An eight-part framework for mental clarity, beginning with ethics and ending in deep meditation.",
+      "bullets": [
+        "Yamas + Niyamas: inner and outer ethics",
+        "Asana + Pranayama: body and breath",
+        "Pratyahara + Dharana + Dhyana + Samadhi: focus to absorption"
+      ]
+    },
+    {
+      "id": "lymph",
+      "title": "Lymphatic support",
+      "body": "Dynamic movement and breath act as pumps for lymph flow, while inversions and twists help drain and circulate fluids.",
+      "bullets": [
+        "Dynamic sequences for the muscle pump",
+        "Inversions for gravity-assisted drainage",
+        "Twists to compress and release"
+      ]
+    },
+    {
+      "id": "mental-health",
+      "title": "Dosha-balanced sequences",
+      "body": "Different energetic patterns benefit from different pacing and pose types.",
+      "bullets": [
+        "Vata: slow, grounding, warm",
+        "Pitta: cooling, non-competitive",
+        "Kapha: energizing, uplifting"
+      ]
+    },
+    {
+      "id": "desk-yoga",
+      "title": "5-minute desk reset",
+      "body": "Short sequences for neck, spine, hips, and wrists that reduce tension and refresh focus.",
+      "bullets": [
+        "Neck rolls, seated cat-cow, twists",
+        "Seated pigeon + wrist stretches",
+        "Forward fold if space allows"
+      ]
+    }
+  ]
+}

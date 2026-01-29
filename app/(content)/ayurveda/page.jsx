@@ -7,16 +7,51 @@ const sections = [
     body: 'Ayurveda is a traditional system of wellness that focuses on balance. It looks at your energy, digestion, sleep, and stress patterns to help you feel steady and supported.',
   },
   {
-    title: 'The three doshas',
-    body: 'Vata is light and airy, Pitta is warm and focused, Kapha is steady and grounded. Everyone has a mix. The goal is not to be perfect—just to notice what brings you back to balance.',
-  },
-  {
     title: 'Daily rituals that help',
     body: 'Simple habits like warm water in the morning, a short walk after meals, or a calm breath reset can shift how you feel. Small steps matter more than perfect routines.',
   },
   {
     title: 'Food as support',
     body: 'Ayurveda encourages you to eat in a way that feels supportive—warm, simple, and easy to digest. You can start by noticing how foods make you feel, then adjust gently over time.',
+  },
+];
+
+const doshas = [
+  {
+    name: 'Vata',
+    tone: 'Light + airy',
+    body: 'Movement, creativity, and change. Balance with warmth, grounding, and steady routines.',
+    color: '#546E7A',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#546E7A" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 4c-4 2-4 6 0 8s4 6 0 8" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Pitta',
+    tone: 'Warm + focused',
+    body: 'Drive, digestion, and clarity. Balance with cooling, softness, and spaciousness.',
+    color: '#C62828',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#C62828" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 4c2 3 1 5-1 7 2 0 3 2 3 4a3 3 0 0 1-6 0c0-2 2-4 4-6z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Kapha',
+    tone: 'Steady + grounded',
+    body: 'Stability, strength, and calm. Balance with lightness, variety, and gentle energy.',
+    color: '#6D4C41',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6D4C41" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M8 16h8M9 18h6" />
+      </svg>
+    ),
   },
 ];
 
@@ -42,25 +77,70 @@ export default function AyurvedaPage() {
           </div>
 
           <div
-            className="soft-frame rounded-[32px] bg-white/70 p-6 shadow-glow"
+            className="soft-frame grid gap-6 rounded-[32px] bg-white/70 p-6 shadow-glow lg:grid-cols-[1.3fr_0.7fr]"
             style={{
               '--accent-image': `url('${CDN_BASE}/wellness.jpg')`,
             }}
           >
-            <div className="grid gap-6 md:grid-cols-2">
-              {sections.map((section) => (
-                <div
-                  key={section.title}
-                  className="relative overflow-hidden rounded-2xl border border-stone-200/70 bg-white/70 p-5"
-                >
-                  <span className="absolute right-4 top-4 text-[10px] uppercase tracking-[0.4em] text-stone-400">
-                    ✶
-                  </span>
-                  <h2 className="text-lg font-semibold text-stone-900">{section.title}</h2>
-                  <p className="mt-3 text-sm text-stone-600">{section.body}</p>
-                </div>
-              ))}
+            <div className="grid gap-6">
+              <div className="grid gap-6 md:grid-cols-2">
+                {[sections[0], sections[2]].map((section) => (
+                  <div
+                    key={section.title}
+                    className="relative overflow-hidden rounded-2xl border border-stone-200/70 bg-white/70 p-5"
+                  >
+                    <span className="absolute right-4 top-4 text-[10px] uppercase tracking-[0.4em] text-stone-400">
+                      ✶
+                    </span>
+                    <h2 className="text-lg font-semibold text-stone-900">{section.title}</h2>
+                    <p className="mt-3 text-sm text-stone-600">{section.body}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="relative overflow-hidden rounded-2xl border border-stone-200/70 bg-white/80 p-5">
+                <span className="absolute right-4 top-4 text-[10px] uppercase tracking-[0.4em] text-stone-400">
+                  ✶
+                </span>
+                <h2 className="text-lg font-semibold text-stone-900">{sections[1].title}</h2>
+                <p className="mt-3 text-sm text-stone-600">{sections[1].body}</p>
+              </div>
             </div>
+
+            <aside className="flex flex-col gap-4 rounded-3xl border border-stone-200/70 bg-white/80 p-5">
+              <div>
+                <p className="text-xs uppercase tracking-[0.35em] text-stone-500">Doshas</p>
+                <h2 className="mt-2 text-lg font-semibold text-stone-900">The three energies</h2>
+                <p className="mt-2 text-sm text-stone-600">
+                  Each dosha has strengths and needs. You can support balance with small, steady shifts.
+                </p>
+              </div>
+
+              <div className="grid gap-3">
+                {doshas.map((dosha) => (
+                  <div
+                    key={dosha.name}
+                    className="rounded-2xl border border-stone-200/70 bg-white/70 p-4"
+                    style={{
+                      borderColor: `${dosha.color}33`,
+                      backgroundColor: `${dosha.color}0A`,
+                    }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <p className="text-xs uppercase tracking-[0.3em] text-stone-500">{dosha.tone}</p>
+                      <span
+                        className="inline-flex h-9 w-9 items-center justify-center rounded-full border bg-white"
+                        style={{ borderColor: `${dosha.color}55`, color: dosha.color }}
+                      >
+                        {dosha.icon}
+                      </span>
+                    </div>
+                    <h3 className="mt-2 text-base font-semibold text-stone-900">{dosha.name}</h3>
+                    <p className="mt-2 text-sm text-stone-600">{dosha.body}</p>
+                  </div>
+                ))}
+              </div>
+            </aside>
           </div>
         </div>
       </Container>

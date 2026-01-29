@@ -1,9 +1,9 @@
 'use client';
 
-import HeroSection from '../../components/marketing/HeroSection';
 import ImageCarousel from '../../components/marketing/ImageCarousel';
 import SplitSection from '../../components/marketing/SplitSection';
 import { CDN_BASE } from '../../lib/media/cdn';
+import HomeHero from '../../components/marketing/HomeHero';
 
 // Sample carousel images - replace with your actual images
 const carouselImages = [
@@ -46,11 +46,11 @@ export default function Home() {
     <main
       className="ambient-page grain-layer pb-20"
       style={{
-        '--ambient-image-1': `url('${CDN_BASE}/hero-background.jpg')`,
-        '--ambient-image-2': `url('${CDN_BASE}/wellness.jpg')`,
+        '--ambient-image-1': `url('${CDN_BASE}/bg/chakras-2.png')`,
+        '--ambient-image-2': `url('${CDN_BASE}/bg/browning-mill-waterfall.jpeg')`,
       }}
     >
-      <HeroSection />
+      <HomeHero />
       <ImageCarousel images={carouselImages} />
       <SplitSection />
     </main>

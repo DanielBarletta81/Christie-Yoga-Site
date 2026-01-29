@@ -1,0 +1,48 @@
+{
+  "title": "Ayurveda",
+  "subtitle": "Foundations for daily balance",
+  "summary": "Ayurveda frames wellness as balance among three bio-energies (doshas) and the five elements. Practical routines align your body with seasonal and daily rhythms.",
+  "sections": [
+    {
+      "id": "doshas",
+      "title": "Tridosha framework",
+      "body": "Vata (ether/air), Pitta (fire/water), and Kapha (earth/water) describe how energy moves through body and mind. Balance is restored by choosing foods, routines, and practices that counter the current imbalance.",
+      "bullets": [
+        "Vata: movement, lightness, variability",
+        "Pitta: transformation, heat, focus",
+        "Kapha: structure, stability, cohesion"
+      ]
+    },
+    {
+      "id": "prakriti",
+      "title": "Prakriti vs. Vikriti",
+      "body": "Prakriti is your baseline constitution; Vikriti is the current state shaped by stress, climate, and lifestyle. Ayurveda aims to align the present state back to baseline through gentle shifts.",
+      "bullets": [
+        "Notice seasonal changes in appetite, mood, and digestion",
+        "Use daily routines as stabilizers",
+        "Adjust diet with the season"
+      ]
+    },
+    {
+      "id": "ritucharya",
+      "title": "Seasonal rhythm (Ritucharya)",
+      "body": "Each season emphasizes different qualities. Matching food, movement, and rest to those shifts keeps the system steady.",
+      "bullets": [
+        "Spring: reduce heaviness, invite light movement",
+        "Summer: cool the system, hydrate, slow down",
+        "Autumn: ground and warm, reduce dryness",
+        "Winter: nourish and protect warmth"
+      ]
+    },
+    {
+      "id": "dinacharya",
+      "title": "Daily rhythm (Dinacharya)",
+      "body": "Small daily rituals like warm water on waking, light dinners, and early sleep create steady energy and digestion.",
+      "bullets": [
+        "Morning: warm water, calm start",
+        "Evening: lighter meals, wind-down routines",
+        "Sleep before the late-night energy spike"
+      ]
+    }
+  ]
+}

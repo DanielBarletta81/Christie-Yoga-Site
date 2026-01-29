@@ -20,6 +20,7 @@
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
+    "@types/node": "25.1.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",

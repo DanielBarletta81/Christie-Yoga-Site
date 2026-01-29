@@ -1,0 +1,39 @@
+{
+  "title": "Crystals",
+  "subtitle": "Ritual, intention, and safety",
+  "summary": "Crystals are used as symbolic supports aligned to chakra themes. Safety guidance keeps elixirs and sunlight use responsible.",
+  "sections": [
+    {
+      "id": "correspondences",
+      "title": "Chakra correspondences",
+      "body": "Match stone color and tone to the chakra you want to support.",
+      "bullets": [
+        "Root: Red Jasper, Black Tourmaline, Smoky Quartz",
+        "Sacral: Carnelian, Moonstone",
+        "Solar Plexus: Citrine, Tiger's Eye",
+        "Heart: Rose Quartz, Malachite, Green Aventurine",
+        "Throat: Sodalite, Aquamarine",
+        "Third Eye: Amethyst, Lapis Lazuli",
+        "Crown: Clear Quartz, Selenite"
+      ]
+    },
+    {
+      "id": "elixirs",
+      "title": "Crystal elixirs (safety)",
+      "body": "Only safe stones go directly in water. Toxic or soluble stones must use the indirect method.",
+      "bullets": [
+        "Direct-safe: clear/rose/smoky quartz, citrine, amethyst, carnelian, red jasper, aventurine",
+        "Indirect-only: malachite, lapis lazuli, tiger's eye (raw), turquoise, selenite, fluorite, moonstone/labradorite, galena, cinnabar"
+      ]
+    },
+    {
+      "id": "sun",
+      "title": "Sun sensitivity",
+      "body": "Some stones fade in sunlight; use moonlight or sound cleansing instead.",
+      "bullets": [
+        "Fade in sun: amethyst, rose quartz, citrine, fluorite, aquamarine, kunzite, celestite",
+        "Sun safe: clear quartz, carnelian, jasper, black tourmaline, labradorite"
+      ]
+    }
+  ]
+}

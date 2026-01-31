@@ -331,3 +331,29 @@
     filter: none;
   }
 }
+
+/* Soma logo hover ripple (for future brand mark image) */
+.soma-logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soma-logo::after {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+.soma-logo:hover::after,
+.soma-logo:focus-visible::after {
+  opacity: 0.25;
+  transform: scale(1.05);
+}

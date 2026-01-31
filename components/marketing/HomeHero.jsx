@@ -1,6 +1,7 @@
 'use client';
 
 import { CDN_BASE } from '../../lib/media/cdn';
+import SomaBackdrop from '../brand/SomaBackdrop';
 
 export default function HomeHero() {
   return (
@@ -12,6 +13,7 @@ export default function HomeHero() {
         backgroundPosition: 'center',
       }}
     >
+      <SomaBackdrop tone="dark" />
       <div
         className="absolute inset-0 opacity-45"
         style={{

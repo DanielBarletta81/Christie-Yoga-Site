@@ -1,0 +1,522 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+    <channel>
+      <title>Soma Living Wellness Seed</title>
+      <link>https://cms.somalivingwellness.com</link>
+      <description>Seed content for Soma CMS</description>
+      <pubDate>Fri, 31 Jan 2026 12:00:00 +0000</pubDate>
+      <language>en-US</language>
+      <wp:wxr_version>1.2</wp:wxr_version>
+
+      <!-- SOUNDS -->
+      <item><title>285 Hz</title><wp:post_type>sound</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>285</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Often used to support a sense of stability and
+  release tension held in the body.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/285hz-healing.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#8c5a2b</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>333 Hz</title><wp:post_type>sound</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>333</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>A commonly used tuning associated with ease
+  and relaxed listening.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/333-hz-healing.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#c9a24d</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>639 Hz</title><wp:post_type>sound</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>639</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Used by some to support feelings of harmony
+  and relational awareness.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/639-hz-heart-chakra.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#9fcfc0</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>741 Hz</title><wp:post_type>sound</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>741</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Often explored during moments of mental reset
+  or quiet focus.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/741hz-throat.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#8b95c9</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>963 Hz</title><wp:post_type>sound</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>963</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Chosen by listeners seeking stillness and
+  inward attention.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/963hz-healing.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#b49ac9</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>2173 Hz</title><wp:post_type>sound</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>2173</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Sometimes chosen for reflection, openness, and
+  gentle emotional balance.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/2173hz-spirtual.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#8fbf8a</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <!-- CHAKRAS -->
+      <!-- Root -->
+      <item><title>Root (Muladhara)</title><wp:post_type>chakra</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>order</wp:meta_key><wp:meta_value>1</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_order</wp:meta_key><wp:meta_value>field_chakra_order</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>theme_color</wp:meta_key><wp:meta_value>#C62828</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_theme_color</wp:meta_key><wp:meta_value>field_chakra_theme_color</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>element</wp:meta_key><wp:meta_value>Earth</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_element</wp:meta_key><wp:meta_value>field_chakra_element</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>mantra</wp:meta_key><wp:meta_value>I am safe. I belong.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_mantra</wp:meta_key><wp:meta_value>field_chakra_mantra</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>sanskrit</wp:meta_key><wp:meta_value>Muladhara</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sanskrit</wp:meta_key><wp:meta_value>field_chakra_sanskrit</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes</wp:meta_key><wp:meta_value>field_chakra_themes</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_0_label</wp:meta_key><wp:meta_value>Safety</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_0_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_1_label</wp:meta_key><wp:meta_value>Grounding</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_1_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_2_label</wp:meta_key><wp:meta_value>Stability</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_2_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances</wp:meta_key><wp:meta_value>field_chakra_imbalances</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_0_label</wp:meta_key><wp:meta_value>Fear</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_0_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_1_label</wp:meta_key><wp:meta_value>Insecurity</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_1_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_2_label</wp:meta_key><wp:meta_value>Lower back tension</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_2_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices</wp:meta_key><wp:meta_value>field_chakra_practices</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_0_label</wp:meta_key><wp:meta_value>Grounding breath</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_0_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_1_label</wp:meta_key><wp:meta_value>Slow squats</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_1_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_2_label</wp:meta_key><wp:meta_value>Walking barefoot</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_2_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <!-- Sacral -->
+      <item><title>Sacral (Svadhisthana)</title><wp:post_type>chakra</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>order</wp:meta_key><wp:meta_value>2</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_order</wp:meta_key><wp:meta_value>field_chakra_order</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>theme_color</wp:meta_key><wp:meta_value>#EF6C00</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_theme_color</wp:meta_key><wp:meta_value>field_chakra_theme_color</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>element</wp:meta_key><wp:meta_value>Water</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_element</wp:meta_key><wp:meta_value>field_chakra_element</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>mantra</wp:meta_key><wp:meta_value>I feel. I flow.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_mantra</wp:meta_key><wp:meta_value>field_chakra_mantra</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>sanskrit</wp:meta_key><wp:meta_value>Svadhisthana</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sanskrit</wp:meta_key><wp:meta_value>field_chakra_sanskrit</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes</wp:meta_key><wp:meta_value>field_chakra_themes</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_0_label</wp:meta_key><wp:meta_value>Creativity</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_0_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_1_label</wp:meta_key><wp:meta_value>Emotion</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_1_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_2_label</wp:meta_key><wp:meta_value>Pleasure</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_2_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances</wp:meta_key><wp:meta_value>field_chakra_imbalances</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_0_label</wp:meta_key><wp:meta_value>Numbness</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_0_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_1_label</wp:meta_key><wp:meta_value>Guilt</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_1_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_2_label</wp:meta_key><wp:meta_value>Creative blocks</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_2_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices</wp:meta_key><wp:meta_value>field_chakra_practices</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_0_label</wp:meta_key><wp:meta_value>Hip circles</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_0_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_1_label</wp:meta_key><wp:meta_value>Gentle flow</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_1_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_2_label</wp:meta_key><wp:meta_value>Journaling</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_2_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <!-- Solar Plexus -->
+      <item><title>Solar Plexus (Manipura)</title><wp:post_type>chakra</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>order</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_order</wp:meta_key><wp:meta_value>field_chakra_order</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>theme_color</wp:meta_key><wp:meta_value>#F9A825</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_theme_color</wp:meta_key><wp:meta_value>field_chakra_theme_color</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>element</wp:meta_key><wp:meta_value>Fire</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_element</wp:meta_key><wp:meta_value>field_chakra_element</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>mantra</wp:meta_key><wp:meta_value>I can. I choose.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_mantra</wp:meta_key><wp:meta_value>field_chakra_mantra</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>sanskrit</wp:meta_key><wp:meta_value>Manipura</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sanskrit</wp:meta_key><wp:meta_value>field_chakra_sanskrit</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes</wp:meta_key><wp:meta_value>field_chakra_themes</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_0_label</wp:meta_key><wp:meta_value>Willpower</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_0_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_1_label</wp:meta_key><wp:meta_value>Action</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_1_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_2_label</wp:meta_key><wp:meta_value>Metabolism</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_2_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances</wp:meta_key><wp:meta_value>field_chakra_imbalances</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_0_label</wp:meta_key><wp:meta_value>Shame</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_0_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_1_label</wp:meta_key><wp:meta_value>Anger</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_1_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_2_label</wp:meta_key><wp:meta_value>Digestive discomfort</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_2_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices</wp:meta_key><wp:meta_value>field_chakra_practices</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_0_label</wp:meta_key><wp:meta_value>Core engagement</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_0_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_1_label</wp:meta_key><wp:meta_value>Sun breath</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_1_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_2_label</wp:meta_key><wp:meta_value>Clear boundaries</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_2_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <!-- Heart -->
+      <item><title>Heart (Anahata)</title><wp:post_type>chakra</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>order</wp:meta_key><wp:meta_value>4</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_order</wp:meta_key><wp:meta_value>field_chakra_order</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>theme_color</wp:meta_key><wp:meta_value>#2E7D32</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_theme_color</wp:meta_key><wp:meta_value>field_chakra_theme_color</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>element</wp:meta_key><wp:meta_value>Air</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_element</wp:meta_key><wp:meta_value>field_chakra_element</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>mantra</wp:meta_key><wp:meta_value>I love. I accept.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_mantra</wp:meta_key><wp:meta_value>field_chakra_mantra</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>sanskrit</wp:meta_key><wp:meta_value>Anahata</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sanskrit</wp:meta_key><wp:meta_value>field_chakra_sanskrit</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes</wp:meta_key><wp:meta_value>field_chakra_themes</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_0_label</wp:meta_key><wp:meta_value>Love</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_0_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_1_label</wp:meta_key><wp:meta_value>Connection</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_1_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_2_label</wp:meta_key><wp:meta_value>Compassion</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_2_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances</wp:meta_key><wp:meta_value>field_chakra_imbalances</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_0_label</wp:meta_key><wp:meta_value>Grief</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_0_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_1_label</wp:meta_key><wp:meta_value>Isolation</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_1_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_2_label</wp:meta_key><wp:meta_value>Resentment</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_2_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices</wp:meta_key><wp:meta_value>field_chakra_practices</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_0_label</wp:meta_key><wp:meta_value>Chest opening</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_0_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_1_label</wp:meta_key><wp:meta_value>Kindness meditation</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_1_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_2_label</wp:meta_key><wp:meta_value>Forgiveness ritual</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_2_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <!-- Throat -->
+      <item><title>Throat (Vishuddha)</title><wp:post_type>chakra</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>order</wp:meta_key><wp:meta_value>5</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_order</wp:meta_key><wp:meta_value>field_chakra_order</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>theme_color</wp:meta_key><wp:meta_value>#1565C0</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_theme_color</wp:meta_key><wp:meta_value>field_chakra_theme_color</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>element</wp:meta_key><wp:meta_value>Ether</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_element</wp:meta_key><wp:meta_value>field_chakra_element</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>mantra</wp:meta_key><wp:meta_value>I speak. I express.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_mantra</wp:meta_key><wp:meta_value>field_chakra_mantra</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>sanskrit</wp:meta_key><wp:meta_value>Vishuddha</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sanskrit</wp:meta_key><wp:meta_value>field_chakra_sanskrit</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes</wp:meta_key><wp:meta_value>field_chakra_themes</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_0_label</wp:meta_key><wp:meta_value>Truth</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_0_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_1_label</wp:meta_key><wp:meta_value>Expression</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_1_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_2_label</wp:meta_key><wp:meta_value>Clarity</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_2_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances</wp:meta_key><wp:meta_value>field_chakra_imbalances</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_0_label</wp:meta_key><wp:meta_value>Fear of speaking</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_0_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_1_label</wp:meta_key><wp:meta_value>Tension</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_1_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_2_label</wp:meta_key><wp:meta_value>Overthinking</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_2_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices</wp:meta_key><wp:meta_value>field_chakra_practices</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_0_label</wp:meta_key><wp:meta_value>Humming</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_0_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_1_label</wp:meta_key><wp:meta_value>Neck release</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_1_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_2_label</wp:meta_key><wp:meta_value>Write one clear sentence</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_2_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <!-- Third Eye -->
+      <item><title>Third Eye (Ajna)</title><wp:post_type>chakra</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>order</wp:meta_key><wp:meta_value>6</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_order</wp:meta_key><wp:meta_value>field_chakra_order</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>theme_color</wp:meta_key><wp:meta_value>#4527A0</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_theme_color</wp:meta_key><wp:meta_value>field_chakra_theme_color</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>element</wp:meta_key><wp:meta_value>Light</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_element</wp:meta_key><wp:meta_value>field_chakra_element</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>mantra</wp:meta_key><wp:meta_value>I see. I expand.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_mantra</wp:meta_key><wp:meta_value>field_chakra_mantra</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>sanskrit</wp:meta_key><wp:meta_value>Ajna</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sanskrit</wp:meta_key><wp:meta_value>field_chakra_sanskrit</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes</wp:meta_key><wp:meta_value>field_chakra_themes</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_0_label</wp:meta_key><wp:meta_value>Insight</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_0_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_1_label</wp:meta_key><wp:meta_value>Imagination</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_1_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_2_label</wp:meta_key><wp:meta_value>Vision</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_2_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances</wp:meta_key><wp:meta_value>field_chakra_imbalances</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_0_label</wp:meta_key><wp:meta_value>Brain fog</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_0_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_1_label</wp:meta_key><wp:meta_value>Headaches</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_1_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_2_label</wp:meta_key><wp:meta_value>Indecision</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_2_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices</wp:meta_key><wp:meta_value>field_chakra_practices</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_0_label</wp:meta_key><wp:meta_value>Candle gazing</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_0_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_1_label</wp:meta_key><wp:meta_value>Visualization</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_1_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_2_label</wp:meta_key><wp:meta_value>Quiet time</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_2_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <!-- Crown -->
+      <item><title>Crown (Sahasrara)</title><wp:post_type>chakra</wp:post_type><wp:status>publish</wp:status>
+        <wp:postmeta><wp:meta_key>order</wp:meta_key><wp:meta_value>7</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_order</wp:meta_key><wp:meta_value>field_chakra_order</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>theme_color</wp:meta_key><wp:meta_value>#6A1B9A</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_theme_color</wp:meta_key><wp:meta_value>field_chakra_theme_color</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>element</wp:meta_key><wp:meta_value>Space</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_element</wp:meta_key><wp:meta_value>field_chakra_element</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>mantra</wp:meta_key><wp:meta_value>I am light.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_mantra</wp:meta_key><wp:meta_value>field_chakra_mantra</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>sanskrit</wp:meta_key><wp:meta_value>Sahasrara</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sanskrit</wp:meta_key><wp:meta_value>field_chakra_sanskrit</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes</wp:meta_key><wp:meta_value>field_chakra_themes</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_0_label</wp:meta_key><wp:meta_value>Spirituality</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_0_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_1_label</wp:meta_key><wp:meta_value>Connection</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_1_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>themes_2_label</wp:meta_key><wp:meta_value>Meaning</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_themes_2_label</wp:meta_key><wp:meta_value>field_chakra_theme_label</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances</wp:meta_key><wp:meta_value>field_chakra_imbalances</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_0_label</wp:meta_key><wp:meta_value>Cynicism</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_0_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_1_label</wp:meta_key><wp:meta_value>Disconnection</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_1_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>imbalances_2_label</wp:meta_key><wp:meta_value>Rigid beliefs</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_imbalances_2_label</wp:meta_key><wp:meta_value>field_chakra_imbalance_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices</wp:meta_key><wp:meta_value>3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices</wp:meta_key><wp:meta_value>field_chakra_practices</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_0_label</wp:meta_key><wp:meta_value>Silent meditation</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_0_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_1_label</wp:meta_key><wp:meta_value>Gratitude</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_1_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>practices_2_label</wp:meta_key><wp:meta_value>Rest</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_practices_2_label</wp:meta_key><wp:meta_value>field_chakra_practice_label</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <!-- PRACTICES -->
+      <item><title>Eight limbs (Ashtanga)</title><wp:post_type>practice</wp:post_type><wp:status>publish</wp:status>
+        <content:encoded><![CDATA[An eight-part framework for mental clarity, beginning with ethics and ending in deep
+  meditation.]]></content:encoded>
+        <wp:postmeta><wp:meta_key>sequence_notes</wp:meta_key><wp:meta_value>An eight-part framework for mental clarity,
+  beginning with ethics and ending in deep meditation.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sequence_notes</wp:meta_key><wp:meta_value>field_practice_sequence_notes</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <item><title>Lymphatic support</title><wp:post_type>practice</wp:post_type><wp:status>publish</wp:status>
+        <content:encoded><![CDATA[Dynamic movement and breath act as pumps for lymph flow, while inversions and twists help
+  drain and circulate fluids.]]></content:encoded>
+        <wp:postmeta><wp:meta_key>sequence_notes</wp:meta_key><wp:meta_value>Dynamic movement and breath act as pumps for
+  lymph flow, while inversions and twists help drain and circulate fluids.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sequence_notes</wp:meta_key><wp:meta_value>field_practice_sequence_notes</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <item><title>Dosha-balanced sequences</title><wp:post_type>practice</wp:post_type><wp:status>publish</wp:status>
+        <content:encoded><![CDATA[Different energetic patterns benefit from different pacing and pose types.]]></
+  content:encoded>
+        <wp:postmeta><wp:meta_key>sequence_notes</wp:meta_key><wp:meta_value>Different energetic patterns benefit from
+  different pacing and pose types.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sequence_notes</wp:meta_key><wp:meta_value>field_practice_sequence_notes</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <item><title>5-minute desk reset</title><wp:post_type>practice</wp:post_type><wp:status>publish</wp:status>
+        <content:encoded><![CDATA[Short sequences for neck, spine, hips, and wrists that reduce tension and refresh
+  focus.]]></content:encoded>
+        <wp:postmeta><wp:meta_key>sequence_notes</wp:meta_key><wp:meta_value>Short sequences for neck, spine, hips, and
+  wrists that reduce tension and refresh focus.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sequence_notes</wp:meta_key><wp:meta_value>field_practice_sequence_notes</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+    </channel>
+  </rss>

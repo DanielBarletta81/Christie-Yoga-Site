@@ -9,7 +9,7 @@ export default function CrystalsPage() {
     <main
       className="ambient-page grain-layer pb-20 pt-28"
       style={{
-        '--ambient-image-1': `url('${CDN_BASE}/still-waterfall.png')`,
+        '--ambient-image-1': `url('${CDN_BASE}/bg/buddha-sit.jpg')`,
         '--ambient-image-2': `url('${CDN_BASE}/art-release.JPEG')`,
       }}
     >

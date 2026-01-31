@@ -22,6 +22,7 @@ const doshas = [
     tone: 'Light + airy',
     body: 'Movement, creativity, and change. Balance with warmth, grounding, and steady routines.',
     color: '#546E7A',
+    kathaIcon: `${CDN_BASE}/icons/dosha-katha/vata-katha.svg`,
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#546E7A" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="4" />
@@ -34,6 +35,7 @@ const doshas = [
     tone: 'Warm + focused',
     body: 'Drive, digestion, and clarity. Balance with cooling, softness, and spaciousness.',
     color: '#C62828',
+    kathaIcon: `${CDN_BASE}/icons/dosha-katha/pitta-katha.svg`,
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#C62828" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="4" />
@@ -46,6 +48,11 @@ const doshas = [
     tone: 'Steady + grounded',
     body: 'Stability, strength, and calm. Balance with lightness, variety, and gentle energy.',
     color: '#6D4C41',
+    kathaIcon: `${CDN_BASE}/icons/dosha-katha/kapha-katha.svg`,
+    markers: [
+      `${CDN_BASE}/icons/dosha-icon-system/kapha-active.svg`,
+      `${CDN_BASE}/icons/dosha-icon-system/kapha-aggravating.svg`,
+    ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6D4C41" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="4" />
@@ -68,9 +75,19 @@ export default function AyurvedaPage() {
         <div className="flex flex-col gap-10">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-stone-500">Ayurveda</p>
-            <h1 className="mt-3 text-3xl font-semibold text-stone-900 sm:text-4xl">
-              Ayurveda, made simple
-            </h1>
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <h1 className="text-3xl font-semibold text-stone-900 sm:text-4xl">Ayurveda, made simple</h1>
+              <div className="flex items-center gap-2">
+                {doshas.map((dosha) => (
+                  <img
+                    key={`${dosha.name}-katha`}
+                    src={dosha.kathaIcon}
+                    alt=""
+                    className="h-6 w-6 opacity-70"
+                  />
+                ))}
+              </div>
+            </div>
             <p className="mt-4 max-w-2xl text-base text-stone-600">
               A gentle, everyday guide to balance. No jargon—just practical ways to feel better in your body.
             </p>
@@ -120,12 +137,19 @@ export default function AyurvedaPage() {
                 {doshas.map((dosha) => (
                   <div
                     key={dosha.name}
-                    className="rounded-2xl border border-stone-200/70 bg-white/70 p-4"
+                    className="relative rounded-2xl border border-stone-200/70 bg-white/70 p-4"
                     style={{
                       borderColor: `${dosha.color}33`,
                       backgroundColor: `${dosha.color}0A`,
                     }}
                   >
+                    {dosha.kathaIcon ? (
+                      <img
+                        src={dosha.kathaIcon}
+                        alt=""
+                        className="absolute right-4 top-4 h-6 w-6 opacity-60"
+                      />
+                    ) : null}
                     <div className="flex items-center justify-between">
                       <p className="text-xs uppercase tracking-[0.3em] text-stone-500">{dosha.tone}</p>
                       <span
@@ -135,7 +159,16 @@ export default function AyurvedaPage() {
                         {dosha.icon}
                       </span>
                     </div>
-                    <h3 className="mt-2 text-base font-semibold text-stone-900">{dosha.name}</h3>
+                    <div className="mt-2 flex items-center justify-between">
+                      <h3 className="text-base font-semibold text-stone-900">{dosha.name}</h3>
+                      {dosha.markers ? (
+                        <div className="flex items-center gap-2">
+                          {dosha.markers.map((src) => (
+                            <img key={src} src={src} alt="" className="h-5 w-5 opacity-70" />
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
                     <p className="mt-2 text-sm text-stone-600">{dosha.body}</p>
                   </div>
                 ))}

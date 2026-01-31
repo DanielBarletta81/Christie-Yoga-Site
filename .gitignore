@@ -36,3 +36,4 @@ next-env.d.ts
 .mov
 .mp4
 *.pdf
+content/brand/**/*.md

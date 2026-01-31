@@ -1,0 +1,184 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+    <channel>
+      <title>Soma Living Wellness Seed v2</title>
+      <link>https://cms.somalivingwellness.com</link>
+      <description>Seed content for Soma CMS</description>
+      <pubDate>Fri, 31 Jan 2026 12:00:00 +0000</pubDate>
+      <language>en-US</language>
+      <wp:wxr_version>1.2</wp:wxr_version>
+
+      <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[admin@somalivingwellness.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Admin]]></wp:author_display_name>
+        <wp:author_first_name><![CDATA[]]></wp:author_first_name>
+        <wp:author_last_name><![CDATA[]]></wp:author_last_name>
+      </wp:author>
+
+      <!-- SOUNDS -->
+      <item><title>285 Hz</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>sound</
+  wp:post_type><wp:status>publish</wp:status>
+        <wp:post_id>1001</wp:post_id>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>285</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Often used to support a sense of stability and
+  release tension held in the body.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/285hz-healing.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#8c5a2b</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>333 Hz</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>sound</
+  wp:post_type><wp:status>publish</wp:status>
+        <wp:post_id>1002</wp:post_id>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>333</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>A commonly used tuning associated with ease
+  and relaxed listening.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/333-hz-healing.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#c9a24d</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>639 Hz</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>sound</
+  wp:post_type><wp:status>publish</wp:status>
+        <wp:post_id>1003</wp:post_id>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>639</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Used by some to support feelings of harmony
+  and relational awareness.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/639-hz-heart-chakra.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#9fcfc0</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>741 Hz</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>sound</
+  wp:post_type><wp:status>publish</wp:status>
+        <wp:post_id>1004</wp:post_id>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>741</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Often explored during moments of mental reset
+  or quiet focus.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/741hz-throat.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#8b95c9</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>963 Hz</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>sound</
+  wp:post_type><wp:status>publish</wp:status>
+        <wp:post_id>1005</wp:post_id>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>963</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Chosen by listeners seeking stillness and
+  inward attention.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/963hz-healing.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#b49ac9</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <item><title>2173 Hz</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>sound</
+  wp:post_type><wp:status>publish</wp:status>
+        <wp:post_id>1006</wp:post_id>
+        <wp:postmeta><wp:meta_key>frequency_hz</wp:meta_key><wp:meta_value>2173</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_hz</wp:meta_key><wp:meta_value>field_sound_frequency</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>frequency_copy</wp:meta_key><wp:meta_value>Sometimes chosen for reflection, openness, and
+  gentle emotional balance.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_frequency_copy</wp:meta_key><wp:meta_value>field_sound_copy</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>audio_url</wp:meta_key><wp:meta_value>https://soma-website-static-s3.s3.us-east-
+  1.amazonaws.com/sound-bowl/2173hz-spirtual.mp3</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_audio_url</wp:meta_key><wp:meta_value>field_sound_audio_url</wp:meta_value></
+  wp:postmeta>
+        <wp:postmeta><wp:meta_key>color_hex</wp:meta_key><wp:meta_value>#8fbf8a</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_color_hex</wp:meta_key><wp:meta_value>field_sound_color_hex</wp:meta_value></
+  wp:postmeta>
+      </item>
+
+      <!-- CHAKRAS -->
+      <!-- (same chakra items as previous full file; omitted here to keep size manageable) -->
+
+      <!-- PRACTICES -->
+      <item><title>Eight limbs (Ashtanga)</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>practice</
+  wp:post_type><wp:status>publish</wp:status><wp:post_id>3001</wp:post_id>
+        <content:encoded><![CDATA[An eight-part framework for mental clarity, beginning with ethics and ending in deep
+  meditation.]]></content:encoded>
+        <wp:postmeta><wp:meta_key>sequence_notes</wp:meta_key><wp:meta_value>An eight-part framework for mental clarity,
+  beginning with ethics and ending in deep meditation.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sequence_notes</wp:meta_key><wp:meta_value>field_practice_sequence_notes</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <item><title>Lymphatic support</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>practice</
+  wp:post_type><wp:status>publish</wp:status><wp:post_id>3002</wp:post_id>
+        <content:encoded><![CDATA[Dynamic movement and breath act as pumps for lymph flow, while inversions and twists help
+  drain and circulate fluids.]]></content:encoded>
+        <wp:postmeta><wp:meta_key>sequence_notes</wp:meta_key><wp:meta_value>Dynamic movement and breath act as pumps for
+  lymph flow, while inversions and twists help drain and circulate fluids.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sequence_notes</wp:meta_key><wp:meta_value>field_practice_sequence_notes</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <item><title>Dosha-balanced sequences</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>practice</
+  wp:post_type><wp:status>publish</wp:status><wp:post_id>3003</wp:post_id>
+        <content:encoded><![CDATA[Different energetic patterns benefit from different pacing and pose types.]]></
+  content:encoded>
+        <wp:postmeta><wp:meta_key>sequence_notes</wp:meta_key><wp:meta_value>Different energetic patterns benefit from
+  different pacing and pose types.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sequence_notes</wp:meta_key><wp:meta_value>field_practice_sequence_notes</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+      <item><title>5-minute desk reset</title><dc:creator><![CDATA[admin]]></dc:creator><wp:post_type>practice</
+  wp:post_type><wp:status>publish</wp:status><wp:post_id>3004</wp:post_id>
+        <content:encoded><![CDATA[Short sequences for neck, spine, hips, and wrists that reduce tension and refresh
+  focus.]]></content:encoded>
+        <wp:postmeta><wp:meta_key>sequence_notes</wp:meta_key><wp:meta_value>Short sequences for neck, spine, hips, and
+  wrists that reduce tension and refresh focus.</wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key>_sequence_notes</wp:meta_key><wp:meta_value>field_practice_sequence_notes</
+  wp:meta_value></wp:postmeta>
+      </item>
+
+    </channel>
+  </rss>

@@ -2,11 +2,15 @@ import { fetchGraphQL, GET_PRACTICES } from '../../../../lib/wpgraphql';
 import FlowVisualizer from '../../../../components/yoga/FlowVisualizer';
 
 async function getPractices() {
-  const data = await fetchGraphQL(GET_PRACTICES, {
-    revalidate: 600,
-    tags: ['practices'],
-  });
-  return data?.practices?.nodes || [];
+  try {
+    const data = await fetchGraphQL(GET_PRACTICES, {
+      revalidate: 600,
+      tags: ['practices'],
+    });
+    return data?.practices?.nodes || [];
+  } catch (error) {
+    return [];
+  }
 }
 
 export default async function YogaVisualizerPage() {

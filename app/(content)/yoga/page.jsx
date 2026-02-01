@@ -52,6 +52,11 @@ export default async function YogaPage() {
             <p className="mt-4 max-w-2xl text-base text-stone-600">
               Yoga practices are now sourced directly from the CMS.
             </p>
+            <div className="mt-6 flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-stone-500">
+              <a className="rounded-full border border-stone-300 px-4 py-2 hover:bg-stone-100" href="/yoga/visualizer">
+                Yoga Visualizer
+              </a>
+            </div>
           </div>
 
           <div

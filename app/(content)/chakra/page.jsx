@@ -72,6 +72,14 @@ export default async function ChakraPage() {
             <p className="mt-5 max-w-3xl text-lg text-white/70">
               Seven centers, one calm interface. Chakra content is now pulled from the CMS.
             </p>
+            <div className="mt-6 flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-white/60">
+              <a className="rounded-full border border-white/20 px-4 py-2 hover:bg-white/10" href="/chakra-system">
+                Chakra System
+              </a>
+              <a className="rounded-full border border-white/20 px-4 py-2 hover:bg-white/10" href="/sound-bowl">
+                Sound Bowl
+              </a>
+            </div>
           </div>
 
           {hasChakras ? (

@@ -12,9 +12,11 @@ export default function SoundBowlPage() {
   const [activeFreq, setActiveFreq] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [soundOnly, setSoundOnly] = useState(false);
+  const [loadError, setLoadError] = useState('');
   const audioRef = useRef(null);
 
   const hasGraphql = useMemo(() => Boolean(process.env.NEXT_PUBLIC_WORDPRESS_API_URL), []);
+  const loadTimeoutRef = useRef(null);
 
   useEffect(() => {
     setSoundOnly(shouldUseSoundOnly());
@@ -26,6 +28,7 @@ export default function SoundBowlPage() {
 
     async function loadSounds() {
       try {
+        setLoadError('');
         const data = await fetchGraphQL(GET_ALL_SOUNDS, {
           cache: 'no-store',
         });
@@ -48,16 +51,27 @@ export default function SoundBowlPage() {
         if (!ignore && mapped.length) {
           setFrequencies(mapped);
           setActiveFreq(mapped[0]);
+        } else if (!ignore) {
+          setLoadError('No sounds returned from the CMS yet.');
         }
       } catch (error) {
-        // Silent no-data mode
+        if (!ignore) {
+          setLoadError('Unable to load sounds right now.');
+        }
       }
     }
 
     loadSounds();
+    clearTimeout(loadTimeoutRef.current);
+    loadTimeoutRef.current = setTimeout(() => {
+      if (!ignore && !frequencies.length) {
+        setLoadError('Sound library is taking longer to load.');
+      }
+    }, 4000);
 
     return () => {
       ignore = true;
+      clearTimeout(loadTimeoutRef.current);
     };
   }, [hasGraphql]);
 
@@ -155,8 +169,9 @@ export default function SoundBowlPage() {
           </Canvas>
         )
       ) : (
-        <div className="absolute inset-0 flex items-center justify-center text-sm text-text-muted">
-          Sound library is coming online.
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-sm text-text-muted">
+          <p>Sound library is coming online.</p>
+          {loadError ? <p className="text-xs text-text-muted/80">{loadError}</p> : null}
         </div>
       )}
 

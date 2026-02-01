@@ -59,7 +59,7 @@ export default function SoundBowlPage() {
     return () => {
       ignore = true;
     };
-  }, [graphqlEndpoint, hasGraphql]);
+  }, [hasGraphql]);
 
   useEffect(() => {
     if (!frequencies.length) return;

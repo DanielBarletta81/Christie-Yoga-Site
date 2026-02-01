@@ -31,6 +31,28 @@
       linear-gradient(120deg, rgba(247, 241, 234, 0.95), rgba(255, 250, 244, 0.75));
   }
 
+  .editorial-base {
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.005em;
+  }
+
+  .editorial-base p {
+    line-height: 1.8;
+  }
+
+  .editorial-base h1 {
+    letter-spacing: -0.02em;
+  }
+
+  .editorial-base h2 {
+    letter-spacing: -0.015em;
+  }
+
+  .editorial-base h3 {
+    letter-spacing: -0.01em;
+  }
+
   h1,
   h2,
   h3,
@@ -91,6 +113,7 @@
   .card-elevated {
     @apply rounded-3xl bg-white/70 backdrop-blur-xl ring-1 ring-white/60;
     box-shadow: var(--shadow-soft);
+    padding: 28px;
   }
 }
 
@@ -116,7 +139,7 @@
   }
 
   .section-shell {
-    @apply mx-auto max-w-6xl px-6;
+    @apply mx-auto max-w-7xl px-6;
   }
 
   .ambient-page {
@@ -175,15 +198,49 @@
     opacity: 0.12;
     filter: blur(6px) saturate(0.9);
   }
+
+  .editorial-shell {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .editorial-shell::before,
+  .editorial-shell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .editorial-shell::before {
+    background-image: var(--plant-image-1), var(--plant-image-2);
+    background-size: 52% auto, 48% auto;
+    background-position: left -6% top 6%, right -10% bottom 10%;
+    background-repeat: no-repeat;
+    opacity: 0.28;
+    filter: saturate(0.9) blur(2px);
+  }
+
+  .editorial-shell::after {
+    background: radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.18), transparent 45%),
+      radial-gradient(circle at 85% 80%, rgba(255, 255, 255, 0.12), transparent 45%);
+    opacity: 0.7;
+  }
+
+  .editorial-content {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 /* Chakra system utilities */
 .chakra-card {
   background: #0e1115;
   border-radius: 18px;
-  padding: 24px;
+  padding: 32px;
   width: 100%;
-  max-width: 420px;
+  max-width: 520px;
   color: #e6e9ec;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 0 48px var(--chakra-color);
 }
@@ -192,7 +249,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .chakra-dot {

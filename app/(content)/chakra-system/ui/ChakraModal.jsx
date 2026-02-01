@@ -46,12 +46,12 @@ export function ChakraModal({ chakra, open, onClose }) {
     >
       <div
         ref={wrapperRef}
-        className="chakra-card relative w-full max-w-md rounded-modal bg-bg-surface p-6 text-text-primary"
+        className="chakra-card relative w-full rounded-modal bg-bg-surface text-text-primary"
         style={{ '--chakra-color': chakra.glow, boxShadow: `0 0 48px ${chakra.glow}` }}
       >
         <button
           ref={closeRef}
-          className="absolute right-4 top-4 text-text-muted"
+          className="absolute right-5 top-5 text-text-muted"
           onClick={onClose}
           aria-label="Close chakra details"
         >
@@ -61,33 +61,33 @@ export function ChakraModal({ chakra, open, onClose }) {
         <div className="chakra-card-header">
           <span className="chakra-dot" />
           <div>
-            <h2 id="chakra-title" className="text-sm uppercase tracking-[0.3em]">
+            <h2 id="chakra-title" className="text-base uppercase tracking-[0.3em]">
               {chakra.name}
             </h2>
-            <p className="text-xs text-text-muted">{chakra.sanskrit}</p>
+            <p className="text-sm text-text-muted">{chakra.sanskrit}</p>
           </div>
         </div>
 
         <section className="mt-4">
-          <h3 className="text-[0.7rem] uppercase tracking-[0.2em] text-text-muted">Governs</h3>
-          <p className="mt-2 text-sm text-text-secondary">{chakra.governs.join(' · ')}</p>
+          <h3 className="text-xs uppercase tracking-[0.2em] text-text-muted">Governs</h3>
+          <p className="mt-2 text-base text-text-secondary">{chakra.governs.join(' · ')}</p>
         </section>
 
         <section className="mt-4">
-          <h3 className="text-[0.7rem] uppercase tracking-[0.2em] text-text-muted">When strained or imbalanced</h3>
-          <p className="mt-2 text-sm text-text-secondary">{chakra.imbalance.join(', ')}</p>
+          <h3 className="text-xs uppercase tracking-[0.2em] text-text-muted">When strained or imbalanced</h3>
+          <p className="mt-2 text-base text-text-secondary">{chakra.imbalance.join(', ')}</p>
         </section>
 
         <section className="mt-4">
-          <h3 className="text-[0.7rem] uppercase tracking-[0.2em] text-text-muted">Gentle practices</h3>
-          <ul className="mt-2 list-disc space-y-2 pl-4 text-sm text-text-secondary">
+          <h3 className="text-xs uppercase tracking-[0.2em] text-text-muted">Gentle practices</h3>
+          <ul className="mt-2 list-disc space-y-2 pl-4 text-base text-text-secondary">
             {chakra.practices.map((practice) => (
               <li key={practice}>{practice}</li>
             ))}
           </ul>
         </section>
 
-        <section className="mt-4 text-sm text-text-secondary">
+        <section className="mt-4 text-base text-text-secondary">
           {chakra.tone}
         </section>
       </div>

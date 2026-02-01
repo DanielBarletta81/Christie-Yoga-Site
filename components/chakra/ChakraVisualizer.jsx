@@ -34,8 +34,8 @@ export default function ChakraVisualizer({ data }) {
     : null;
 
   return (
-    <section className="relative grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-      <div className="relative flex min-h-[560px] flex-col items-center justify-between overflow-hidden rounded-[32px] border border-white/10 bg-black/70 p-6">
+    <section className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+      <div className="relative flex min-h-[620px] flex-col items-center justify-between overflow-hidden rounded-[36px] border border-white/10 bg-black/70 p-8 md:p-10">
         <div
           className="absolute inset-0 opacity-80"
           style={{
@@ -55,9 +55,9 @@ export default function ChakraVisualizer({ data }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_85%,rgba(255,255,255,0.18),transparent_55%)]" />
 
-        <div className="relative z-10 flex flex-col items-center gap-6">
+        <div className="relative z-10 flex flex-col items-center gap-7">
           <div className="text-xs uppercase tracking-[0.4em] text-white/60">Chakra Tower</div>
-          <div className="relative h-[360px] w-[220px] rounded-full border border-white/10 bg-black/60">
+          <div className="relative h-[380px] w-[240px] rounded-full border border-white/10 bg-black/60">
             <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_50%_80%,rgba(255,255,255,0.16),transparent_65%)]" />
             <div className="absolute inset-6 rounded-full border border-white/10 bg-black/70" />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -96,28 +96,28 @@ export default function ChakraVisualizer({ data }) {
               </div>
             </div>
           </div>
-          <div className="text-center text-sm text-white/70">
+          <div className="text-center text-base text-white/70">
             The quiet center. Tap a crystal to explore.
           </div>
         </div>
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="rounded-[24px] border border-white/10 bg-black/60 p-5 text-white shadow-[0_40px_80px_-50px_rgba(0,0,0,0.8)]">
+        <div className="rounded-[28px] border border-white/10 bg-black/60 p-7 text-white shadow-[0_40px_80px_-50px_rgba(0,0,0,0.8)] sm:p-8">
           <div className="flex items-center justify-between gap-4">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-white/50">Active chakra</p>
-              <h2 className="mt-2 text-xl font-light text-white">{active.name}</h2>
+              <h2 className="mt-2 text-2xl font-light text-white">{active.name}</h2>
             </div>
             <span
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border"
               style={{ borderColor: `${active.color}66`, color: active.color }}
             >
               <ChakraIcon type={chakraIcons[active.id]} />
             </span>
           </div>
 
-          <div className="mt-4 grid gap-3 text-sm text-white/70">
+          <div className="mt-5 grid gap-3 text-base text-white/70">
             <p>
               <span className="text-white/50">Element:</span> {active.element}
             </p>
@@ -135,7 +135,7 @@ export default function ChakraVisualizer({ data }) {
 
           {imageUrl ? (
             <div className="mt-6 overflow-hidden rounded-2xl border border-white/10">
-              <img src={imageUrl} alt={active.name} className="h-44 w-full object-cover" />
+              <img src={imageUrl} alt={active.name} className="h-52 w-full object-cover" />
             </div>
           ) : null}
         </div>

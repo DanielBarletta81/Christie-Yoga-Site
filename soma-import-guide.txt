@@ -1,0 +1,331 @@
+WP ALL IMPORT - SOMA CONTENT IMPORT GUIDE
+
+FILES INCLUDED
+- chakras.csv
+- sounds.csv
+- practices.csv
+- rituals.csv
+- guides.csv
+
+IMPORT ORDER (RECOMMENDED)
+1) chakras.csv  -> Post Type: Chakra
+2) practices.csv -> Post Type: Practice
+3) rituals.csv  -> Post Type: Ritual
+4) guides.csv   -> Post Type: Guide
+5) sounds.csv   -> Post Type: Sound
+
+GENERAL SETTINGS (ALL IMPORTS)
+- Update existing posts: YES
+- Set Status: publish (already in CSV)
+- Unique Identifier:
+  * Sound: audio_url
+  * Chakra: post_title
+  * Practice: post_title
+  * Ritual: post_title
+  * Guide: post_title
+
+MAPPING: CHAKRAS (chakras.csv)
+Title
+- post_title -> Title
+
+Custom Fields
+order              -> {order}
+_order             -> field_chakra_order
+
+theme_color        -> {theme_color}
+_theme_color       -> field_chakra_theme_color
+
+short_description  -> {short_description}
+_short_description -> field_chakra_short_description
+
+is_active          -> {is_active}
+_is_active         -> field_chakra_is_active
+
+element            -> {element}
+_element           -> field_chakra_element
+
+mantra             -> {mantra}
+_mantra            -> field_chakra_mantra
+
+sanskrit           -> {sanskrit}
+_sanskrit          -> field_chakra_sanskrit
+
+tone               -> {tone}
+_tone              -> field_chakra_tone
+
+Themes repeater
+themes             -> {themes_count}
+_themes            -> field_chakra_themes
+
+themes_0_label     -> {theme_1}
+_themes_0_label    -> field_chakra_theme_label
+
+themes_1_label     -> {theme_2}
+_themes_1_label    -> field_chakra_theme_label
+
+themes_2_label     -> {theme_3}
+_themes_2_label    -> field_chakra_theme_label
+
+Imbalances repeater
+imbalances         -> {imbalances_count}
+_imbalances        -> field_chakra_imbalances
+
+imbalances_0_label  -> {imbalance_1}
+_imbalances_0_label -> field_chakra_imbalance_label
+
+imbalances_1_label  -> {imbalance_2}
+_imbalances_1_label -> field_chakra_imbalance_label
+
+imbalances_2_label  -> {imbalance_3}
+_imbalances_2_label -> field_chakra_imbalance_label
+
+Practices repeater
+practices          -> {practices_count}
+_practices         -> field_chakra_practices
+
+practices_0_label  -> {practice_1}
+_practices_0_label -> field_chakra_practice_label
+
+practices_1_label  -> {practice_2}
+_practices_1_label -> field_chakra_practice_label
+
+practices_2_label  -> {practice_3}
+_practices_2_label -> field_chakra_practice_label
+
+Governs repeater
+governs            -> {governs_count}
+_governs           -> field_chakra_governs
+
+governs_0_label    -> {govern_1}
+_governs_0_label   -> field_chakra_governs_label
+
+governs_1_label    -> {govern_2}
+_governs_1_label   -> field_chakra_governs_label
+
+governs_2_label    -> {govern_3}
+_governs_2_label   -> field_chakra_governs_label
+
+Soma Content Core
+summary            -> {summary}
+_summary           -> field_soma_summary
+
+duration_minutes   -> {duration_minutes}
+_duration_minutes  -> field_soma_duration_minutes
+
+media_type         -> {media_type}
+_media_type        -> field_soma_media_type
+
+media_url          -> {media_url}
+_media_url         -> field_soma_media_url
+
+hero_image         -> {hero_image}
+_hero_image        -> field_soma_hero_image
+
+cta_label          -> {cta_label}
+_cta_label         -> field_soma_cta_label
+
+cta_url            -> {cta_url}
+_cta_url           -> field_soma_cta_url
+
+is_free_weekly     -> {is_free_weekly}
+_is_free_weekly    -> field_soma_is_free_weekly
+
+free_window_start  -> {free_window_start}
+_free_window_start -> field_soma_free_window_start
+
+free_window_end    -> {free_window_end}
+_free_window_end   -> field_soma_free_window_end
+
+paid_after_window  -> {paid_after_window}
+_paid_after_window -> field_soma_paid_after_window
+
+MAPPING: PRACTICES (practices.csv)
+Title
+- post_title -> Title
+
+Custom Fields
+instructor      -> {instructor}
+_instructor     -> field_practice_instructor
+
+difficulty      -> {difficulty}
+_difficulty     -> field_practice_difficulty
+
+props           -> {props}
+_props          -> field_practice_props
+
+sequence_notes  -> {sequence_notes}
+_sequence_notes -> field_practice_sequence_notes
+
+Soma Content Core
+summary            -> {summary}
+_summary           -> field_soma_summary
+
+duration_minutes   -> {duration_minutes}
+_duration_minutes  -> field_soma_duration_minutes
+
+media_type         -> {media_type}
+_media_type        -> field_soma_media_type
+
+media_url          -> {media_url}
+_media_url         -> field_soma_media_url
+
+hero_image         -> {hero_image}
+_hero_image        -> field_soma_hero_image
+
+cta_label          -> {cta_label}
+_cta_label         -> field_soma_cta_label
+
+cta_url            -> {cta_url}
+_cta_url           -> field_soma_cta_url
+
+is_free_weekly     -> {is_free_weekly}
+_is_free_weekly    -> field_soma_is_free_weekly
+
+free_window_start  -> {free_window_start}
+_free_window_start -> field_soma_free_window_start
+
+free_window_end    -> {free_window_end}
+_free_window_end   -> field_soma_free_window_end
+
+paid_after_window  -> {paid_after_window}
+_paid_after_window -> field_soma_paid_after_window
+
+MAPPING: RITUALS (rituals.csv)
+Title
+- post_title -> Title
+
+Custom Fields
+instruction        -> {instruction}
+_instruction       -> field_ritual_instruction
+
+chakra_context     -> {chakra_context}
+_chakra_context    -> field_ritual_chakra_context
+
+sound_context      -> {sound_context}
+_sound_context     -> field_ritual_sound_context
+
+time_of_day        -> {time_of_day}
+_time_of_day       -> field_ritual_time_of_day
+
+intensity          -> {intensity}
+_intensity         -> field_ritual_intensity
+
+is_active          -> {is_active}
+_is_active         -> field_ritual_is_active
+
+Soma Content Core
+summary            -> {summary}
+_summary           -> field_soma_summary
+
+duration_minutes   -> {duration_minutes}
+_duration_minutes  -> field_soma_duration_minutes
+
+media_type         -> {media_type}
+_media_type        -> field_soma_media_type
+
+media_url          -> {media_url}
+_media_url         -> field_soma_media_url
+
+hero_image         -> {hero_image}
+_hero_image        -> field_soma_hero_image
+
+cta_label          -> {cta_label}
+_cta_label         -> field_soma_cta_label
+
+cta_url            -> {cta_url}
+_cta_url           -> field_soma_cta_url
+
+is_free_weekly     -> {is_free_weekly}
+_is_free_weekly    -> field_soma_is_free_weekly
+
+free_window_start  -> {free_window_start}
+_free_window_start -> field_soma_free_window_start
+
+free_window_end    -> {free_window_end}
+_free_window_end   -> field_soma_free_window_end
+
+paid_after_window  -> {paid_after_window}
+_paid_after_window -> field_soma_paid_after_window
+
+MAPPING: GUIDES (guides.csv)
+Title
+- post_title -> Title
+
+Content
+- content -> Main Content Body
+
+Soma Content Core
+summary            -> {summary}
+_summary           -> field_soma_summary
+
+cta_label          -> {cta_label}
+_cta_label         -> field_soma_cta_label
+
+cta_url            -> {cta_url}
+_cta_url           -> field_soma_cta_url
+
+is_free_weekly     -> {is_free_weekly}
+_is_free_weekly    -> field_soma_is_free_weekly
+
+paid_after_window  -> {paid_after_window}
+_paid_after_window -> field_soma_paid_after_window
+
+MAPPING: SOUNDS (sounds.csv)
+Title
+- post_title -> Title
+
+Custom Fields
+frequency_hz      -> {frequency_hz}
+_frequency_hz     -> field_sound_frequency
+
+frequency_copy    -> {frequency_copy}
+_frequency_copy   -> field_sound_copy
+
+audio_url         -> {audio_url}
+_audio_url        -> field_sound_audio_url
+
+color_hex         -> {color_hex}
+_color_hex        -> field_sound_color_hex
+
+description       -> {description}
+_description      -> field_sound_description
+
+sort_order        -> {sort_order}
+_sort_order       -> field_sound_sort_order
+
+loopable          -> {loopable}
+_loopable         -> field_sound_loopable
+
+Soma Content Core
+summary            -> {summary}
+_summary           -> field_soma_summary
+
+duration_minutes   -> {duration_minutes}
+_duration_minutes  -> field_soma_duration_minutes
+
+media_type         -> {media_type}
+_media_type        -> field_soma_media_type
+
+media_url          -> {media_url}
+_media_url         -> field_soma_media_url
+
+hero_image         -> {hero_image}
+_hero_image        -> field_soma_hero_image
+
+cta_label          -> {cta_label}
+_cta_label         -> field_soma_cta_label
+
+cta_url            -> {cta_url}
+_cta_url           -> field_soma_cta_url
+
+is_free_weekly     -> {is_free_weekly}
+_is_free_weekly    -> field_soma_is_free_weekly
+
+free_window_start  -> {free_window_start}
+_free_window_start -> field_soma_free_window_start
+
+free_window_end    -> {free_window_end}
+_free_window_end   -> field_soma_free_window_end
+
+paid_after_window  -> {paid_after_window}
+_paid_after_window -> field_soma_paid_after_window

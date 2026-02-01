@@ -44,7 +44,7 @@ export default async function ChakraPage() {
   const hasChakras = data.chakras.length > 0;
   return (
     <main
-      className="relative min-h-screen bg-black pb-24 pt-28 text-white"
+      className="editorial-shell relative min-h-screen bg-black pb-28 pt-28 text-white"
       style={{
         '--ambient-image-1': `url('${CDN_BASE}/hero-background.jpg')`,
         '--ambient-image-2': `url('${CDN_BASE}/wellness.jpg')`,
@@ -57,7 +57,7 @@ export default async function ChakraPage() {
         <div className="h-full w-full bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.08),transparent_45%),radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.06),transparent_45%)]" />
       </div>
       <Container>
-        <div className="relative z-10 flex flex-col gap-10">
+        <div className="editorial-content flex flex-col gap-12">
           <div>
             <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.35em] text-white/60">
               <span>Chakra</span>
@@ -67,9 +67,9 @@ export default async function ChakraPage() {
                 className="h-5 w-5 opacity-80"
               />
             </div>
-            <h1 className="mt-3 text-3xl font-light text-white sm:text-4xl">Chakra Energy</h1>
-            <p className="mt-2 text-sm uppercase tracking-[0.3em] text-white/50">Subtle anatomy for everyday balance</p>
-            <p className="mt-4 max-w-2xl text-base text-white/70">
+            <h1 className="mt-3 text-4xl font-light text-white sm:text-5xl">Chakra Energy</h1>
+            <p className="mt-3 text-sm uppercase tracking-[0.3em] text-white/50">Subtle anatomy for everyday balance</p>
+            <p className="mt-5 max-w-3xl text-lg text-white/70">
               Seven centers, one calm interface. Chakra content is now pulled from the CMS.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default async function ChakraPage() {
           {hasChakras ? (
             <ChakraVisualizer data={data} />
           ) : (
-            <div className="rounded-2xl border border-white/10 bg-black/60 p-6 text-sm text-white/70">
+            <div className="rounded-3xl border border-white/10 bg-black/60 p-8 text-base text-white/70">
               Chakra content is not published yet.
             </div>
           )}

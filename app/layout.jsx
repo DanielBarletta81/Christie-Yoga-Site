@@ -21,8 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${playfair.variable}`}>
-        {children}
+      <body className={`${manrope.variable} ${playfair.variable} editorial-base editorial-shell`}>
+        <div className="editorial-content">
+          {children}
+        </div>
       </body>
     </html>
   );

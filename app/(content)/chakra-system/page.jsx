@@ -101,7 +101,7 @@ export default function ChakraSystemPage() {
 
   return (
     <main
-      className="min-h-screen bg-bg-primary text-text-primary"
+      className="editorial-shell min-h-screen bg-bg-primary text-text-primary"
       style={{
         backgroundImage: `url('${CDN_BASE}/bg/chakras-2.png'), url('${CDN_BASE}/chakra-vis.jpg')`,
         backgroundSize: 'cover, cover',
@@ -110,7 +110,7 @@ export default function ChakraSystemPage() {
     >
       <div className="min-h-screen bg-bg-primary/80">
         <SomaBackdrop tone="dark" />
-        <div className="mx-auto flex max-w-[420px] flex-col gap-6 px-4 py-6 sm:max-w-[720px]">
+        <div className="editorial-content mx-auto flex max-w-[520px] flex-col gap-8 px-5 py-8 sm:max-w-[980px]">
           <header className="flex flex-col gap-2">
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.35em] text-text-muted">
               <img
@@ -120,8 +120,8 @@ export default function ChakraSystemPage() {
               />
               Chakra System
             </div>
-            <h1 className="text-2xl font-light text-text-primary">A calm ritual field</h1>
-            <p className="text-sm text-text-secondary">
+            <h1 className="text-3xl font-light text-text-primary sm:text-4xl">A calm ritual field</h1>
+            <p className="text-base text-text-secondary sm:text-lg">
               Explore one center at a time. No pressure, no plans — just gentle attention and an optional suggestion.
             </p>
             <div className="flex items-center gap-3 pt-2">
@@ -138,7 +138,7 @@ export default function ChakraSystemPage() {
               activeChakraId={state.activeChakra?.id}
             />
           ) : (
-            <div className="rounded-2xl border border-white/10 bg-black/60 p-6 text-sm text-white/70">
+            <div className="rounded-3xl border border-white/10 bg-black/60 p-8 text-base text-white/70">
               Chakra content is not published yet.
             </div>
           )}

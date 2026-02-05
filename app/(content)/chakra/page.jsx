@@ -1,7 +1,8 @@
 import Container from '../../../components/ui/Container';
 import ChakraVisualizer from '../../../components/chakra/ChakraVisualizer';
+import ChakraSystemSection from './ChakraSystemSection';
 import { CDN_BASE } from '../../../lib/media/cdn';
-import { fetchGraphQL, GET_ALL_CHAKRAS } from '../../../lib/wpgraphql';
+import { fetchGraphQL, GET_ALL_CHAKRAS, GET_RITUAL_TRAY } from '../../../lib/wpgraphql';
 
 async function getChakraOverrides() {
   try {
@@ -15,8 +16,20 @@ async function getChakraOverrides() {
   }
 }
 
+async function getRituals() {
+  try {
+    const data = await fetchGraphQL(GET_RITUAL_TRAY, {
+      revalidate: 600,
+      tags: ['rituals'],
+    });
+    return data?.rituals?.nodes || [];
+  } catch (error) {
+    return [];
+  }
+}
+
 export default async function ChakraPage() {
-  const overrides = await getChakraOverrides();
+  const [overrides, ritualNodes] = await Promise.all([getChakraOverrides(), getRituals()]);
   const raw = overrides
     .map((node) => {
       const fields = node.chakraFields || {};
@@ -31,7 +44,10 @@ export default async function ChakraPage() {
         themes: toList(fields.themes),
         imbalances: toList(fields.imbalances),
         practices: toList(fields.practices),
+        governs: toList(fields.governs),
         mantra: fields.mantra || '—',
+        sanskrit: fields.sanskrit || '',
+        tone: fields.tone || fields.shortDescription || '',
         image: fields.image?.sourceUrl || null,
         order: fields.order ?? null,
       };
@@ -42,6 +58,37 @@ export default async function ChakraPage() {
 
   const data = { chakras: raw };
   const hasChakras = data.chakras.length > 0;
+
+  const crystalBase = `${CDN_BASE}/icons/chakra-crystal-system/svg`;
+  const chakraSystemChakras = raw.map((chakra) => ({
+    id: chakra.id,
+    name: chakra.name,
+    sanskrit: chakra.sanskrit,
+    glow: chakra.color,
+    svg: `${crystalBase}/${chakra.id}.svg`,
+    governs: chakra.governs,
+    imbalance: chakra.imbalances,
+    practices: chakra.practices,
+    tone: chakra.tone,
+    order: chakra.order ?? 0,
+  }));
+
+  const chakraSystemRituals = ritualNodes
+    .map((node) => {
+      const supports = node.supportsChakra?.nodes?.map((item) => item.slug) || [];
+      const biases = node.supportsDosha?.nodes?.map((item) => item.slug) || [];
+
+      if (!supports.length) return null;
+
+      return {
+        id: node.id,
+        label: node.ritualDetails?.ritualLabel || node.title,
+        supports,
+        biases,
+      };
+    })
+    .filter(Boolean);
+
   return (
     <main
       className="editorial-shell relative min-h-screen bg-black pb-28 pt-28 text-white"
@@ -70,14 +117,15 @@ export default async function ChakraPage() {
             <h1 className="mt-3 text-4xl font-light text-white sm:text-5xl">Chakra Energy</h1>
             <p className="mt-3 text-sm uppercase tracking-[0.3em] text-white/50">Subtle anatomy for everyday balance</p>
             <p className="mt-5 max-w-3xl text-lg text-white/70">
-              Seven centers, one calm interface. Chakra content is now pulled from the CMS.
+              Seven centers, one calm interface. Move through each chakra, then deepen with a ritual field or
+              a matching sound bowl.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-white/60">
-              <a className="rounded-full border border-white/20 px-4 py-2 hover:bg-white/10" href="/chakra-system">
-                Chakra System
-              </a>
               <a className="rounded-full border border-white/20 px-4 py-2 hover:bg-white/10" href="/sound-bowl">
                 Sound Bowl
+              </a>
+              <a className="rounded-full border border-white/20 px-4 py-2 hover:bg-white/10" href="/yoga/visualizer">
+                Yoga Visualizer
               </a>
             </div>
           </div>
@@ -89,6 +137,8 @@ export default async function ChakraPage() {
               Chakra content is not published yet.
             </div>
           )}
+
+          <ChakraSystemSection chakras={chakraSystemChakras} rituals={chakraSystemRituals} />
         </div>
       </Container>
     </main>

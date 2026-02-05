@@ -163,6 +163,7 @@ export default function SoundBowlPage() {
           <Canvas camera={{ position: [0, 1.2, 3], fov: 40 }}>
             <ambientLight intensity={0.35} />
             <directionalLight position={[2, 4, 2]} intensity={0.6} />
+            <pointLight position={[0, 1.2, 1.4]} intensity={0.8} color={activeFreq.color} />
             <Environment preset="studio" />
 
             <SoundBowl glowColor={activeFreq.color} isPlaying={isPlaying} onToggle={togglePlay} />
@@ -212,6 +213,29 @@ function SoundBowl({ glowColor, isPlaying, onToggle }) {
         <meshStandardMaterial color="#bfa35a" metalness={1} roughness={0.3} />
       </mesh>
 
+      <mesh position={[0, 0.05, 0]} rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[1.4, 0.035, 16, 120]} />
+        <meshStandardMaterial
+          color={glowColor}
+          emissive={glowColor}
+          emissiveIntensity={0.7}
+          transparent
+          opacity={isPlaying ? 0.55 : 0.25}
+        />
+      </mesh>
+
+      <mesh position={[0, 0.45, 0]}>
+        <sphereGeometry args={[1.9, 64, 64]} />
+        <meshStandardMaterial
+          color={glowColor}
+          emissive={glowColor}
+          emissiveIntensity={0.35}
+          transparent
+          opacity={isPlaying ? 0.14 : 0.06}
+          depthWrite={false}
+        />
+      </mesh>
+
       <mesh scale={1.03}>
         <cylinderGeometry args={[1.05, 1.25, 0.62, 64, 1, true]} />
         <meshStandardMaterial color={glowColor} transparent opacity={isPlaying ? 0.12 : 0} />
@@ -234,12 +258,21 @@ function SoundOnlyPlayer({ frequency, isPlaying, onToggle }) {
     >
       <div className="flex flex-col items-center gap-6">
         <div
-          className="h-24 w-24 rounded-full border"
+          className="relative flex h-28 w-28 items-center justify-center rounded-full border"
           style={{
             borderColor: frequency.color,
-            opacity: isPlaying ? 0.6 : 0.3,
+            opacity: isPlaying ? 0.7 : 0.4,
+            boxShadow: `0 0 24px ${frequency.color}55`,
           }}
-        />
+        >
+          <div
+            className="absolute inset-2 rounded-full"
+            style={{
+              background: `radial-gradient(circle, ${frequency.color}55, transparent 70%)`,
+              opacity: isPlaying ? 0.9 : 0.5,
+            }}
+          />
+        </div>
 
         <p className="text-xs text-text-muted">{isPlaying ? 'Playing' : 'Tap to play'}</p>
       </div>

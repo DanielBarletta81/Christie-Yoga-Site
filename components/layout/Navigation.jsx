@@ -123,13 +123,6 @@ export default function Navigation() {
                   Chakra
                 </Link>
                 <Link
-                  href="/chakra-system"
-                  onClick={() => setIsDropdownOpen(false)}
-                  className="block px-5 py-3 text-sm uppercase tracking-wide transition hover:bg-brand-100/60"
-                >
-                  Chakra System
-                </Link>
-                <Link
                   href="/crystals"
                   onClick={() => setIsDropdownOpen(false)}
                   className="block px-5 py-3 text-sm uppercase tracking-wide transition hover:bg-brand-100/60"

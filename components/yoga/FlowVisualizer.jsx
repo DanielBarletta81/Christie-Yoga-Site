@@ -25,6 +25,27 @@ function YogiModel({ modelUrl, color }) {
   return <primitive object={scene} />;
 }
 
+function SphereHalo({ color = '#7fb9c8' }) {
+  return (
+    <group>
+      <mesh>
+        <sphereGeometry args={[2.1, 64, 64]} />
+        <meshStandardMaterial color={color} transparent opacity={0.08} roughness={0.2} metalness={0.1} />
+      </mesh>
+      <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 0.1, 0]}>
+        <torusGeometry args={[1.6, 0.02, 16, 100]} />
+        <meshStandardMaterial
+          color={color}
+          emissive={color}
+          emissiveIntensity={0.8}
+          transparent
+          opacity={0.5}
+        />
+      </mesh>
+    </group>
+  );
+}
+
 function normalizePractice(practice) {
   const details = practice?.practiceDetails || {};
   const summary = practice?.somaContentCore?.summary;
@@ -74,6 +95,7 @@ export default function FlowVisualizer({ practices = [], modelUrl = '/models/yog
                   <YogiModel modelUrl={modelUrl} />
                 </Suspense>
               </Stage>
+              <SphereHalo />
               <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.4} />
             </Canvas>
 
@@ -128,6 +150,14 @@ export default function FlowVisualizer({ practices = [], modelUrl = '/models/yog
                 {activePractice?.props ? <span>{activePractice.props}</span> : null}
               </div>
               <p className="mt-3 leading-relaxed text-stone-600">{activePractice?.body}</p>
+            </div>
+
+            <div className="rounded-[24px] border border-stone-200/70 bg-stone-50/80 p-6 text-sm text-stone-600">
+              <p className="text-xs uppercase tracking-[0.25em] text-stone-500">Accessible adjustments</p>
+              <p className="mt-3 leading-relaxed text-stone-600">
+                If a movement feels too intense, scale it down with props, slower pacing, or a smaller range of motion.
+                The goal is comfort and consistency over perfect form.
+              </p>
             </div>
 
             <div className="flex flex-wrap gap-2">

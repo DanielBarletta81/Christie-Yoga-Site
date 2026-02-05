@@ -245,6 +245,84 @@
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 0 48px var(--chakra-color);
 }
 
+/* Chakra stack visualizer */
+.chakra-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chakra-stack-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform 0.35s ease, border-color 0.35s ease;
+  overflow: hidden;
+}
+
+.chakra-stack-item::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle, var(--chakra-glow), transparent 70%);
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.chakra-stack-item:hover,
+.chakra-stack-item.is-active {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--chakra-glow) 60%, transparent);
+}
+
+.chakra-stack-item:hover::before,
+.chakra-stack-item.is-active::before {
+  opacity: 0.28;
+}
+
+.chakra-stack-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 46px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: box-shadow 0.4s ease;
+}
+
+.chakra-stack-icon img {
+  height: 28px;
+  width: 28px;
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  transition: filter 0.4s ease;
+}
+
+.chakra-stack-item:hover .chakra-stack-icon,
+.chakra-stack-item.is-active .chakra-stack-icon {
+  box-shadow: 0 0 18px color-mix(in srgb, var(--chakra-glow) 70%, transparent);
+}
+
+.chakra-stack-item:hover .chakra-stack-icon img,
+.chakra-stack-item.is-active .chakra-stack-icon img {
+  filter: drop-shadow(0 0 18px var(--chakra-glow));
+}
+
+.chakra-stack-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .chakra-card-header {
   display: flex;
   align-items: center;

@@ -33,71 +33,51 @@ export default function ChakraVisualizer({ data }) {
       : `${CDN_BASE}/${active.image}`
     : null;
 
+  const chakraIconBase = `${CDN_BASE}/icons/chakra-crystal-system/svg`;
+
   return (
-    <section className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-      <div className="relative flex min-h-[620px] flex-col items-center justify-between overflow-hidden rounded-[36px] border border-white/10 bg-black/70 p-8 md:p-10">
+    <section className="relative grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="relative overflow-hidden rounded-[36px] border border-white/10 bg-black/70 p-8 md:p-10">
         <div
-          className="absolute inset-0 opacity-80"
+          className="absolute inset-0 opacity-70"
           style={{
             backgroundImage: `url('${CDN_BASE}/chakra-vis.jpg')`,
-            backgroundSize: '120%',
-            backgroundPosition: 'left center',
-          }}
-        />
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: `url('${CDN_BASE}/icons/chakras-3.svg')`,
-            backgroundSize: 'cover',
+            backgroundSize: '140%',
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_85%,rgba(255,255,255,0.18),transparent_55%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_15%,rgba(255,255,255,0.12),transparent_45%)]" />
 
-        <div className="relative z-10 flex flex-col items-center gap-7">
-          <div className="text-xs uppercase tracking-[0.4em] text-white/60">Chakra Tower</div>
-          <div className="relative h-[380px] w-[240px] rounded-full border border-white/10 bg-black/60">
-            <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_50%_80%,rgba(255,255,255,0.16),transparent_65%)]" />
-            <div className="absolute inset-6 rounded-full border border-white/10 bg-black/70" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex flex-col items-center gap-3 translate-x-6 md:translate-x-8">
-                {data.chakras.map((chakra) => {
-                  const isActive = chakra.id === activeId;
-                  return (
-                    <button
-                      key={chakra.id}
-                      type="button"
-                      onClick={() => setActiveId(chakra.id)}
-                      onMouseEnter={() => setActiveId(chakra.id)}
-                      className="group relative h-10 w-10 rounded-full border border-white/10 bg-black/70 transition"
-                      style={{
-                        boxShadow: isActive ? `0 0 24px ${chakra.color}66` : 'none',
-                        borderColor: isActive ? `${chakra.color}88` : 'rgba(255,255,255,0.1)',
-                      }}
-                      aria-label={chakra.name}
-                    >
-                      <span
-                        className="absolute inset-[7px] rounded-full bg-white/10 transition group-hover:opacity-100"
-                        style={{
-                          backgroundColor: isActive ? chakra.color : 'rgba(255,255,255,0.12)',
-                          opacity: isActive ? 1 : 0.35,
-                        }}
-                      />
-                      <span
-                        className="absolute inset-0 flex items-center justify-center text-white/60 transition group-hover:text-white"
-                        style={{ color: isActive ? chakra.color : 'rgba(255,255,255,0.6)' }}
-                      >
-                        <ChakraIcon type={chakraIcons[chakra.id]} />
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
+        <div className="relative z-10 flex flex-col items-center gap-6">
+          <div className="text-xs uppercase tracking-[0.4em] text-white/60">Chakra Alignment</div>
+          <div className="chakra-stack w-full max-w-[320px]">
+            {data.chakras.map((chakra) => {
+              const isActive = chakra.id === activeId;
+              return (
+                <button
+                  key={chakra.id}
+                  type="button"
+                  onClick={() => setActiveId(chakra.id)}
+                  onMouseEnter={() => setActiveId(chakra.id)}
+                  className={`chakra-stack-item group ${isActive ? 'is-active' : ''}`}
+                  style={{ '--chakra-glow': chakra.color }}
+                  aria-label={chakra.name}
+                >
+                  <span className="chakra-stack-glow" />
+                  <span className="chakra-stack-icon">
+                    <img src={`${chakraIconBase}/${chakra.id}.svg`} alt="" />
+                  </span>
+                  <span className="chakra-stack-label">
+                    <span className="text-xs uppercase tracking-[0.35em] text-white/40">{chakra.element}</span>
+                    <span className="text-base text-white">{chakra.name}</span>
+                  </span>
+                </button>
+              );
+            })}
           </div>
-          <div className="text-center text-base text-white/70">
-            The quiet center. Tap a crystal to explore.
+          <div className="text-center text-sm text-white/60">
+            Hover to illuminate. Tap to explore.
           </div>
         </div>
       </div>
@@ -138,6 +118,16 @@ export default function ChakraVisualizer({ data }) {
               <img src={imageUrl} alt={active.name} className="h-52 w-full object-cover" />
             </div>
           ) : null}
+
+          <div className="mt-6 flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-white/60">
+            <a
+              className="rounded-full border px-4 py-2 transition hover:bg-white/10"
+              href="/sound-bowl"
+              style={{ borderColor: `${active.color}66`, color: active.color }}
+            >
+              Match with sound bowl
+            </a>
+          </div>
         </div>
       </div>
     </section>

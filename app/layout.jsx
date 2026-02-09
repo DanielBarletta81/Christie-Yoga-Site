@@ -1,5 +1,6 @@
 import './globals.css';
 import { Manrope, Playfair_Display } from 'next/font/google';
+import DevErrorOverlay from '../components/dev/DevErrorOverlay';
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <div className="editorial-content">
           {children}
         </div>
+        <DevErrorOverlay />
       </body>
     </html>
   );

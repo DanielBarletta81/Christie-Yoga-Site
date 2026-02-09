@@ -3,7 +3,7 @@ export default function ModuleCard({ title, minutes, type, tags, subtle }) {
 
   return (
     <div
-      className={`rounded-2xl border ${subtle ? 'border-dashed border-stone-200 bg-white/80' : 'border-stone-200 bg-white'} p-3 shadow-sm`}
+      className={`rounded-2xl border hover-soft ${subtle ? 'border-dashed border-stone-200 bg-white/80' : 'border-stone-200 bg-white'} p-3 shadow-sm`}
     >
       <div className="text-sm font-semibold text-stone-900">{title}</div>
       {showMeta ? (

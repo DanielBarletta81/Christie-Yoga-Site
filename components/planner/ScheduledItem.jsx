@@ -3,6 +3,7 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { ChakraIcon } from './ChakraIcons';
+import { formatSlotLabel, getPrimaryRecommendation } from '../../lib/planner/recommendations';
 
 const chakraMap = {
   yoga: ['Root', 'Sacral', 'Solar'],
@@ -13,7 +14,19 @@ const chakraMap = {
   note: ['Throat'],
 };
 
-export default function ScheduledItem({ id, module, done, onToggleDone, onRemove, onOpenDetails }) {
+export default function ScheduledItem({
+  id,
+  module,
+  done,
+  slotKey,
+  hour,
+  onToggleDone,
+  onRemove,
+  onOpenDetails,
+  onUpdateHour,
+  showTimePicker,
+  availableHours,
+}) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
     id,
     data: { moduleId: module.id, source: 'schedule' },
@@ -25,6 +38,8 @@ export default function ScheduledItem({ id, module, done, onToggleDone, onRemove
   };
 
   const chakras = chakraMap[module.type] || [];
+  const recommended = getPrimaryRecommendation(module.type);
+  const showRecommendation = slotKey && recommended !== 'flex' && slotKey !== recommended;
 
   return (
     <div
@@ -32,7 +47,7 @@ export default function ScheduledItem({ id, module, done, onToggleDone, onRemove
       style={style}
       {...attributes}
       {...listeners}
-      className={`flex min-w-0 items-center gap-2 rounded-full border border-stone-200 bg-white/90 px-3 py-2 text-[11px] uppercase tracking-[0.2em] text-stone-600 shadow-sm ${
+      className={`flex min-w-0 items-center gap-2 rounded-full border border-stone-200 bg-white/90 px-3 py-2 text-[11px] uppercase tracking-[0.2em] text-stone-600 shadow-sm hover-soft ${
         isDragging ? 'opacity-60' : ''
       }`}
     >
@@ -63,6 +78,28 @@ export default function ScheduledItem({ id, module, done, onToggleDone, onRemove
       <span className="text-[9px] uppercase tracking-[0.2em] text-stone-500">{module.minutes} min</span>
 
       <span className="text-[9px] uppercase tracking-[0.2em] text-stone-400">{module.type}</span>
+      {hour !== null && hour !== undefined ? (
+        <span className="text-[9px] uppercase tracking-[0.2em] text-stone-400">{hour}:00</span>
+      ) : null}
+      {showTimePicker && availableHours?.length ? (
+        <select
+          className="rounded-full border border-stone-200 bg-white px-2 py-1 text-[9px] uppercase tracking-[0.2em] text-stone-500"
+          value={hour ?? ''}
+          onChange={(event) => onUpdateHour?.(Number(event.target.value))}
+          onClick={(event) => event.stopPropagation()}
+        >
+          {availableHours.map((h) => (
+            <option key={h} value={h}>
+              {h}:00
+            </option>
+          ))}
+        </select>
+      ) : null}
+      {showRecommendation ? (
+        <span className="rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[9px] uppercase tracking-[0.2em] text-amber-600">
+          Best in {formatSlotLabel(recommended)}
+        </span>
+      ) : null}
 
       {chakras.length ? (
         <div className="flex items-center gap-1">

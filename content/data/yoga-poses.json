@@ -1,0 +1,1716 @@
+{
+  "flow": {
+    "order": [
+      "downward-dog",
+      "cat-cow",
+      "low-lunge",
+      "warrior-ii",
+      "chair-pose",
+      "tree-pose",
+      "bridge-pose",
+      "cobra-pose",
+      "seated-fold",
+      "childs-pose",
+      "triangle-pose",
+      "pigeon-pose",
+      "savasana",
+      "mountain-pose",
+      "warrior-i"
+    ],
+    "transitionMs": 1600,
+    "dwellMs": 1200
+  },
+  "poses": [
+    {
+      "id": "downward-dog",
+      "name": "Downward-Facing Dog",
+      "sanskrit": "Adho Mukha Svanasana",
+      "summary": "Explore angles, alignment, and options that meet you where you are. The visualizer is a guide \u2014 not a test.",
+      "benefits": [
+        "Lengthens the posterior chain and shoulders.",
+        "Encourages steady, even breath.",
+        "Supports overall circulation and grounding."
+      ],
+      "history": "A foundational posture in modern yoga sequences, often used as a transitional and resting pose.",
+      "moreLink": {
+        "label": "Read more about this pose",
+        "url": "https://www.yogajournal.com/poses/downward-facing-dog/"
+      },
+      "cues": [
+        "Lengthen from wrists through hips to keep the spine neutral.",
+        "Soften knees or lift heels until the hinge feels available.",
+        "Press evenly through palms; shoulder blades stay wide.",
+        "Choose props or child's pose when you need more ease."
+      ],
+      "modifications": [
+        "Bend knees generously to protect the spine.",
+        "Place hands on blocks to reduce wrist load.",
+        "Use a chair or wall for a supported version."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 150
+        },
+        "neck": {
+          "x": 300,
+          "y": 190
+        },
+        "shoulderL": {
+          "x": 265,
+          "y": 220
+        },
+        "shoulderR": {
+          "x": 335,
+          "y": 220
+        },
+        "elbowL": {
+          "x": 225,
+          "y": 270
+        },
+        "elbowR": {
+          "x": 375,
+          "y": 270
+        },
+        "wristL": {
+          "x": 185,
+          "y": 330
+        },
+        "wristR": {
+          "x": 415,
+          "y": 330
+        },
+        "hip": {
+          "x": 300,
+          "y": 300
+        },
+        "kneeL": {
+          "x": 250,
+          "y": 380
+        },
+        "kneeR": {
+          "x": 350,
+          "y": 380
+        },
+        "ankleL": {
+          "x": 210,
+          "y": 470
+        },
+        "ankleR": {
+          "x": 390,
+          "y": 470
+        }
+      },
+      "angles": [
+        {
+          "label": "Hip hinge ~75\u00b0",
+          "color": "#E37E35",
+          "type": "arc",
+          "path": "M 320 200 Q 360 160 400 200"
+        },
+        {
+          "label": "Long spine",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 180,
+          "y1": 420,
+          "x2": 320,
+          "y2": 200
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "HIP HINGE ~75\u00b0",
+          "x": 330,
+          "y": 150,
+          "color": "#E37E35"
+        },
+        {
+          "text": "LONG SPINE",
+          "x": 120,
+          "y": 450,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "path",
+          "d": "M 210 420 Q 280 330 320 220",
+          "color": "#D45B5B"
+        },
+        {
+          "type": "text",
+          "x": 140,
+          "y": 350,
+          "text": "SOFTEN KNEES",
+          "color": "#D45B5B"
+        },
+        {
+          "type": "circle",
+          "cx": 230,
+          "cy": 220,
+          "r": 32,
+          "color": "#D45B5B"
+        },
+        {
+          "type": "text",
+          "x": 70,
+          "y": 220,
+          "text": "USE BLOCKS",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "cat-cow",
+      "name": "Cat/Cow",
+      "sanskrit": "Marjaryasana / Bitilasana",
+      "summary": "Move slowly between flexion and extension to lubricate the spine and wake up breath awareness.",
+      "benefits": [
+        "Mobilizes the spine through a gentle range.",
+        "Encourages breath-led movement.",
+        "Relieves stiffness in the back and neck."
+      ],
+      "history": "A foundational warm-up in many modern practices, used to coordinate movement and breath.",
+      "moreLink": {
+        "label": "Cat/Cow overview",
+        "url": "https://www.yogajournal.com/poses/cat-pose/"
+      },
+      "cues": [
+        "Inhale to open the chest and lift the tailbone.",
+        "Exhale to round the spine and soften the neck.",
+        "Keep shoulders over wrists and hips over knees."
+      ],
+      "modifications": [
+        "Place a blanket under knees.",
+        "Reduce range if wrists feel strained.",
+        "Make the movement smaller and slower."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 180
+        },
+        "neck": {
+          "x": 300,
+          "y": 220
+        },
+        "shoulderL": {
+          "x": 270,
+          "y": 250
+        },
+        "shoulderR": {
+          "x": 330,
+          "y": 250
+        },
+        "elbowL": {
+          "x": 250,
+          "y": 300
+        },
+        "elbowR": {
+          "x": 350,
+          "y": 300
+        },
+        "wristL": {
+          "x": 230,
+          "y": 350
+        },
+        "wristR": {
+          "x": 370,
+          "y": 350
+        },
+        "hip": {
+          "x": 300,
+          "y": 340
+        },
+        "kneeL": {
+          "x": 260,
+          "y": 420
+        },
+        "ankleL": {
+          "x": 260,
+          "y": 500
+        },
+        "kneeR": {
+          "x": 340,
+          "y": 420
+        },
+        "ankleR": {
+          "x": 340,
+          "y": 500
+        }
+      },
+      "angles": [
+        {
+          "label": "Neutral spine",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 220,
+          "y1": 270,
+          "x2": 380,
+          "y2": 360
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "NEUTRAL LINE",
+          "x": 180,
+          "y": 260,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 80,
+          "y": 460,
+          "text": "PAD KNEES",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "warrior-ii",
+      "name": "Warrior II",
+      "sanskrit": "Virabhadrasana II",
+      "summary": "Ground through the feet and expand through the arms. Find steadiness without forcing depth.",
+      "benefits": [
+        "Builds stability in hips and legs.",
+        "Opens chest and shoulders for fuller breath.",
+        "Cultivates focused attention."
+      ],
+      "history": "A standing strength pose common in vinyasa and flow traditions.",
+      "moreLink": {
+        "label": "Learn the pose",
+        "url": "https://www.yogajournal.com/poses/warrior-ii/"
+      },
+      "cues": [
+        "Front knee tracks toward the middle toes.",
+        "Arms reach long from the center line.",
+        "Torso stacks over the pelvis."
+      ],
+      "modifications": [
+        "Shorten the stance to reduce load on the front knee.",
+        "Rest hands on hips or a block for balance.",
+        "Practice against a wall for feedback."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 140
+        },
+        "neck": {
+          "x": 300,
+          "y": 180
+        },
+        "shoulderL": {
+          "x": 230,
+          "y": 200
+        },
+        "shoulderR": {
+          "x": 370,
+          "y": 200
+        },
+        "elbowL": {
+          "x": 170,
+          "y": 210
+        },
+        "elbowR": {
+          "x": 430,
+          "y": 210
+        },
+        "wristL": {
+          "x": 120,
+          "y": 220
+        },
+        "wristR": {
+          "x": 480,
+          "y": 220
+        },
+        "hip": {
+          "x": 300,
+          "y": 280
+        },
+        "kneeL": {
+          "x": 220,
+          "y": 360
+        },
+        "kneeR": {
+          "x": 380,
+          "y": 320
+        },
+        "ankleL": {
+          "x": 150,
+          "y": 460
+        },
+        "ankleR": {
+          "x": 430,
+          "y": 450
+        }
+      },
+      "angles": [
+        {
+          "label": "Front knee ~90\u00b0",
+          "color": "#6F8FC7",
+          "type": "arc",
+          "path": "M 260 360 Q 300 300 360 320"
+        },
+        {
+          "label": "Arms in line",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 160,
+          "y1": 250,
+          "x2": 440,
+          "y2": 250
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "FRONT KNEE ~90\u00b0",
+          "x": 250,
+          "y": 300,
+          "color": "#6F8FC7"
+        },
+        {
+          "text": "ARMS IN LINE",
+          "x": 150,
+          "y": 230,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "path",
+          "d": "M 220 390 Q 270 360 330 350",
+          "color": "#D45B5B"
+        },
+        {
+          "type": "text",
+          "x": 90,
+          "y": 380,
+          "text": "SHORTEN STANCE",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "chair-pose",
+      "name": "Chair Pose",
+      "sanskrit": "Utkatasana",
+      "summary": "Sit back as if into a chair, keeping breath steady. Depth comes after stability.",
+      "benefits": [
+        "Strengthens legs and core.",
+        "Builds heat and circulation.",
+        "Encourages upright posture."
+      ],
+      "history": "A classic standing posture that trains stability and endurance.",
+      "moreLink": {
+        "label": "Chair pose details",
+        "url": "https://www.yogajournal.com/poses/chair-pose/"
+      },
+      "cues": [
+        "Hips travel back before knees move forward.",
+        "Lift through the chest; keep ribs soft.",
+        "Weight in heels and mid-foot."
+      ],
+      "modifications": [
+        "Decrease the bend if knees feel strained.",
+        "Keep hands at heart instead of overhead.",
+        "Practice against a wall for support."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 150
+        },
+        "neck": {
+          "x": 300,
+          "y": 190
+        },
+        "shoulderL": {
+          "x": 270,
+          "y": 220
+        },
+        "shoulderR": {
+          "x": 330,
+          "y": 220
+        },
+        "elbowL": {
+          "x": 245,
+          "y": 190
+        },
+        "elbowR": {
+          "x": 355,
+          "y": 190
+        },
+        "wristL": {
+          "x": 230,
+          "y": 150
+        },
+        "wristR": {
+          "x": 370,
+          "y": 150
+        },
+        "hip": {
+          "x": 300,
+          "y": 300
+        },
+        "kneeL": {
+          "x": 270,
+          "y": 380
+        },
+        "kneeR": {
+          "x": 330,
+          "y": 380
+        },
+        "ankleL": {
+          "x": 265,
+          "y": 470
+        },
+        "ankleR": {
+          "x": 335,
+          "y": 470
+        }
+      },
+      "angles": [
+        {
+          "label": "Hip hinge",
+          "color": "#E37E35",
+          "type": "line",
+          "x1": 280,
+          "y1": 260,
+          "x2": 340,
+          "y2": 380
+        },
+        {
+          "label": "Knee over ankle",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 330,
+          "y1": 420,
+          "x2": 330,
+          "y2": 500
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "HIP HINGE",
+          "x": 240,
+          "y": 250,
+          "color": "#E37E35"
+        },
+        {
+          "text": "KNEE STACK",
+          "x": 350,
+          "y": 500,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "circle",
+          "cx": 260,
+          "cy": 320,
+          "r": 26,
+          "color": "#D45B5B"
+        },
+        {
+          "type": "text",
+          "x": 80,
+          "y": 320,
+          "text": "LESS DEPTH",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "tree-pose",
+      "name": "Tree Pose",
+      "sanskrit": "Vrksasana",
+      "summary": "Find a steady base and soft gaze. Balance comes from ease, not force.",
+      "benefits": [
+        "Improves balance and proprioception.",
+        "Strengthens ankles and standing leg.",
+        "Encourages calm focus."
+      ],
+      "history": "A classic balancing posture used to cultivate steadiness and attention.",
+      "moreLink": {
+        "label": "Tree pose guidance",
+        "url": "https://www.yogajournal.com/poses/tree-pose/"
+      },
+      "cues": [
+        "Press foot into inner calf or thigh (avoid the knee).",
+        "Lengthen through the crown of the head.",
+        "Hands at heart or overhead."
+      ],
+      "modifications": [
+        "Keep toes on the floor with heel at ankle.",
+        "Use a wall for light fingertip support.",
+        "Lower the foot if balance feels shaky."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 140
+        },
+        "neck": {
+          "x": 300,
+          "y": 180
+        },
+        "shoulderL": {
+          "x": 270,
+          "y": 210
+        },
+        "shoulderR": {
+          "x": 330,
+          "y": 210
+        },
+        "elbowL": {
+          "x": 250,
+          "y": 260
+        },
+        "elbowR": {
+          "x": 350,
+          "y": 260
+        },
+        "wristL": {
+          "x": 240,
+          "y": 300
+        },
+        "wristR": {
+          "x": 360,
+          "y": 300
+        },
+        "hip": {
+          "x": 300,
+          "y": 290
+        },
+        "kneeL": {
+          "x": 300,
+          "y": 380
+        },
+        "ankleL": {
+          "x": 300,
+          "y": 470
+        },
+        "kneeR": {
+          "x": 350,
+          "y": 320
+        },
+        "ankleR": {
+          "x": 380,
+          "y": 370
+        }
+      },
+      "angles": [
+        {
+          "label": "Standing leg vertical",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 300,
+          "y1": 260,
+          "x2": 300,
+          "y2": 500
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "STACKED LEG",
+          "x": 320,
+          "y": 260,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 80,
+          "y": 360,
+          "text": "USE WALL",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "low-lunge",
+      "name": "Low Lunge",
+      "sanskrit": "Anjaneyasana",
+      "summary": "Open the front of the hip while keeping the breath smooth and steady.",
+      "benefits": [
+        "Opens hip flexors and quadriceps.",
+        "Builds gentle strength in legs.",
+        "Encourages upright posture."
+      ],
+      "history": "A common lunge variation for hip opening and gentle strength.",
+      "moreLink": {
+        "label": "Low lunge tutorial",
+        "url": "https://www.yogajournal.com/poses/low-lunge/"
+      },
+      "cues": [
+        "Front knee stacks over the ankle.",
+        "Lift through the sternum while softening the shoulders.",
+        "Pad the back knee if needed."
+      ],
+      "modifications": [
+        "Place hands on blocks for support.",
+        "Lower the back knee to reduce strain.",
+        "Shorten the stance to find stability."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 150
+        },
+        "neck": {
+          "x": 300,
+          "y": 190
+        },
+        "shoulderL": {
+          "x": 270,
+          "y": 220
+        },
+        "shoulderR": {
+          "x": 330,
+          "y": 220
+        },
+        "elbowL": {
+          "x": 250,
+          "y": 270
+        },
+        "elbowR": {
+          "x": 350,
+          "y": 270
+        },
+        "wristL": {
+          "x": 240,
+          "y": 320
+        },
+        "wristR": {
+          "x": 360,
+          "y": 320
+        },
+        "hip": {
+          "x": 300,
+          "y": 300
+        },
+        "kneeL": {
+          "x": 250,
+          "y": 380
+        },
+        "ankleL": {
+          "x": 230,
+          "y": 470
+        },
+        "kneeR": {
+          "x": 340,
+          "y": 360
+        },
+        "ankleR": {
+          "x": 420,
+          "y": 420
+        }
+      },
+      "angles": [
+        {
+          "label": "Front knee over ankle",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 250,
+          "y1": 340,
+          "x2": 250,
+          "y2": 460
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "STACK KNEE",
+          "x": 150,
+          "y": 330,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 90,
+          "y": 420,
+          "text": "PAD KNEE",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "bridge-pose",
+      "name": "Bridge Pose",
+      "sanskrit": "Setu Bandha Sarvangasana",
+      "summary": "Lift the hips with support from the feet and shoulders. Keep the neck soft.",
+      "benefits": [
+        "Strengthens glutes and posterior chain.",
+        "Opens chest and hip flexors.",
+        "Supports gentle backbending."
+      ],
+      "history": "A classic backbend used for strength and heart opening.",
+      "moreLink": {
+        "label": "Bridge pose guide",
+        "url": "https://www.yogajournal.com/poses/bridge-pose/"
+      },
+      "cues": [
+        "Feet hip-width, press evenly through heels.",
+        "Lift hips without compressing the neck.",
+        "Keep knees tracking forward."
+      ],
+      "modifications": [
+        "Place a block under the sacrum for support.",
+        "Keep hips lower if low back feels strained.",
+        "Bring feet closer to the sit bones."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 220,
+          "y": 420
+        },
+        "neck": {
+          "x": 250,
+          "y": 400
+        },
+        "shoulderL": {
+          "x": 280,
+          "y": 380
+        },
+        "shoulderR": {
+          "x": 320,
+          "y": 380
+        },
+        "elbowL": {
+          "x": 260,
+          "y": 420
+        },
+        "elbowR": {
+          "x": 340,
+          "y": 420
+        },
+        "wristL": {
+          "x": 240,
+          "y": 460
+        },
+        "wristR": {
+          "x": 360,
+          "y": 460
+        },
+        "hip": {
+          "x": 320,
+          "y": 330
+        },
+        "kneeL": {
+          "x": 380,
+          "y": 380
+        },
+        "ankleL": {
+          "x": 440,
+          "y": 460
+        },
+        "kneeR": {
+          "x": 360,
+          "y": 380
+        },
+        "ankleR": {
+          "x": 420,
+          "y": 460
+        }
+      },
+      "angles": [
+        {
+          "label": "Lift from hips",
+          "color": "#E37E35",
+          "type": "line",
+          "x1": 320,
+          "y1": 330,
+          "x2": 380,
+          "y2": 400
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "LIFT HIPS",
+          "x": 330,
+          "y": 320,
+          "color": "#E37E35"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 90,
+          "y": 380,
+          "text": "BLOCK SUPPORT",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "cobra-pose",
+      "name": "Cobra Pose",
+      "sanskrit": "Bhujangasana",
+      "summary": "Lift the chest with gentle backbend, keeping elbows soft and shoulders down.",
+      "benefits": [
+        "Strengthens back muscles.",
+        "Opens chest and shoulders.",
+        "Improves spinal mobility."
+      ],
+      "history": "A foundational prone backbend often used in sun salutations.",
+      "moreLink": {
+        "label": "Cobra pose details",
+        "url": "https://www.yogajournal.com/poses/cobra-pose/"
+      },
+      "cues": [
+        "Press pubic bone into the mat.",
+        "Keep elbows hugging in.",
+        "Lift chest without compressing low back."
+      ],
+      "modifications": [
+        "Keep a small lift if low back is sensitive.",
+        "Place hands forward to reduce intensity.",
+        "Keep gaze down to avoid neck strain."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 340,
+          "y": 260
+        },
+        "neck": {
+          "x": 320,
+          "y": 300
+        },
+        "shoulderL": {
+          "x": 300,
+          "y": 340
+        },
+        "shoulderR": {
+          "x": 340,
+          "y": 340
+        },
+        "elbowL": {
+          "x": 280,
+          "y": 380
+        },
+        "elbowR": {
+          "x": 360,
+          "y": 380
+        },
+        "wristL": {
+          "x": 260,
+          "y": 420
+        },
+        "wristR": {
+          "x": 380,
+          "y": 420
+        },
+        "hip": {
+          "x": 320,
+          "y": 420
+        },
+        "kneeL": {
+          "x": 360,
+          "y": 460
+        },
+        "ankleL": {
+          "x": 420,
+          "y": 500
+        },
+        "kneeR": {
+          "x": 340,
+          "y": 460
+        },
+        "ankleR": {
+          "x": 400,
+          "y": 500
+        }
+      },
+      "angles": [
+        {
+          "label": "Gentle lift",
+          "color": "#E37E35",
+          "type": "line",
+          "x1": 320,
+          "y1": 320,
+          "x2": 360,
+          "y2": 250
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "LIFT CHEST",
+          "x": 360,
+          "y": 230,
+          "color": "#E37E35"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 80,
+          "y": 440,
+          "text": "LOWER LIFT",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "seated-fold",
+      "name": "Seated Forward Fold",
+      "sanskrit": "Paschimottanasana",
+      "summary": "Lengthen the spine and fold with ease. Let the breath guide depth.",
+      "benefits": [
+        "Stretches hamstrings and low back.",
+        "Encourages calm, inward focus.",
+        "Supports gentle digestion."
+      ],
+      "history": "A classic seated posture for calming the nervous system.",
+      "moreLink": {
+        "label": "Seated fold overview",
+        "url": "https://www.yogajournal.com/poses/seated-forward-bend/"
+      },
+      "cues": [
+        "Sit tall before folding.",
+        "Lead with the chest, not the chin.",
+        "Bend knees slightly if needed."
+      ],
+      "modifications": [
+        "Use a strap around the feet.",
+        "Sit on a folded blanket.",
+        "Keep knees softly bent."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 260,
+          "y": 250
+        },
+        "neck": {
+          "x": 280,
+          "y": 270
+        },
+        "shoulderL": {
+          "x": 300,
+          "y": 300
+        },
+        "shoulderR": {
+          "x": 320,
+          "y": 300
+        },
+        "elbowL": {
+          "x": 340,
+          "y": 330
+        },
+        "elbowR": {
+          "x": 360,
+          "y": 330
+        },
+        "wristL": {
+          "x": 380,
+          "y": 360
+        },
+        "wristR": {
+          "x": 400,
+          "y": 360
+        },
+        "hip": {
+          "x": 320,
+          "y": 360
+        },
+        "kneeL": {
+          "x": 400,
+          "y": 400
+        },
+        "ankleL": {
+          "x": 480,
+          "y": 420
+        },
+        "kneeR": {
+          "x": 420,
+          "y": 420
+        },
+        "ankleR": {
+          "x": 520,
+          "y": 440
+        }
+      },
+      "angles": [
+        {
+          "label": "Long spine",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 250,
+          "y1": 260,
+          "x2": 340,
+          "y2": 360
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "LENGTHEN",
+          "x": 230,
+          "y": 240,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 120,
+          "y": 330,
+          "text": "BEND KNEES",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "childs-pose",
+      "name": "Child's Pose",
+      "sanskrit": "Balasana",
+      "summary": "A restful posture for grounding and breath recovery. Let the back body soften.",
+      "benefits": [
+        "Gently stretches back and hips.",
+        "Calms the nervous system.",
+        "Offers a restorative pause."
+      ],
+      "history": "A traditional resting posture used between stronger poses.",
+      "moreLink": {
+        "label": "Child's pose guidance",
+        "url": "https://www.yogajournal.com/poses/childs-pose/"
+      },
+      "cues": [
+        "Knees wide or together; choose comfort.",
+        "Forehead rests on the mat or a block.",
+        "Breathe into the back ribs."
+      ],
+      "modifications": [
+        "Place a blanket under hips or knees.",
+        "Support forehead on stacked hands.",
+        "Use a bolster along the torso."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 220,
+          "y": 340
+        },
+        "neck": {
+          "x": 240,
+          "y": 360
+        },
+        "shoulderL": {
+          "x": 270,
+          "y": 380
+        },
+        "shoulderR": {
+          "x": 300,
+          "y": 380
+        },
+        "elbowL": {
+          "x": 310,
+          "y": 410
+        },
+        "elbowR": {
+          "x": 330,
+          "y": 420
+        },
+        "wristL": {
+          "x": 350,
+          "y": 440
+        },
+        "wristR": {
+          "x": 370,
+          "y": 450
+        },
+        "hip": {
+          "x": 320,
+          "y": 420
+        },
+        "kneeL": {
+          "x": 360,
+          "y": 450
+        },
+        "ankleL": {
+          "x": 420,
+          "y": 480
+        },
+        "kneeR": {
+          "x": 340,
+          "y": 450
+        },
+        "ankleR": {
+          "x": 400,
+          "y": 480
+        }
+      },
+      "angles": [
+        {
+          "label": "Soft fold",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 230,
+          "y1": 350,
+          "x2": 320,
+          "y2": 420
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "REST",
+          "x": 200,
+          "y": 320,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 120,
+          "y": 470,
+          "text": "USE BOLSTER",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "triangle-pose",
+      "name": "Triangle Pose",
+      "sanskrit": "Trikonasana",
+      "summary": "Extend through both sides of the body while keeping the chest open and breath steady.",
+      "benefits": [
+        "Stretches hamstrings and side body.",
+        "Improves hip mobility and balance.",
+        "Encourages open chest and breath."
+      ],
+      "history": "A foundational standing pose for expansion and balance.",
+      "moreLink": {
+        "label": "Triangle pose guide",
+        "url": "https://www.yogajournal.com/poses/triangle-pose/"
+      },
+      "cues": [
+        "Front leg stays long; soften the knee if needed.",
+        "Extend both arms in a long line.",
+        "Keep the chest rotating open."
+      ],
+      "modifications": [
+        "Use a block under the bottom hand.",
+        "Shorten the stance for comfort.",
+        "Keep gaze forward instead of up."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 340,
+          "y": 140
+        },
+        "neck": {
+          "x": 330,
+          "y": 180
+        },
+        "shoulderL": {
+          "x": 270,
+          "y": 210
+        },
+        "shoulderR": {
+          "x": 360,
+          "y": 200
+        },
+        "elbowL": {
+          "x": 220,
+          "y": 230
+        },
+        "elbowR": {
+          "x": 400,
+          "y": 250
+        },
+        "wristL": {
+          "x": 170,
+          "y": 250
+        },
+        "wristR": {
+          "x": 430,
+          "y": 300
+        },
+        "hip": {
+          "x": 310,
+          "y": 280
+        },
+        "kneeL": {
+          "x": 250,
+          "y": 360
+        },
+        "ankleL": {
+          "x": 210,
+          "y": 460
+        },
+        "kneeR": {
+          "x": 360,
+          "y": 330
+        },
+        "ankleR": {
+          "x": 430,
+          "y": 420
+        }
+      },
+      "angles": [
+        {
+          "label": "Long torso",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 250,
+          "y1": 210,
+          "x2": 370,
+          "y2": 330
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "LENGTHEN",
+          "x": 210,
+          "y": 200,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 120,
+          "y": 420,
+          "text": "USE BLOCK",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "pigeon-pose",
+      "name": "Pigeon Pose",
+      "sanskrit": "Eka Pada Rajakapotasana",
+      "summary": "A deep hip opener \u2014 keep the front shin comfortable and support the hips as needed.",
+      "benefits": [
+        "Opens outer hips and glutes.",
+        "Relieves hip tension.",
+        "Encourages quiet, steady breath."
+      ],
+      "history": "A modern staple for hip release and grounding.",
+      "moreLink": {
+        "label": "Pigeon pose info",
+        "url": "https://www.yogajournal.com/poses/pigeon-pose/"
+      },
+      "cues": [
+        "Square the hips toward the front.",
+        "Use support under the front hip.",
+        "Keep the breath calm and even."
+      ],
+      "modifications": [
+        "Place a bolster under the front hip.",
+        "Keep the torso upright if folding is too much.",
+        "Try reclined figure four instead."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 220
+        },
+        "neck": {
+          "x": 300,
+          "y": 250
+        },
+        "shoulderL": {
+          "x": 280,
+          "y": 280
+        },
+        "shoulderR": {
+          "x": 320,
+          "y": 280
+        },
+        "elbowL": {
+          "x": 260,
+          "y": 320
+        },
+        "elbowR": {
+          "x": 340,
+          "y": 320
+        },
+        "wristL": {
+          "x": 240,
+          "y": 360
+        },
+        "wristR": {
+          "x": 360,
+          "y": 360
+        },
+        "hip": {
+          "x": 320,
+          "y": 320
+        },
+        "kneeL": {
+          "x": 260,
+          "y": 360
+        },
+        "ankleL": {
+          "x": 200,
+          "y": 380
+        },
+        "kneeR": {
+          "x": 360,
+          "y": 420
+        },
+        "ankleR": {
+          "x": 420,
+          "y": 500
+        }
+      },
+      "angles": [
+        {
+          "label": "Square hips",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 250,
+          "y1": 320,
+          "x2": 380,
+          "y2": 320
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "LEVEL HIPS",
+          "x": 200,
+          "y": 300,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 120,
+          "y": 430,
+          "text": "SUPPORT HIP",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "savasana",
+      "name": "Savasana",
+      "sanskrit": "Savasana",
+      "summary": "Rest fully and allow the body to integrate the practice.",
+      "benefits": [
+        "Supports nervous system recovery.",
+        "Encourages deep rest and integration.",
+        "Relieves overall tension."
+      ],
+      "history": "A traditional closing posture to integrate the effects of practice.",
+      "moreLink": {
+        "label": "Savasana guide",
+        "url": "https://www.yogajournal.com/poses/corpse-pose/"
+      },
+      "cues": [
+        "Let the limbs rest naturally.",
+        "Soften the face and jaw.",
+        "Breathe without effort."
+      ],
+      "modifications": [
+        "Place a bolster under knees.",
+        "Use an eye pillow for relaxation.",
+        "Cover with a blanket for warmth."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 200,
+          "y": 340
+        },
+        "neck": {
+          "x": 240,
+          "y": 340
+        },
+        "shoulderL": {
+          "x": 280,
+          "y": 330
+        },
+        "shoulderR": {
+          "x": 320,
+          "y": 330
+        },
+        "elbowL": {
+          "x": 340,
+          "y": 340
+        },
+        "elbowR": {
+          "x": 360,
+          "y": 350
+        },
+        "wristL": {
+          "x": 380,
+          "y": 360
+        },
+        "wristR": {
+          "x": 420,
+          "y": 370
+        },
+        "hip": {
+          "x": 360,
+          "y": 360
+        },
+        "kneeL": {
+          "x": 420,
+          "y": 380
+        },
+        "ankleL": {
+          "x": 500,
+          "y": 390
+        },
+        "kneeR": {
+          "x": 440,
+          "y": 390
+        },
+        "ankleR": {
+          "x": 520,
+          "y": 400
+        }
+      },
+      "angles": [
+        {
+          "label": "Rest state",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 200,
+          "y1": 330,
+          "x2": 520,
+          "y2": 400
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "REST",
+          "x": 230,
+          "y": 310,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 80,
+          "y": 360,
+          "text": "BOLSTER",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "mountain-pose",
+      "name": "Mountain Pose",
+      "sanskrit": "Tadasana",
+      "summary": "Stand tall and steady, using breath to create length and ease.",
+      "benefits": [
+        "Improves posture and alignment awareness.",
+        "Builds steady grounding through the feet.",
+        "Encourages calm focus."
+      ],
+      "history": "A foundational standing posture used to establish alignment and breath.",
+      "moreLink": {
+        "label": "Mountain pose basics",
+        "url": "https://www.yogajournal.com/poses/mountain-pose/"
+      },
+      "cues": [
+        "Feet grounded, weight evenly distributed.",
+        "Lift through the crown of the head.",
+        "Soften shoulders away from ears."
+      ],
+      "modifications": [
+        "Stand with feet wider for balance.",
+        "Practice against a wall for feedback.",
+        "Keep a slight bend in the knees."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 130
+        },
+        "neck": {
+          "x": 300,
+          "y": 170
+        },
+        "shoulderL": {
+          "x": 270,
+          "y": 200
+        },
+        "shoulderR": {
+          "x": 330,
+          "y": 200
+        },
+        "elbowL": {
+          "x": 260,
+          "y": 250
+        },
+        "elbowR": {
+          "x": 340,
+          "y": 250
+        },
+        "wristL": {
+          "x": 250,
+          "y": 300
+        },
+        "wristR": {
+          "x": 350,
+          "y": 300
+        },
+        "hip": {
+          "x": 300,
+          "y": 290
+        },
+        "kneeL": {
+          "x": 290,
+          "y": 380
+        },
+        "ankleL": {
+          "x": 290,
+          "y": 480
+        },
+        "kneeR": {
+          "x": 310,
+          "y": 380
+        },
+        "ankleR": {
+          "x": 310,
+          "y": 480
+        }
+      },
+      "angles": [
+        {
+          "label": "Stacked alignment",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 300,
+          "y1": 140,
+          "x2": 300,
+          "y2": 500
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "STACKED",
+          "x": 320,
+          "y": 160,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 90,
+          "y": 360,
+          "text": "WIDER STANCE",
+          "color": "#D45B5B"
+        }
+      ]
+    },
+    {
+      "id": "warrior-i",
+      "name": "Warrior I",
+      "sanskrit": "Virabhadrasana I",
+      "summary": "Hips square forward while the chest lifts. Build strength without strain.",
+      "benefits": [
+        "Strengthens legs and core.",
+        "Opens hip flexors and chest.",
+        "Builds focus and stamina."
+      ],
+      "history": "A classic standing pose used in many flow sequences.",
+      "moreLink": {
+        "label": "Warrior I details",
+        "url": "https://www.yogajournal.com/poses/warrior-i/"
+      },
+      "cues": [
+        "Square the hips toward the front.",
+        "Front knee stacks over ankle.",
+        "Lift through the chest without arching the low back."
+      ],
+      "modifications": [
+        "Shorten the stance for stability.",
+        "Keep hands at heart center.",
+        "Use blocks under hands for support."
+      ],
+      "skeleton": {
+        "head": {
+          "x": 300,
+          "y": 140
+        },
+        "neck": {
+          "x": 300,
+          "y": 180
+        },
+        "shoulderL": {
+          "x": 270,
+          "y": 210
+        },
+        "shoulderR": {
+          "x": 330,
+          "y": 210
+        },
+        "elbowL": {
+          "x": 250,
+          "y": 170
+        },
+        "elbowR": {
+          "x": 350,
+          "y": 170
+        },
+        "wristL": {
+          "x": 240,
+          "y": 130
+        },
+        "wristR": {
+          "x": 360,
+          "y": 130
+        },
+        "hip": {
+          "x": 300,
+          "y": 290
+        },
+        "kneeL": {
+          "x": 250,
+          "y": 370
+        },
+        "ankleL": {
+          "x": 220,
+          "y": 470
+        },
+        "kneeR": {
+          "x": 340,
+          "y": 330
+        },
+        "ankleR": {
+          "x": 420,
+          "y": 420
+        }
+      },
+      "angles": [
+        {
+          "label": "Front knee stack",
+          "color": "#2C8BB0",
+          "type": "line",
+          "x1": 250,
+          "y1": 330,
+          "x2": 250,
+          "y2": 460
+        }
+      ],
+      "angleLabels": [
+        {
+          "text": "KNEE STACK",
+          "x": 140,
+          "y": 320,
+          "color": "#2C8BB0"
+        }
+      ],
+      "modOverlays": [
+        {
+          "type": "text",
+          "x": 80,
+          "y": 410,
+          "text": "SHORTEN STANCE",
+          "color": "#D45B5B"
+        }
+      ]
+    }
+  ]
+}

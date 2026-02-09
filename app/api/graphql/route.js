@@ -1,10 +1,14 @@
 import { NextResponse } from 'next/server';
+import { assertServerEnv } from '../../../lib/env';
 
 export async function POST(request) {
-  const upstream = process.env.NEXT_PUBLIC_WORDPRESS_API_URL;
-  if (!upstream) {
+  let upstream;
+  try {
+    assertServerEnv();
+    upstream = process.env.NEXT_PUBLIC_WORDPRESS_API_URL;
+  } catch (error) {
     return NextResponse.json(
-      { errors: [{ message: 'Missing NEXT_PUBLIC_WORDPRESS_API_URL' }] },
+      { errors: [{ message: error.message || 'Missing required env vars' }] },
       { status: 500 }
     );
   }

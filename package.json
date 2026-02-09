@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sanity": "node scripts/validate-env.js && next lint && next build",
+    "healthcheck": "python3 scripts/devtools/healthcheck.py"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

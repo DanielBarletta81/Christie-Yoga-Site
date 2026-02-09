@@ -1,0 +1,63 @@
+{
+  "poses": [
+    {
+      "title": "Downward-Facing Dog",
+      "slug": "downward-dog",
+      "pose_fields": {
+        "sanskrit": "Adho Mukha Svanasana",
+        "summary": "Explore angles, alignment, and options that meet you where you are. The visualizer is a guide — not a test.",
+        "benefits": ["Lengthens the posterior chain and shoulders.", "Encourages steady, even breath.", "Supports overall circulation and grounding."],
+        "history": "A foundational posture in modern yoga sequences, often used as a transitional and resting pose.",
+        "more_link_label": "Read more about this pose",
+        "more_link_url": "https://www.yogajournal.com/poses/downward-facing-dog/",
+        "cues": ["Lengthen from wrists through hips to keep the spine neutral.", "Soften knees or lift heels until the hinge feels available.", "Press evenly through palms; shoulder blades stay wide.", "Choose props or child's pose when you need more ease."],
+        "modifications": ["Bend knees generously to protect the spine.", "Place hands on blocks to reduce wrist load.", "Use a chair or wall for a supported version."],
+        "skeleton_json": "{\"head\":{\"x\":300,\"y\":150},\"neck\":{\"x\":300,\"y\":190},\"shoulderL\":{\"x\":265,\"y\":220},\"shoulderR\":{\"x\":335,\"y\":220},\"elbowL\":{\"x\":225,\"y\":270},\"elbowR\":{\"x\":375,\"y\":270},\"wristL\":{\"x\":185,\"y\":330},\"wristR\":{\"x\":415,\"y\":330},\"hip\":{\"x\":300,\"y\":300},\"kneeL\":{\"x\":250,\"y\":380},\"kneeR\":{\"x\":350,\"y\":380},\"ankleL\":{\"x\":210,\"y\":470},\"ankleR\":{\"x\":390,\"y\":470}}",
+        "angles_json": "[{\"label\":\"Hip hinge ~75°\",\"color\":\"#E37E35\",\"type\":\"arc\",\"path\":\"M 320 200 Q 360 160 400 200\"},{\"label\":\"Long spine\",\"color\":\"#2C8BB0\",\"type\":\"line\",\"x1\":180,\"y1\":420,\"x2\":320,\"y2\":200}]",
+        "angle_labels_json": "[{\"text\":\"HIP HINGE ~75°\",\"x\":330,\"y\":150,\"color\":\"#E37E35\"},{\"text\":\"LONG SPINE\",\"x\":120,\"y\":450,\"color\":\"#2C8BB0\"}]",
+        "mod_overlays_json": "[{\"type\":\"path\",\"d\":\"M 210 420 Q 280 330 320 220\",\"color\":\"#D45B5B\"},{\"type\":\"text\",\"x\":140,\"y\":350,\"text\":\"SOFTEN KNEES\",\"color\":\"#D45B5B\"},{\"type\":\"circle\",\"cx\":230,\"cy\":220,\"r\":32,\"color\":\"#D45B5B\"},{\"type\":\"text\",\"x\":70,\"y\":220,\"text\":\"USE BLOCKS\",\"color\":\"#D45B5B\"}]"
+      }
+    },
+    {
+      "title": "Warrior II",
+      "slug": "warrior-ii",
+      "pose_fields": {
+        "sanskrit": "Virabhadrasana II",
+        "summary": "Ground through the feet and expand through the arms. Find steadiness without forcing depth.",
+        "benefits": ["Builds stability in hips and legs.", "Opens chest and shoulders for fuller breath.", "Cultivates focused attention."],
+        "history": "A standing strength pose common in vinyasa and flow traditions.",
+        "more_link_label": "Learn the pose",
+        "more_link_url": "https://www.yogajournal.com/poses/warrior-ii/",
+        "cues": ["Front knee tracks toward the middle toes.", "Arms reach long from the center line.", "Torso stacks over the pelvis."],
+        "modifications": ["Shorten the stance to reduce load on the front knee.", "Rest hands on hips or a block for balance.", "Practice against a wall for feedback."],
+        "skeleton_json": "{\"head\":{\"x\":300,\"y\":140},\"neck\":{\"x\":300,\"y\":180},\"shoulderL\":{\"x\":230,\"y\":200},\"shoulderR\":{\"x\":370,\"y\":200},\"elbowL\":{\"x\":170,\"y\":210},\"elbowR\":{\"x\":430,\"y\":210},\"wristL\":{\"x\":120,\"y\":220},\"wristR\":{\"x\":480,\"y\":220},\"hip\":{\"x\":300,\"y\":280},\"kneeL\":{\"x\":220,\"y\":360},\"kneeR\":{\"x\":380,\"y\":320},\"ankleL\":{\"x\":150,\"y\":460},\"ankleR\":{\"x\":430,\"y\":450}}",
+        "angles_json": "[{\"label\":\"Front knee ~90°\",\"color\":\"#6F8FC7\",\"type\":\"arc\",\"path\":\"M 260 360 Q 300 300 360 320\"},{\"label\":\"Arms in line\",\"color\":\"#2C8BB0\",\"type\":\"line\",\"x1\":160,\"y1\":250,\"x2\":440,\"y2\":250}]",
+        "angle_labels_json": "[{\"text\":\"FRONT KNEE ~90°\",\"x\":250,\"y\":300,\"color\":\"#6F8FC7\"},{\"text\":\"ARMS IN LINE\",\"x\":150,\"y\":230,\"color\":\"#2C8BB0\"}]",
+        "mod_overlays_json": "[{\"type\":\"path\",\"d\":\"M 220 390 Q 270 360 330 350\",\"color\":\"#D45B5B\"},{\"type\":\"text\",\"x\":90,\"y\":380,\"text\":\"SHORTEN STANCE\",\"color\":\"#D45B5B\"}]"
+      }
+    },
+    {
+      "title": "Chair Pose",
+      "slug": "chair-pose",
+      "pose_fields": {
+        "sanskrit": "Utkatasana",
+        "summary": "Sit back as if into a chair, keeping breath steady. Depth comes after stability.",
+        "benefits": ["Strengthens legs and core.", "Builds heat and circulation.", "Encourages upright posture."],
+        "history": "A classic standing posture that trains stability and endurance.",
+        "more_link_label": "Chair pose details",
+        "more_link_url": "https://www.yogajournal.com/poses/chair-pose/",
+        "cues": ["Hips travel back before knees move forward.", "Lift through the chest; keep ribs soft.", "Weight in heels and mid-foot."],
+        "modifications": ["Decrease the bend if knees feel strained.", "Keep hands at heart instead of overhead.", "Practice against a wall for support."],
+        "skeleton_json": "{\"head\":{\"x\":300,\"y\":150},\"neck\":{\"x\":300,\"y\":190},\"shoulderL\":{\"x\":270,\"y\":220},\"shoulderR\":{\"x\":330,\"y\":220},\"elbowL\":{\"x\":245,\"y\":190},\"elbowR\":{\"x\":355,\"y\":190},\"wristL\":{\"x\":230,\"y\":150},\"wristR\":{\"x\":370,\"y\":150},\"hip\":{\"x\":300,\"y\":300},\"kneeL\":{\"x\":270,\"y\":380},\"kneeR\":{\"x\":330,\"y\":380},\"ankleL\":{\"x\":265,\"y\":470},\"ankleR\":{\"x\":335,\"y\":470}}",
+        "angles_json": "[{\"label\":\"Hip hinge\",\"color\":\"#E37E35\",\"type\":\"line\",\"x1\":280,\"y1\":260,\"x2\":340,\"y2\":380},{\"label\":\"Knee over ankle\",\"color\":\"#2C8BB0\",\"type\":\"line\",\"x1\":330,\"y1\":420,\"x2\":330,\"y2\":500}]",
+        "angle_labels_json": "[{\"text\":\"HIP HINGE\",\"x\":240,\"y\":250,\"color\":\"#E37E35\"},{\"text\":\"KNEE STACK\",\"x\":350,\"y\":500,\"color\":\"#2C8BB0\"}]",
+        "mod_overlays_json": "[{\"type\":\"circle\",\"cx\":260,\"cy\":320,\"r\":26,\"color\":\"#D45B5B\"},{\"type\":\"text\",\"x\":80,\"y\":320,\"text\":\"LESS DEPTH\",\"color\":\"#D45B5B\"}]"
+      }
+    }
+  ],
+  "flow": {
+    "order": ["downward-dog", "warrior-ii", "chair-pose"],
+    "transitionMs": 1600,
+    "dwellMs": 1200
+  }
+}

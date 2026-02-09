@@ -23,15 +23,52 @@ import { ritualRoutines } from '../../lib/content/ritual-routines';
 import { loadSavedRoutines, saveSavedRoutines } from '../../lib/planner/saved-routines';
 import { loadSavedDailyRoutines, saveSavedDailyRoutines } from '../../lib/planner/saved-daily-routines';
 import { CDN_BASE } from '../../lib/media/cdn';
+import { getPrimaryRecommendation } from '../../lib/planner/recommendations';
 
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const SLOTS = [
-  { key: 'morning', label: 'Morning' },
-  { key: 'midday', label: 'Midday' },
-  { key: 'afternoon', label: 'Afternoon' },
-  { key: 'evening', label: 'Evening' },
-  { key: 'flex', label: 'Anytime (flex)' },
+  { key: 'morning', label: 'Morning', time: '6–10a', startHour: 6, endHour: 10 },
+  { key: 'midday', label: 'Midday', time: '10a–2p', startHour: 10, endHour: 14 },
+  { key: 'afternoon', label: 'Afternoon', time: '2–5p', startHour: 14, endHour: 17 },
+  { key: 'evening', label: 'Evening', time: '5–9p', startHour: 17, endHour: 21 },
+  { key: 'flex', label: 'Anytime (flex)', time: 'Flexible', startHour: 6, endHour: 21 },
 ];
+
+function buildMonthLabel(date) {
+  return date.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+}
+
+function getMonthWeeks(baseDate) {
+  const year = baseDate.getFullYear();
+  const month = baseDate.getMonth();
+  const first = new Date(year, month, 1);
+  const start = new Date(first);
+  start.setDate(first.getDate() - first.getDay());
+  const weeks = [];
+  for (let i = 0; i < 6; i += 1) {
+    const weekStart = new Date(start);
+    weekStart.setDate(start.getDate() + i * 7);
+    const weekEnd = new Date(weekStart);
+    weekEnd.setDate(weekStart.getDate() + 6);
+    const hasMonthDay = weekStart.getMonth() === month || weekEnd.getMonth() === month;
+    if (hasMonthDay) weeks.push(weekStart);
+  }
+  return weeks;
+}
+
+function formatWeekLabel(weekStart) {
+  const startLabel = weekStart.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+  const end = new Date(weekStart);
+  end.setDate(weekStart.getDate() + 6);
+  const endLabel = end.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+  return `${startLabel} – ${endLabel}`;
+}
+
+function formatDayLabel(weekStart, dayIndex) {
+  const day = new Date(weekStart);
+  day.setDate(weekStart.getDate() + dayIndex);
+  return day.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+}
 
 function getContainerId(dayIndex, slotKey) {
   return `${dayIndex}:${slotKey}`;
@@ -45,6 +82,19 @@ function createEmptyPlanner() {
     }
   }
   return { itemsByContainer, completed: {} };
+}
+
+function parseDropId(id) {
+  const parts = String(id).split(':');
+  if (parts.length === 3) {
+    const [dayIndex, slotKey, hour] = parts;
+    return { dayIndex: Number(dayIndex), slotKey, hour: Number(hour) };
+  }
+  if (parts.length === 2) {
+    const [dayIndex, slotKey] = parts;
+    return { dayIndex: Number(dayIndex), slotKey, hour: null };
+  }
+  return null;
 }
 
 function createInstanceId(moduleId) {
@@ -68,12 +118,27 @@ export default function PlannerBoard({ catalog }) {
   const [hasLoadedDailyRoutines, setHasLoadedDailyRoutines] = useState(false);
   const [hasLoadedSchedule, setHasLoadedSchedule] = useState(false);
   const [deletedRoutines, setDeletedRoutines] = useState([]);
+  const [monthOffset, setMonthOffset] = useState(0);
+  const [weekIndex, setWeekIndex] = useState(0);
+  const [layoutMode, setLayoutMode] = useState('slots');
   const undoTimerRef = useRef(new Map());
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 6 } }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   );
+
+  const dragModifiers = useMemo(() => {
+    if (layoutMode !== 'time') return undefined;
+    const rowHeight = 40;
+    return [
+      ({ transform }) => ({
+        ...transform,
+        x: transform.x,
+        y: Math.round(transform.y / rowHeight) * rowHeight,
+      }),
+    ];
+  }, [layoutMode]);
 
   useEffect(() => {
     const stored = loadSchedule();
@@ -215,10 +280,32 @@ export default function PlannerBoard({ catalog }) {
     }));
   }, [savedDailyRoutines]);
 
+  const calendar = useMemo(() => {
+    const now = new Date();
+    const activeMonth = new Date(now.getFullYear(), now.getMonth() + monthOffset, 1);
+    const weeks = getMonthWeeks(activeMonth);
+    const clampedWeekIndex = Math.min(Math.max(weekIndex, 0), Math.max(weeks.length - 1, 0));
+    const weekStart = weeks[clampedWeekIndex] ?? weeks[0] ?? activeMonth;
+    return {
+      label: buildMonthLabel(activeMonth),
+      weeks,
+      weekStart,
+      weekIndex: clampedWeekIndex,
+    };
+  }, [monthOffset, weekIndex]);
+
   function findContainer(id) {
     if (planner.itemsByContainer[id]) return id;
     for (const [containerId, items] of Object.entries(planner.itemsByContainer)) {
       if (items.some((item) => item.id === id)) return containerId;
+    }
+    return null;
+  }
+
+  function findItem(id) {
+    for (const [containerId, items] of Object.entries(planner.itemsByContainer)) {
+      const match = items.find((item) => item.id === id);
+      if (match) return { item: match, containerId };
     }
     return null;
   }
@@ -295,9 +382,17 @@ export default function PlannerBoard({ catalog }) {
     }
 
     const activeContainer = findContainer(active.id);
+    const parsedOver = parseDropId(over.id);
     const overContainer = findContainer(over.id) ?? (planner.itemsByContainer[over.id] ? over.id : null);
+    const overContainerId = parsedOver ? getContainerId(parsedOver.dayIndex, parsedOver.slotKey) : overContainer;
+    const overItem = !parsedOver ? findItem(over.id) : null;
+    let targetHour = parsedOver?.hour ?? overItem?.item?.hour ?? null;
+    if (targetHour === null && overContainerId) {
+      const [, slotKey] = String(overContainerId).split(':');
+      targetHour = SLOTS.find((slot) => slot.key === slotKey)?.startHour ?? null;
+    }
 
-    if (!overContainer) {
+    if (!overContainerId) {
       setActiveDrag(null);
       return;
     }
@@ -316,7 +411,11 @@ export default function PlannerBoard({ catalog }) {
 
         routine.modules.forEach((moduleId) => {
           const instanceId = createInstanceId(moduleId);
-          next.itemsByContainer[overContainer].push({ id: instanceId, moduleId });
+          next.itemsByContainer[overContainerId].push({
+            id: instanceId,
+            moduleId,
+            hour: targetHour,
+          });
           next.completed[instanceId] = false;
         });
         return next;
@@ -327,7 +426,11 @@ export default function PlannerBoard({ catalog }) {
         if (!moduleId) return prev;
 
         const instanceId = createInstanceId(moduleId);
-        next.itemsByContainer[overContainer].push({ id: instanceId, moduleId });
+        next.itemsByContainer[overContainerId].push({
+          id: instanceId,
+          moduleId,
+          hour: targetHour,
+        });
         next.completed[instanceId] = false;
         return next;
       }
@@ -337,34 +440,39 @@ export default function PlannerBoard({ catalog }) {
       const activeIndex = next.itemsByContainer[activeContainer].findIndex((item) => item.id === active.id);
       if (activeIndex === -1) return prev;
 
-      if (activeContainer === overContainer) {
+      if (activeContainer === overContainerId) {
         if (planner.itemsByContainer[over.id]) {
           const [moved] = next.itemsByContainer[activeContainer].splice(activeIndex, 1);
-          next.itemsByContainer[overContainer].push(moved);
+          moved.hour = targetHour ?? moved.hour ?? null;
+          next.itemsByContainer[overContainerId].push(moved);
           return next;
         }
 
-        const overIndex = next.itemsByContainer[overContainer].findIndex((item) => item.id === over.id);
+        const overIndex = next.itemsByContainer[overContainerId].findIndex((item) => item.id === over.id);
         if (overIndex === -1) return prev;
 
         const [moved] = next.itemsByContainer[activeContainer].splice(activeIndex, 1);
-        next.itemsByContainer[overContainer].splice(overIndex, 0, moved);
+        moved.hour = targetHour ?? moved.hour ?? null;
+        next.itemsByContainer[overContainerId].splice(overIndex, 0, moved);
         return next;
       }
 
       const [moved] = next.itemsByContainer[activeContainer].splice(activeIndex, 1);
       if (planner.itemsByContainer[over.id]) {
-        next.itemsByContainer[overContainer].push(moved);
+        moved.hour = targetHour ?? moved.hour ?? null;
+        next.itemsByContainer[overContainerId].push(moved);
         return next;
       }
 
-      const overIndex = next.itemsByContainer[overContainer].findIndex((item) => item.id === over.id);
+      const overIndex = next.itemsByContainer[overContainerId].findIndex((item) => item.id === over.id);
       if (overIndex === -1) {
-        next.itemsByContainer[overContainer].push(moved);
+        moved.hour = parsedOver?.hour ?? moved.hour ?? null;
+        next.itemsByContainer[overContainerId].push(moved);
         return next;
       }
 
-      next.itemsByContainer[overContainer].splice(overIndex, 0, moved);
+      moved.hour = targetHour ?? moved.hour ?? null;
+      next.itemsByContainer[overContainerId].splice(overIndex, 0, moved);
       return next;
     });
 
@@ -391,14 +499,32 @@ export default function PlannerBoard({ catalog }) {
     });
   }
 
+  function updateItemHour(itemId, hour) {
+    setPlanner((prev) => {
+      const next = structuredClone(prev);
+      const containerId = findContainer(itemId);
+      if (!containerId) return prev;
+      const items = next.itemsByContainer[containerId] ?? [];
+      const target = items.find((item) => item.id === itemId);
+      if (!target) return prev;
+      target.hour = hour;
+      return next;
+    });
+  }
+
   function applyTemplate(template) {
     setPlanner(() => {
       const next = createEmptyPlanner();
       template.entries.forEach((entry) => {
         const containerId = getContainerId(entry.day, entry.slot);
         if (!next.itemsByContainer[containerId]) return;
+        const slotMeta = SLOTS.find((slot) => slot.key === entry.slot);
         const instanceId = createInstanceId(entry.moduleId);
-        next.itemsByContainer[containerId].push({ id: instanceId, moduleId: entry.moduleId });
+        next.itemsByContainer[containerId].push({
+          id: instanceId,
+          moduleId: entry.moduleId,
+          hour: slotMeta?.startHour ?? null,
+        });
         next.completed[instanceId] = false;
       });
       return next;
@@ -510,11 +636,16 @@ export default function PlannerBoard({ catalog }) {
       const next = structuredClone(prev);
       SLOTS.forEach((slot) => {
         const containerId = getContainerId(dayIndex, slot.key);
-        const moduleIds = routine.slots?.[slot.key] ?? [];
-        next.itemsByContainer[containerId] = moduleIds.map((moduleId) => ({
-          id: createInstanceId(moduleId),
-          moduleId,
-        }));
+        const slotItems = routine.slots?.[slot.key] ?? [];
+        next.itemsByContainer[containerId] = slotItems.map((entry) => {
+          const moduleId = typeof entry === 'string' ? entry : entry.moduleId;
+          const hour = typeof entry === 'string' ? slot.startHour ?? null : entry.hour ?? slot.startHour ?? null;
+          return {
+            id: createInstanceId(moduleId),
+            moduleId,
+            hour,
+          };
+        });
         next.itemsByContainer[containerId].forEach((item) => {
           next.completed[item.id] = false;
         });
@@ -526,17 +657,21 @@ export default function PlannerBoard({ catalog }) {
   function applySlotToAllWeek(dayIndex, slotKey) {
     const sourceId = getContainerId(dayIndex, slotKey);
     const sourceItems = planner.itemsByContainer[sourceId] ?? [];
-    const moduleIds = sourceItems.map((item) => item.moduleId);
+    const moduleEntries = sourceItems.map((item) => ({
+      moduleId: item.moduleId,
+      hour: item.hour ?? SLOTS.find((slot) => slot.key === slotKey)?.startHour ?? null,
+    }));
 
-    if (!moduleIds.length) return;
+    if (!moduleEntries.length) return;
 
     setPlanner((prev) => {
       const next = structuredClone(prev);
       for (let d = 0; d < 7; d += 1) {
         const targetId = getContainerId(d, slotKey);
-        next.itemsByContainer[targetId] = moduleIds.map((moduleId) => ({
-          id: createInstanceId(moduleId),
-          moduleId,
+        next.itemsByContainer[targetId] = moduleEntries.map((entry) => ({
+          id: createInstanceId(entry.moduleId),
+          moduleId: entry.moduleId,
+          hour: entry.hour,
         }));
         next.itemsByContainer[targetId].forEach((item) => {
           next.completed[item.id] = false;
@@ -552,11 +687,71 @@ export default function PlannerBoard({ catalog }) {
     applySlotToAllWeek(Number(dayIndex), slotKey);
   }
 
+  function autoSortDay(dayIndex) {
+    setPlanner((prev) => {
+      const next = structuredClone(prev);
+      const dayBuckets = {};
+      SLOTS.forEach((slot) => {
+        dayBuckets[slot.key] = [];
+      });
+
+      SLOTS.forEach((slot) => {
+        const containerId = getContainerId(dayIndex, slot.key);
+        const items = next.itemsByContainer[containerId] ?? [];
+        items.forEach((item) => {
+          const module = catalogById.get(item.moduleId);
+          const recommended = module ? getPrimaryRecommendation(module.type) : 'flex';
+          const target = dayBuckets[recommended] ? recommended : 'flex';
+          dayBuckets[target].push({ ...item, hour: SLOTS.find((s) => s.key === target)?.startHour ?? null });
+        });
+      });
+
+      SLOTS.forEach((slot) => {
+        const containerId = getContainerId(dayIndex, slot.key);
+        next.itemsByContainer[containerId] = dayBuckets[slot.key] ?? [];
+      });
+
+      return next;
+    });
+  }
+
+  function autoSortWeek() {
+    setPlanner((prev) => {
+      const next = structuredClone(prev);
+      for (let d = 0; d < 7; d += 1) {
+        const dayBuckets = {};
+        SLOTS.forEach((slot) => {
+          dayBuckets[slot.key] = [];
+        });
+
+        SLOTS.forEach((slot) => {
+          const containerId = getContainerId(d, slot.key);
+          const items = next.itemsByContainer[containerId] ?? [];
+          items.forEach((item) => {
+            const module = catalogById.get(item.moduleId);
+            const recommended = module ? getPrimaryRecommendation(module.type) : 'flex';
+            const target = dayBuckets[recommended] ? recommended : 'flex';
+          dayBuckets[target].push({ ...item, hour: SLOTS.find((s) => s.key === target)?.startHour ?? null });
+          });
+        });
+
+        SLOTS.forEach((slot) => {
+          const containerId = getContainerId(d, slot.key);
+          next.itemsByContainer[containerId] = dayBuckets[slot.key] ?? [];
+        });
+      }
+      return next;
+    });
+  }
+
   function applyDayToWeek(dayIndex) {
     const daySlots = {};
     SLOTS.forEach((slot) => {
       const containerId = getContainerId(dayIndex, slot.key);
-      daySlots[slot.key] = (planner.itemsByContainer[containerId] ?? []).map((item) => item.moduleId);
+      daySlots[slot.key] = (planner.itemsByContainer[containerId] ?? []).map((item) => ({
+        moduleId: item.moduleId,
+        hour: item.hour ?? slot.startHour ?? null,
+      }));
     });
 
     setPlanner((prev) => {
@@ -564,10 +759,11 @@ export default function PlannerBoard({ catalog }) {
       for (let d = 0; d < 7; d += 1) {
         SLOTS.forEach((slot) => {
           const targetId = getContainerId(d, slot.key);
-          const moduleIds = daySlots[slot.key] ?? [];
-          next.itemsByContainer[targetId] = moduleIds.map((moduleId) => ({
-            id: createInstanceId(moduleId),
-            moduleId,
+          const moduleEntries = daySlots[slot.key] ?? [];
+          next.itemsByContainer[targetId] = moduleEntries.map((entry) => ({
+            id: createInstanceId(entry.moduleId),
+            moduleId: entry.moduleId,
+            hour: entry.hour ?? slot.startHour ?? null,
           }));
           next.itemsByContainer[targetId].forEach((item) => {
             next.completed[item.id] = false;
@@ -585,7 +781,10 @@ export default function PlannerBoard({ catalog }) {
     const slots = {};
     SLOTS.forEach((slot) => {
       const containerId = getContainerId(dayIndex, slot.key);
-      slots[slot.key] = (planner.itemsByContainer[containerId] ?? []).map((item) => item.moduleId);
+      slots[slot.key] = (planner.itemsByContainer[containerId] ?? []).map((item) => ({
+        moduleId: item.moduleId,
+        hour: item.hour ?? slot.startHour ?? null,
+      }));
     });
 
     const routine = {
@@ -628,6 +827,41 @@ export default function PlannerBoard({ catalog }) {
                 {viewMode === 'daily' ? 'Daily Planner' : 'Weekly Planner'}
               </h2>
               <p className="text-sm text-stone-600">No pressure. No perfect schedule. Just gentle defaults.</p>
+              <div className="mt-3 flex flex-wrap items-center gap-3">
+                <div className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-stone-600">
+                  <button
+                    type="button"
+                    onClick={() => setMonthOffset((prev) => prev - 1)}
+                    className="text-stone-400"
+                    aria-label="Previous month"
+                  >
+                    ‹
+                  </button>
+                  <span>{calendar.label}</span>
+                  <button
+                    type="button"
+                    onClick={() => setMonthOffset((prev) => prev + 1)}
+                    className="text-stone-400"
+                    aria-label="Next month"
+                  >
+                    ›
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {calendar.weeks.map((weekStart, idx) => (
+                    <button
+                      key={weekStart.toISOString()}
+                      type="button"
+                      onClick={() => setWeekIndex(idx)}
+                      className={`rounded-full border px-3 py-1 text-[10px] uppercase tracking-[0.25em] ${
+                        calendar.weekIndex === idx ? 'border-stone-900 bg-stone-900 text-white' : 'border-stone-200 bg-white text-stone-500'
+                      }`}
+                    >
+                      {formatWeekLabel(weekStart)}
+                    </button>
+                  ))}
+                </div>
+              </div>
               <div className="mt-3">
                 <button
                   type="button"
@@ -685,6 +919,22 @@ export default function PlannerBoard({ catalog }) {
                   className={`rounded-full px-4 py-2 transition ${viewMode === 'weekly' ? 'bg-stone-900 text-white' : 'text-stone-600'}`}
                 >
                   Weekly
+                </button>
+              </div>
+              <div className="inline-flex rounded-full border border-stone-200 bg-white p-1 text-[10px] uppercase tracking-[0.25em] text-stone-600">
+                <button
+                  type="button"
+                  onClick={() => setLayoutMode('slots')}
+                  className={`rounded-full px-3 py-2 transition ${layoutMode === 'slots' ? 'bg-stone-900 text-white' : 'text-stone-600'}`}
+                >
+                  Slots
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setLayoutMode('time')}
+                  className={`rounded-full px-3 py-2 transition ${layoutMode === 'time' ? 'bg-stone-900 text-white' : 'text-stone-600'}`}
+                >
+                  Time
                 </button>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -752,6 +1002,7 @@ export default function PlannerBoard({ catalog }) {
             collisionDetection={closestCenter}
             onDragStart={onDragStart}
             onDragEnd={onDragEnd}
+            modifiers={dragModifiers}
           >
             <div className={`grid gap-6 ${isFocusMode ? 'lg:grid-cols-[minmax(0,1fr)]' : 'lg:grid-cols-[260px_minmax(0,1fr)_220px]'}`}>
               {!isFocusMode ? (
@@ -781,6 +1032,9 @@ export default function PlannerBoard({ catalog }) {
                   '--accent-image': `url('${CDN_BASE}/wellness.jpg')`,
                 }}
               >
+                <div className="mb-4 rounded-2xl border border-stone-200 bg-white/80 px-4 py-3 text-xs uppercase tracking-[0.25em] text-stone-500">
+                  Planner applies to the selected week. Adjust rituals to match your energy each day.
+                </div>
                 {viewMode === 'daily' ? (
                   <div className="grid gap-4">
                     <div className="flex flex-wrap items-center gap-2 rounded-2xl border border-stone-200 bg-white/80 p-3">
@@ -793,7 +1047,7 @@ export default function PlannerBoard({ catalog }) {
                             activeDay === index ? 'bg-stone-900 text-white' : 'text-stone-600'
                           }`}
                         >
-                          {label}
+                          {label} {formatDayLabel(calendar.weekStart, index)}
                         </button>
                       ))}
                       <div className="ml-auto flex flex-wrap gap-2">
@@ -803,6 +1057,13 @@ export default function PlannerBoard({ catalog }) {
                           className="rounded-full border border-stone-300 bg-white px-3 py-2 text-xs uppercase tracking-[0.2em] text-stone-700"
                         >
                           Save day
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => autoSortDay(activeDay)}
+                          className="rounded-full border border-stone-300 bg-white px-3 py-2 text-xs uppercase tracking-[0.2em] text-stone-700"
+                        >
+                          Auto-sort day
                         </button>
                         <button
                           type="button"
@@ -817,9 +1078,13 @@ export default function PlannerBoard({ catalog }) {
                       dayLabel={DAYS[activeDay]}
                       dayIndex={activeDay}
                       hideHeader
+                      layoutMode={layoutMode}
                       slots={SLOTS.map((slot) => ({
                         key: slot.key,
                         label: slot.label,
+                        time: slot.time,
+                        startHour: slot.startHour,
+                        endHour: slot.endHour,
                         items: planner.itemsByContainer[getContainerId(activeDay, slot.key)] ?? [],
                       }))}
                       catalogById={catalogById}
@@ -828,71 +1093,113 @@ export default function PlannerBoard({ catalog }) {
                       onRemove={removeItem}
                       onSaveRoutine={saveRoutine}
                       onOpenDetails={setActiveDetail}
+                      onUpdateHour={updateItemHour}
+                      dayDate={formatDayLabel(calendar.weekStart, activeDay)}
                       dayDropId={`day:${activeDay}`}
                     />
                   </div>
                 ) : (
-                  <>
-                    <div className="grid gap-4 lg:hidden">
-                      {DAYS.map((label, index) => (
-                        <div key={label}>
-                          <button
-                            type="button"
-                            onClick={() => setOpenDay((prev) => (prev === index ? -1 : index))}
-                            className="flex w-full items-center justify-between rounded-2xl border border-stone-200 bg-white/80 px-4 py-3 text-left"
-                          >
-                            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-700">
-                              {label}
-                            </span>
-                            <span className="text-lg text-stone-500">{openDay === index ? '−' : '+'}</span>
-                          </button>
-                          {openDay === index ? (
-                            <div className="mt-3">
-                              <WeekColumn
-                                dayLabel={label}
-                                dayIndex={index}
-                                hideHeader
-                                slots={SLOTS.map((slot) => ({
-                                  key: slot.key,
-                                  label: slot.label,
-                                  items: planner.itemsByContainer[getContainerId(index, slot.key)] ?? [],
-                                }))}
-                                catalogById={catalogById}
-                                completed={planner.completed}
-                      onToggleDone={toggleDone}
-                      onRemove={removeItem}
-                      onSaveRoutine={saveRoutine}
-                      onApplyAllWeek={handleApplyAllWeek}
-                      onOpenDetails={setActiveDetail}
-                    />
+                  <div className="grid gap-4">
+                    <div className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-stone-200 bg-white/80 px-4 py-3">
+                      <p className="text-xs uppercase tracking-[0.25em] text-stone-500">Weekly desk calendar</p>
+                      <button
+                        type="button"
+                        onClick={autoSortWeek}
+                        className="rounded-full border border-stone-300 bg-white px-3 py-2 text-xs uppercase tracking-[0.2em] text-stone-700"
+                      >
+                        Auto-sort week
+                      </button>
+                    </div>
+                    {calendar.weeks.map((weekStart, idx) => (
+                      <div key={weekStart.toISOString()} className="rounded-3xl border border-stone-200 bg-white/80 p-4 shadow-sm">
+                        <button
+                          type="button"
+                          onClick={() => setWeekIndex(idx)}
+                          className="flex w-full items-center justify-between text-left"
+                        >
+                          <span className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-700">
+                            {formatWeekLabel(weekStart)}
+                          </span>
+                          <span className="text-lg text-stone-500">{calendar.weekIndex === idx ? '−' : '+'}</span>
+                        </button>
+                        {calendar.weekIndex === idx ? (
+                          <div className="mt-4">
+                            <div className="grid gap-4 lg:hidden">
+                              {DAYS.map((label, index) => (
+                                <div key={label}>
+                                  <button
+                                    type="button"
+                                    onClick={() => setOpenDay((prev) => (prev === index ? -1 : index))}
+                                    className="flex w-full items-center justify-between rounded-2xl border border-stone-200 bg-white/80 px-4 py-3 text-left"
+                                  >
+                                    <span className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-700">
+                                      {label} {formatDayLabel(weekStart, index)}
+                                    </span>
+                                    <span className="text-lg text-stone-500">{openDay === index ? '−' : '+'}</span>
+                                  </button>
+                                  {openDay === index ? (
+                                    <div className="mt-3">
+                                      <WeekColumn
+                                        dayLabel={label}
+                                        dayIndex={index}
+                                        hideHeader
+                                        layoutMode={layoutMode}
+                                        slots={SLOTS.map((slot) => ({
+                                          key: slot.key,
+                                          label: slot.label,
+                                          time: slot.time,
+                                          startHour: slot.startHour,
+                                          endHour: slot.endHour,
+                                          items: planner.itemsByContainer[getContainerId(index, slot.key)] ?? [],
+                                        }))}
+                                        catalogById={catalogById}
+                                        completed={planner.completed}
+                                        onToggleDone={toggleDone}
+                                        onRemove={removeItem}
+                                        onSaveRoutine={saveRoutine}
+                                        onApplyAllWeek={handleApplyAllWeek}
+                                        onOpenDetails={setActiveDetail}
+                                        onUpdateHour={updateItemHour}
+                                        dayDate={formatDayLabel(weekStart, index)}
+                                      />
+                                    </div>
+                                  ) : null}
+                                </div>
+                              ))}
                             </div>
-                          ) : null}
-                        </div>
-                      ))}
-                    </div>
 
-                <div className="hidden grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 lg:grid">
-                  {DAYS.map((label, index) => (
-                    <WeekColumn
-                          key={label}
-                          dayLabel={label}
-                          dayIndex={index}
-                          slots={SLOTS.map((slot) => ({
-                            key: slot.key,
-                            label: slot.label,
-                            items: planner.itemsByContainer[getContainerId(index, slot.key)] ?? [],
-                          }))}
-                          catalogById={catalogById}
-                          completed={planner.completed}
-                      onToggleDone={toggleDone}
-                      onRemove={removeItem}
-                      onSaveRoutine={saveRoutine}
-                      onApplyAllWeek={handleApplyAllWeek}
-                      onOpenDetails={setActiveDetail}
-                    />
-                      ))}
-                    </div>
-                  </>
+                            <div className="hidden grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 lg:grid">
+                              {DAYS.map((label, index) => (
+                                <WeekColumn
+                                  key={label}
+                                  dayLabel={label}
+                                  dayIndex={index}
+                                  layoutMode={layoutMode}
+                                  slots={SLOTS.map((slot) => ({
+                                    key: slot.key,
+                                    label: slot.label,
+                                    time: slot.time,
+                                    startHour: slot.startHour,
+                                    endHour: slot.endHour,
+                                    items: planner.itemsByContainer[getContainerId(index, slot.key)] ?? [],
+                                  }))}
+                                  catalogById={catalogById}
+                                  completed={planner.completed}
+                                  onToggleDone={toggleDone}
+                                  onRemove={removeItem}
+                                  onSaveRoutine={saveRoutine}
+                                  onApplyAllWeek={handleApplyAllWeek}
+                                  onOpenDetails={setActiveDetail}
+                                  onUpdateHour={updateItemHour}
+                                  dayDate={formatDayLabel(weekStart, index)}
+                                />
+                              ))}
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    ))}
+                  </div>
                 )}
               </div>
 

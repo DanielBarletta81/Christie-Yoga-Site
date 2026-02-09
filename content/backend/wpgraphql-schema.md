@@ -22,6 +22,9 @@ This is a pragmatic starter schema for a WordPress + WPGraphQL backend. It keeps
 6) **blog** (optional)
 - Purpose: Editorial content
 
+7) **pose**
+- Purpose: Individual yoga poses for the visualizer and pose library
+
 ---
 
 ## Taxonomies
@@ -57,6 +60,7 @@ This is a pragmatic starter schema for a WordPress + WPGraphQL backend. It keeps
 
 **Group:** `Ritual Details`
 
+- `is_active` (True/False)
 - `ritual_label` (Text) — short label for chip
 - `ritual_steps` (Repeater)
   - `step_title` (Text)
@@ -75,6 +79,49 @@ This is a pragmatic starter schema for a WordPress + WPGraphQL backend. It keeps
 - `difficulty` (Select: gentle | steady | strong)
 - `props` (Text)
 - `sequence_notes` (Textarea)
+
+---
+
+## Chakra ACF Field Group (chakra CPT)
+
+**Group:** `Chakra Fields`
+
+- `order` (Number)
+- `theme_color` (Text)
+- `short_description` (Textarea)
+- `is_active` (True/False)
+- `element` (Text)
+- `themes` (Repeater → label)
+- `imbalances` (Repeater → label)
+- `practices` (Repeater → label)
+- `mantra` (Text)
+- `sanskrit` (Text)
+- `governs` (Repeater → label)
+- `tone` (Textarea)
+- `image` (Image)
+- `suggested_sounds` (Relationship → sound)
+
+---
+
+## Pose ACF Field Group (pose CPT)
+
+**Group:** `Pose Details`
+
+- `sanskrit` (Text)
+- `summary` (Textarea)
+- `cues` (Repeater)
+  - `label` (Text)
+- `modifications` (Repeater)
+  - `label` (Text)
+- `benefits` (Repeater)
+  - `label` (Text)
+- `history` (Textarea)
+- `more_link_label` (Text)
+- `more_link_url` (URL)
+- `skeleton_json` (Textarea) — JSON for joint positions
+- `angles_json` (Textarea) — JSON for angle overlays
+- `angle_labels_json` (Textarea)
+- `mod_overlays_json` (Textarea)
 
 ---
 

@@ -69,12 +69,32 @@
     color: var(--ink);
   }
 
+  a:hover,
+  a:focus-visible {
+    color: var(--ink-soft);
+    text-shadow: 0 6px 24px rgba(139, 115, 85, 0.12);
+  }
+
   img {
     @apply block max-w-full;
   }
 
   button {
-    @apply font-sans;
+    @apply font-sans transition duration-200;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply transition duration-200;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible {
+    outline: 2px solid rgba(139, 115, 85, 0.35);
+    outline-offset: 2px;
   }
 
   ::selection {
@@ -86,6 +106,13 @@
 @layer components {
   .glass-panel {
     @apply bg-white/65 backdrop-blur-xl border border-white/40 shadow-xl;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  }
+
+  .glass-panel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    border-color: rgba(255, 255, 255, 0.7);
   }
 
   .soft-ring {
@@ -101,6 +128,8 @@
 
   .btn-primary:hover {
     filter: brightness(1.05);
+    transform: translateY(-1px);
+    box-shadow: 0 16px 35px rgba(139, 115, 85, 0.22);
   }
 
   .btn-ghost {
@@ -110,10 +139,21 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
+  .btn-ghost:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+  }
+
   .card-elevated {
     @apply rounded-3xl bg-white/70 backdrop-blur-xl ring-1 ring-white/60;
     box-shadow: var(--shadow-soft);
     padding: 28px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  }
+
+  .card-elevated:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -184,6 +224,7 @@
   .soft-frame {
     position: relative;
     isolation: isolate;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
   }
 
   .soft-frame::before {
@@ -197,6 +238,35 @@
     background-position: center;
     opacity: 0.12;
     filter: blur(6px) saturate(0.9);
+    transition: opacity 0.35s ease;
+  }
+
+  .soft-frame:hover::before {
+    opacity: 0.2;
+  }
+
+  .soft-frame:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  .hover-lift {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  .hover-soft {
+    transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .hover-soft:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(139, 115, 85, 0.2);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.1);
   }
 
   .editorial-shell {

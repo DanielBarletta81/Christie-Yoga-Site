@@ -5,6 +5,7 @@ import { useDraggable } from '@dnd-kit/core';
 import { SortableContext, verticalListSortingStrategy, useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { ChakraIcon } from './ChakraIcons';
+import { formatSlotLabel, getPrimaryRecommendation } from '../../lib/planner/recommendations';
 
 function ModuleLibraryCard({ module }) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
@@ -22,13 +23,17 @@ function ModuleLibraryCard({ module }) {
   };
 
   const chakras = chakraMap[module.type] || [];
+  const recommended = getPrimaryRecommendation(module.type);
 
   return (
-    <div className={`rounded-2xl border border-stone-200 bg-white/80 p-4 shadow-sm ${isDragging ? 'opacity-60' : ''}`}>
+    <div className={`rounded-2xl border border-stone-200 bg-white/80 p-4 shadow-sm hover-soft ${isDragging ? 'opacity-60' : ''}`}>
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="text-xs uppercase tracking-[0.25em] text-stone-500">{module.type}</p>
           <h4 className="mt-2 text-sm font-semibold text-stone-900">{module.title}</h4>
+          <p className="mt-2 text-[11px] uppercase tracking-[0.25em] text-stone-400">
+            Recommended: {formatSlotLabel(recommended)}
+          </p>
           {module.instructions ? (
             <p className="mt-2 text-sm text-stone-600">{module.instructions}</p>
           ) : null}

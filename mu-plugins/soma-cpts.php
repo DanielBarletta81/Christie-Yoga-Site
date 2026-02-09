@@ -1,8 +1,12 @@
 <?php
 /**
- * Soma Living Wellness — CPT + Taxonomy registration (WPGraphQL ready)
- * Drop into a custom plugin or your theme's functions.php.
+ * Soma MU Plugin: CPTs + ACF (WPGraphQL)
+ * Drop into wp-content/mu-plugins/
  */
+
+if (!defined('ABSPATH')) {
+  exit;
+}
 
 add_action('init', function () {
   $post_types = [

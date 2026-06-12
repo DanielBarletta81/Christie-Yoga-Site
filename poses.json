@@ -1,0 +1,1300 @@
+[
+  {
+    "id": "pose_001",
+    "sanskrit_name": "Padmasana",
+    "english_name": "Lotus Pose",
+    "historical_era": "Ancient",
+    "source_text": "Yoga Sutras of Patanjali",
+    "category": "Seated",
+    "benefits": [
+      "Promotes relaxation",
+      "Improves posture",
+      "Enhances concentration"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/padmasana.svg",
+      "primary_alignment": "Spine vertical, hips externally rotated, feet resting on opposite thighs"
+    },
+    "cues": [
+      "Stack the crown of the head directly over the sitting bones.",
+      "Let the knees soften toward the floor without forcing.",
+      "Rest the backs of the hands on the knees, palms open.",
+      "Breathe into the lower belly to anchor the pose."
+    ],
+    "modifications": [
+      "Use a folded blanket under the hips to elevate the pelvis.",
+      "Practice Half-Lotus or easy cross-legged if full Lotus is unavailable.",
+      "Sit against a wall for back support during extended meditation."
+    ],
+    "history": "The defining posture of ancient yoga tradition, described by Patanjali as the ideal meditation seat. Appears in nearly every yogic text thereafter.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 110 },
+      "neck":      { "x": 300, "y": 155 },
+      "shoulderL": { "x": 255, "y": 185 },
+      "shoulderR": { "x": 345, "y": 185 },
+      "elbowL":    { "x": 240, "y": 240 },
+      "elbowR":    { "x": 360, "y": 240 },
+      "wristL":    { "x": 230, "y": 285 },
+      "wristR":    { "x": 370, "y": 285 },
+      "hip":       { "x": 300, "y": 300 },
+      "kneeL":     { "x": 215, "y": 360 },
+      "kneeR":     { "x": 385, "y": 360 },
+      "ankleL":    { "x": 350, "y": 395 },
+      "ankleR":    { "x": 250, "y": 395 }
+    },
+    "angles": [
+      { "label": "Spine 90°",  "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 155, "x2": 300, "y2": 300 },
+      { "label": "Hip ext. rotation", "color": "#E37E35", "type": "path", "path": "M 270 340 Q 300 310 330 340" }
+    ],
+    "angleLabels": [
+      { "text": "SPINE VERTICAL", "x": 315, "y": 230, "color": "#2C8BB0" },
+      { "text": "HIP ROTATION",   "x": 255, "y": 355, "color": "#E37E35" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 260 380 Q 300 430 340 380", "color": "#D45B5B" },
+      { "type": "text", "x": 215, "y": 430, "text": "BLANKET LIFT", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_002",
+    "sanskrit_name": "Matsyendrasana",
+    "english_name": "Lord of the Fishes Pose",
+    "historical_era": "Medieval",
+    "source_text": "Hatha Yoga Pradipika",
+    "category": "Seated Twist",
+    "benefits": [
+      "Improves spinal flexibility",
+      "Stimulates digestion",
+      "Relieves tension in the back and shoulders"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/matsyendrasana.svg",
+      "primary_alignment": "Axial rotation of the spine, pelvis grounded"
+    },
+    "cues": [
+      "Ground both sitting bones evenly before rotating.",
+      "Lengthen through the crown on the inhale, rotate on the exhale.",
+      "Keep the lower belly gently engaged throughout.",
+      "Use the front arm against the knee as a gentle lever, not a force."
+    ],
+    "modifications": [
+      "Extend the bottom leg straight for a gentler hip position.",
+      "Sit on a folded blanket to elevate the hips.",
+      "Use a strap around the top knee for a lighter twist."
+    ],
+    "history": "Named for the sage Matsyendra, described in the Hatha Yoga Pradipika as one of the 84 classical asanas essential for awakening Kundalini energy.",
+    "skeleton": {
+      "head":      { "x": 280, "y": 110 },
+      "neck":      { "x": 285, "y": 155 },
+      "shoulderL": { "x": 240, "y": 185 },
+      "shoulderR": { "x": 340, "y": 185 },
+      "elbowL":    { "x": 200, "y": 230 },
+      "elbowR":    { "x": 365, "y": 210 },
+      "wristL":    { "x": 175, "y": 270 },
+      "wristR":    { "x": 375, "y": 250 },
+      "hip":       { "x": 300, "y": 310 },
+      "kneeL":     { "x": 225, "y": 380 },
+      "kneeR":     { "x": 375, "y": 355 },
+      "ankleL":    { "x": 380, "y": 410 },
+      "ankleR":    { "x": 240, "y": 415 }
+    },
+    "angles": [
+      { "label": "Spinal rotation ~40°", "color": "#E37E35", "type": "path", "path": "M 285 155 Q 340 170 340 210" },
+      { "label": "Pelvis grounded",      "color": "#2C8BB0", "type": "line", "x1": 260, "y1": 310, "x2": 340, "y2": 310 }
+    ],
+    "angleLabels": [
+      { "text": "ROTATION ~40°", "x": 345, "y": 165, "color": "#E37E35" },
+      { "text": "PELVIS LEVEL",   "x": 245, "y": 305, "color": "#2C8BB0" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 300 310 Q 350 270 390 260", "color": "#D45B5B" },
+      { "type": "text", "x": 390, "y": 255, "text": "EXTEND LEG", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_003",
+    "sanskrit_name": "Virabhadrasana II",
+    "english_name": "Warrior II",
+    "historical_era": "Modern",
+    "source_text": "20th Century Physical Culture / Krishnamacharya",
+    "category": "Standing",
+    "benefits": [
+      "Strengthens legs and core",
+      "Improves balance and stability",
+      "Opens hips and chest"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/warrior2.svg",
+      "primary_alignment": "Front knee at 90-degree angle, arms extended parallel to the floor, torso centered"
+    },
+    "cues": [
+      "Front knee tracks directly over the second toe — don't let it collapse inward.",
+      "Keep the torso stacked vertically, not leaning forward or back.",
+      "Reach through both fingertips as if pulling the arms apart.",
+      "Root the back foot edge firmly; outer hip drives back."
+    ],
+    "modifications": [
+      "Shorten the stance to reduce knee load.",
+      "Place hands on hips if shoulders are fatigued.",
+      "Use a chair alongside for balance support."
+    ],
+    "history": "A modern posture codified by Krishnamacharya in the early 20th century, influenced by Indian wrestling stances and European gymnastics.",
+    "skeleton": {
+      "head":      { "x": 310, "y": 100 },
+      "neck":      { "x": 310, "y": 145 },
+      "shoulderL": { "x": 200, "y": 175 },
+      "shoulderR": { "x": 420, "y": 175 },
+      "elbowL":    { "x": 130, "y": 175 },
+      "elbowR":    { "x": 490, "y": 175 },
+      "wristL":    { "x": 65,  "y": 175 },
+      "wristR":    { "x": 555, "y": 175 },
+      "hip":       { "x": 310, "y": 285 },
+      "kneeL":     { "x": 215, "y": 370 },
+      "kneeR":     { "x": 440, "y": 340 },
+      "ankleL":    { "x": 195, "y": 470 },
+      "ankleR":    { "x": 500, "y": 460 }
+    },
+    "angles": [
+      { "label": "Front knee 90°",   "color": "#E37E35", "type": "path", "path": "M 245 370 Q 215 370 215 410" },
+      { "label": "Arms parallel",    "color": "#2C8BB0", "type": "line", "x1": 65, "y1": 175, "x2": 555, "y2": 175 },
+      { "label": "Torso vertical",   "color": "#7CB87C", "type": "line", "x1": 310, "y1": 145, "x2": 310, "y2": 285 }
+    ],
+    "angleLabels": [
+      { "text": "KNEE 90°",        "x": 155, "y": 400, "color": "#E37E35" },
+      { "text": "ARMS PARALLEL",   "x": 220, "y": 155, "color": "#2C8BB0" },
+      { "text": "TORSO VERTICAL",  "x": 320, "y": 220, "color": "#7CB87C" }
+    ],
+    "modOverlays": [
+      { "type": "circle", "cx": 215, "cy": 370, "r": 22, "color": "#D45B5B" },
+      { "type": "text", "x": 135, "y": 345, "text": "SHORTEN STANCE", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_004",
+    "sanskrit_name": "Sukhasana",
+    "english_name": "Easy Pose",
+    "historical_era": "Ancient",
+    "source_text": "Yoga Sutras of Patanjali",
+    "category": "Seated",
+    "benefits": [
+      "Accessible meditation seat for all levels",
+      "Grounds and calms the nervous system",
+      "Gently opens the hips over time"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/sukhasana.svg",
+      "primary_alignment": "Spine erect, shins crossed, hands resting on knees, crown of head lifting"
+    },
+    "cues": [
+      "Feel both sitting bones equally heavy on the ground.",
+      "Gently draw the lower belly in to support the lumbar spine.",
+      "Let the shoulders release away from the ears.",
+      "Soften the jaw and the space between the eyebrows."
+    ],
+    "modifications": [
+      "Sit on a block or folded blanket to tilt the pelvis forward.",
+      "Cross ankles instead of shins for less hip demand.",
+      "Lean against a wall to maintain an upright spine."
+    ],
+    "history": "One of the oldest documented asanas, used across all major ancient traditions as the default posture for pranayama and meditation.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 115 },
+      "neck":      { "x": 300, "y": 160 },
+      "shoulderL": { "x": 258, "y": 190 },
+      "shoulderR": { "x": 342, "y": 190 },
+      "elbowL":    { "x": 245, "y": 245 },
+      "elbowR":    { "x": 355, "y": 245 },
+      "wristL":    { "x": 240, "y": 290 },
+      "wristR":    { "x": 360, "y": 290 },
+      "hip":       { "x": 300, "y": 305 },
+      "kneeL":     { "x": 230, "y": 365 },
+      "kneeR":     { "x": 370, "y": 365 },
+      "ankleL":    { "x": 330, "y": 390 },
+      "ankleR":    { "x": 270, "y": 390 }
+    },
+    "angles": [
+      { "label": "Spine vertical", "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 160, "x2": 300, "y2": 305 }
+    ],
+    "angleLabels": [
+      { "text": "SPINE VERTICAL", "x": 315, "y": 240, "color": "#2C8BB0" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 265 370 Q 300 420 335 370", "color": "#D45B5B" },
+      { "type": "text", "x": 225, "y": 440, "text": "BLANKET LIFT", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_005",
+    "sanskrit_name": "Siddhasana",
+    "english_name": "Accomplished Pose",
+    "historical_era": "Ancient",
+    "source_text": "Yoga Sutras of Patanjali",
+    "category": "Seated",
+    "benefits": [
+      "Promotes meditative stillness",
+      "Activates the root energy center (Muladhara Chakra)",
+      "Encourages sustained, upright spinal posture"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/siddhasana.svg",
+      "primary_alignment": "One heel pressed to perineum, second heel stacked above, spine elongated"
+    },
+    "cues": [
+      "Place the lower heel at the perineum before settling the upper heel.",
+      "Allow both knees to descend toward the earth without forcing.",
+      "Maintain length through the spine from sacrum to crown.",
+      "Use the breath to deepen stillness, not muscle effort."
+    ],
+    "modifications": [
+      "Use Sukhasana if Siddhasana creates knee discomfort.",
+      "Elevate hips on a firm bolster or meditation cushion.",
+      "Alternate which leg is on top in each session."
+    ],
+    "history": "Revered in Tantric traditions as the second most important seat after Padmasana, said to activate the Muladhara Chakra through heel pressure at the perineum.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 112 },
+      "neck":      { "x": 300, "y": 157 },
+      "shoulderL": { "x": 256, "y": 188 },
+      "shoulderR": { "x": 344, "y": 188 },
+      "elbowL":    { "x": 242, "y": 242 },
+      "elbowR":    { "x": 358, "y": 242 },
+      "wristL":    { "x": 237, "y": 288 },
+      "wristR":    { "x": 363, "y": 288 },
+      "hip":       { "x": 300, "y": 302 },
+      "kneeL":     { "x": 220, "y": 358 },
+      "kneeR":     { "x": 380, "y": 358 },
+      "ankleL":    { "x": 300, "y": 395 },
+      "ankleR":    { "x": 300, "y": 370 }
+    },
+    "angles": [
+      { "label": "Spine vertical", "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 157, "x2": 300, "y2": 302 },
+      { "label": "Heel point",     "color": "#E37E35", "type": "path", "path": "M 285 380 Q 300 360 315 380" }
+    ],
+    "angleLabels": [
+      { "text": "SPINE LONG",   "x": 315, "y": 235, "color": "#2C8BB0" },
+      { "text": "HEEL AT ROOT", "x": 250, "y": 350, "color": "#E37E35" }
+    ],
+    "modOverlays": [
+      { "type": "circle", "cx": 300, "cy": 302, "r": 18, "color": "#D45B5B" },
+      { "type": "text", "x": 230, "y": 450, "text": "CUSHION UNDER HIPS", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_006",
+    "sanskrit_name": "Bhujangasana",
+    "english_name": "Cobra Pose",
+    "historical_era": "Medieval",
+    "source_text": "Gheranda Samhita",
+    "category": "Backbend",
+    "benefits": [
+      "Strengthens the muscles of the back and spine",
+      "Stimulates abdominal organs and digestion",
+      "Opens the chest and supports respiratory function"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/bhujangasana.svg",
+      "primary_alignment": "Pelvis grounded, elbows soft, chest lifted, shoulder blades drawing together and down"
+    },
+    "cues": [
+      "Keep the pelvis and tops of the feet rooted to the mat.",
+      "Micro-bend the elbows — this is a back-bend, not a push-up.",
+      "Draw the shoulder blades toward each other and down.",
+      "Gaze forward or slightly upward; never strain the neck back."
+    ],
+    "modifications": [
+      "Lift only a few inches — baby cobra is fully valid.",
+      "Place a rolled blanket under the lower belly for support.",
+      "Use Sphinx pose (forearms down) as a gentler preparation."
+    ],
+    "history": "Documented in the Gheranda Samhita (17th c.), described as awakening the Kundalini and increasing digestive fire.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 105 },
+      "neck":      { "x": 300, "y": 145 },
+      "shoulderL": { "x": 255, "y": 175 },
+      "shoulderR": { "x": 345, "y": 175 },
+      "elbowL":    { "x": 235, "y": 240 },
+      "elbowR":    { "x": 365, "y": 240 },
+      "wristL":    { "x": 230, "y": 310 },
+      "wristR":    { "x": 370, "y": 310 },
+      "hip":       { "x": 300, "y": 360 },
+      "kneeL":     { "x": 255, "y": 435 },
+      "kneeR":     { "x": 345, "y": 435 },
+      "ankleL":    { "x": 245, "y": 510 },
+      "ankleR":    { "x": 355, "y": 510 }
+    },
+    "angles": [
+      { "label": "Chest lift",    "color": "#E37E35", "type": "path", "path": "M 270 175 Q 300 120 330 175" },
+      { "label": "Elbow angle",   "color": "#2C8BB0", "type": "path", "path": "M 255 175 Q 235 210 255 240" },
+      { "label": "Pelvis grounded","color": "#7CB87C", "type": "line", "x1": 265, "y1": 360, "x2": 335, "y2": 360 }
+    ],
+    "angleLabels": [
+      { "text": "CHEST LIFT",      "x": 310, "y": 100, "color": "#E37E35" },
+      { "text": "ELBOWS SOFT",     "x": 165, "y": 215, "color": "#2C8BB0" },
+      { "text": "PELVIS DOWN",     "x": 250, "y": 385, "color": "#7CB87C" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 235 240 Q 240 310 240 310", "color": "#D45B5B" },
+      { "type": "text", "x": 155, "y": 310, "text": "BABY COBRA", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_007",
+    "sanskrit_name": "Sarvangasana",
+    "english_name": "Shoulderstand",
+    "historical_era": "Medieval",
+    "source_text": "Hatha Yoga Pradipika",
+    "category": "Inversion",
+    "benefits": [
+      "Stimulates the thyroid and parathyroid glands",
+      "Reverses gravitational effect on lymph and venous circulation",
+      "Calms the nervous system and supports sleep"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/sarvangasana.svg",
+      "primary_alignment": "Weight on shoulders and upper arms, spine vertical, legs extended overhead, chin to chest"
+    },
+    "cues": [
+      "Bear weight on the upper arms and shoulders — never the neck.",
+      "Bring the chin lightly toward the chest (Jalandhara Bandha).",
+      "Stack hips over shoulders and feet over hips.",
+      "Keep the elbows close together; hands support the mid-back."
+    ],
+    "modifications": [
+      "Use a folded blanket under the shoulders to protect the cervical spine.",
+      "Legs-up-the-wall (Viparita Karani) is a safe, supported alternative.",
+      "Bend the knees to reduce load while building shoulder strength."
+    ],
+    "history": "Called the 'mother of asanas' in the Hatha Yoga Pradipika. Considered a master restorative and endocrine-regulating posture.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 490 },
+      "neck":      { "x": 300, "y": 445 },
+      "shoulderL": { "x": 258, "y": 415 },
+      "shoulderR": { "x": 342, "y": 415 },
+      "elbowL":    { "x": 242, "y": 360 },
+      "elbowR":    { "x": 358, "y": 360 },
+      "wristL":    { "x": 260, "y": 305 },
+      "wristR":    { "x": 340, "y": 305 },
+      "hip":       { "x": 300, "y": 265 },
+      "kneeL":     { "x": 280, "y": 185 },
+      "kneeR":     { "x": 320, "y": 185 },
+      "ankleL":    { "x": 275, "y": 105 },
+      "ankleR":    { "x": 325, "y": 105 }
+    },
+    "angles": [
+      { "label": "Spine vertical",  "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 445, "x2": 300, "y2": 265 },
+      { "label": "Chin lock",       "color": "#E37E35", "type": "path", "path": "M 285 465 Q 300 455 315 465" }
+    ],
+    "angleLabels": [
+      { "text": "SPINE VERTICAL",  "x": 315, "y": 360, "color": "#2C8BB0" },
+      { "text": "CHIN LOCK",       "x": 320, "y": 480, "color": "#E37E35" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 258 415 Q 240 390 242 360", "color": "#D45B5B" },
+      { "type": "text", "x": 140, "y": 415, "text": "BLANKET UNDER SHOULDERS", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_008",
+    "sanskrit_name": "Sirsasana",
+    "english_name": "Headstand",
+    "historical_era": "Medieval",
+    "source_text": "Hatha Yoga Pradipika",
+    "category": "Inversion",
+    "benefits": [
+      "Increases cerebral circulation",
+      "Builds deep core and shoulder stability",
+      "Cultivates focus and mental clarity"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/sirsasana.svg",
+      "primary_alignment": "Forearms grounded in triangle, crown of head lightly contacting mat, shoulders stacked above elbows, legs fully extended"
+    },
+    "cues": [
+      "Forearms form a triangle base — not too wide, not too narrow.",
+      "Press through the forearms: 90% of weight there, 10% on head.",
+      "Stack shoulders directly above elbows before lifting.",
+      "Engage the core fully before attempting to raise the legs."
+    ],
+    "modifications": [
+      "Practice the base (dolphin pose) to build shoulder strength first.",
+      "Use a wall for support while developing balance.",
+      "Half-headstand with knees bent is a safe intermediate step."
+    ],
+    "history": "Known as the 'king of asanas' in the Hatha Yoga Pradipika. Practiced daily by Iyengar himself for decades; described in his Light on Yoga.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 490 },
+      "neck":      { "x": 300, "y": 450 },
+      "shoulderL": { "x": 258, "y": 418 },
+      "shoulderR": { "x": 342, "y": 418 },
+      "elbowL":    { "x": 240, "y": 470 },
+      "elbowR":    { "x": 360, "y": 470 },
+      "wristL":    { "x": 270, "y": 490 },
+      "wristR":    { "x": 330, "y": 490 },
+      "hip":       { "x": 300, "y": 290 },
+      "kneeL":     { "x": 285, "y": 195 },
+      "kneeR":     { "x": 315, "y": 195 },
+      "ankleL":    { "x": 280, "y": 100 },
+      "ankleR":    { "x": 320, "y": 100 }
+    },
+    "angles": [
+      { "label": "Spine vertical",   "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 450, "x2": 300, "y2": 290 },
+      { "label": "Forearm triangle", "color": "#E37E35", "type": "path", "path": "M 240 470 Q 300 490 360 470" }
+    ],
+    "angleLabels": [
+      { "text": "SPINE VERTICAL",    "x": 315, "y": 370, "color": "#2C8BB0" },
+      { "text": "FOREARM BASE",      "x": 220, "y": 500, "color": "#E37E35" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 258 418 Q 235 440 240 470", "color": "#D45B5B" },
+      { "type": "text", "x": 140, "y": 440, "text": "DOLPHIN FIRST", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_009",
+    "sanskrit_name": "Dhanurasana",
+    "english_name": "Bow Pose",
+    "historical_era": "Medieval",
+    "source_text": "Hatha Yoga Pradipika",
+    "category": "Backbend",
+    "benefits": [
+      "Stretches the entire anterior body",
+      "Strengthens the posterior chain",
+      "Massages abdominal organs, supporting digestive health"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/dhanurasana.svg",
+      "primary_alignment": "Pelvis grounded, ankles held by hands, knees hip-width, chest and thighs lifting away from the mat"
+    },
+    "cues": [
+      "Kick the feet back into the hands to create the lift passively.",
+      "Keep the knees no wider than hip-width throughout.",
+      "Breathe into the chest — the belly compression limits breath there.",
+      "Gaze forward or slightly up; protect the neck."
+    ],
+    "modifications": [
+      "Lift one leg at a time (half bow) if full bow is inaccessible.",
+      "Use a strap around the ankles to close the gap.",
+      "Place a blanket under the hip bones for cushioning."
+    ],
+    "history": "Cataloged in the Hatha Yoga Pradipika. The name means 'bow' — the body forms the arc of a strung bow, the arms as the string.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 105 },
+      "neck":      { "x": 300, "y": 145 },
+      "shoulderL": { "x": 255, "y": 170 },
+      "shoulderR": { "x": 345, "y": 170 },
+      "elbowL":    { "x": 215, "y": 215 },
+      "elbowR":    { "x": 385, "y": 215 },
+      "wristL":    { "x": 195, "y": 300 },
+      "wristR":    { "x": 405, "y": 300 },
+      "hip":       { "x": 300, "y": 345 },
+      "kneeL":     { "x": 240, "y": 285 },
+      "kneeR":     { "x": 360, "y": 285 },
+      "ankleL":    { "x": 205, "y": 235 },
+      "ankleR":    { "x": 395, "y": 235 }
+    },
+    "angles": [
+      { "label": "Bow arc",       "color": "#E37E35", "type": "path", "path": "M 255 170 Q 300 100 345 170" },
+      { "label": "Knee width",    "color": "#2C8BB0", "type": "line", "x1": 240, "y1": 285, "x2": 360, "y2": 285 },
+      { "label": "Pelvis grounded","color": "#7CB87C", "type": "line", "x1": 270, "y1": 345, "x2": 330, "y2": 345 }
+    ],
+    "angleLabels": [
+      { "text": "BOW ARC",      "x": 310, "y": 90,  "color": "#E37E35" },
+      { "text": "KNEES HW",    "x": 245, "y": 275, "color": "#2C8BB0" },
+      { "text": "PELVIS DOWN", "x": 250, "y": 365, "color": "#7CB87C" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 215 215 Q 205 265 205 300", "color": "#D45B5B" },
+      { "type": "text", "x": 110, "y": 270, "text": "USE STRAP", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_010",
+    "sanskrit_name": "Halasana",
+    "english_name": "Plow Pose",
+    "historical_era": "Medieval",
+    "source_text": "Gheranda Samhita",
+    "category": "Inversion",
+    "benefits": [
+      "Deeply stretches the cervical and thoracic spine",
+      "Stimulates the abdominal organs and thyroid",
+      "Quiets the mind and encourages introspection"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/halasana.svg",
+      "primary_alignment": "Shoulders grounded, feet resting on the floor behind the head, spine elongated, hands supporting the lower back or interlaced on the mat"
+    },
+    "cues": [
+      "Transition from Shoulderstand: lower both legs together toward the floor.",
+      "Press the tops of the shoulders into the mat to protect the neck.",
+      "Walk the toes further back to lengthen the spine.",
+      "Interlace fingers on the mat or keep hands supporting the back."
+    ],
+    "modifications": [
+      "Rest feet on a chair instead of the floor.",
+      "Use a wall behind you so feet touch it without full extension.",
+      "Skip this pose entirely if there is any neck injury."
+    ],
+    "history": "Described in the Gheranda Samhita as 'destroyer of diseases.' The name means plow, referencing the body's resemblance to an agricultural plow.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 490 },
+      "neck":      { "x": 300, "y": 450 },
+      "shoulderL": { "x": 255, "y": 420 },
+      "shoulderR": { "x": 345, "y": 420 },
+      "elbowL":    { "x": 240, "y": 380 },
+      "elbowR":    { "x": 360, "y": 380 },
+      "wristL":    { "x": 225, "y": 430 },
+      "wristR":    { "x": 375, "y": 430 },
+      "hip":       { "x": 300, "y": 290 },
+      "kneeL":     { "x": 280, "y": 210 },
+      "kneeR":     { "x": 320, "y": 210 },
+      "ankleL":    { "x": 260, "y": 120 },
+      "ankleR":    { "x": 340, "y": 120 }
+    },
+    "angles": [
+      { "label": "Spine arc",      "color": "#E37E35", "type": "path", "path": "M 300 450 Q 340 370 300 290" },
+      { "label": "Shoulder press", "color": "#2C8BB0", "type": "line", "x1": 255, "y1": 420, "x2": 345, "y2": 420 }
+    ],
+    "angleLabels": [
+      { "text": "SPINE ARC",       "x": 350, "y": 370, "color": "#E37E35" },
+      { "text": "SHOULDERS DOWN",  "x": 215, "y": 415, "color": "#2C8BB0" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 260 120 Q 300 160 340 120", "color": "#D45B5B" },
+      { "type": "text", "x": 210, "y": 110, "text": "FEET ON CHAIR", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_011",
+    "sanskrit_name": "Mayurasana",
+    "english_name": "Peacock Pose",
+    "historical_era": "Medieval",
+    "source_text": "Hatha Yoga Pradipika",
+    "category": "Arm Balance",
+    "benefits": [
+      "Builds exceptional wrist, forearm, and core strength",
+      "Stimulates the digestive fire (Agni)",
+      "Develops full-body muscular integration and balance"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/mayurasana.svg",
+      "primary_alignment": "Elbows pressed into the abdomen, body parallel to the floor, legs extended, gaze forward"
+    },
+    "cues": [
+      "Plant the elbows firmly into the soft abdomen just below the navel.",
+      "Keep elbows together — this is the fulcrum of the entire balance.",
+      "Shift weight slowly forward until the feet lighten off the mat.",
+      "Gaze slightly forward; body forms one straight plank."
+    ],
+    "modifications": [
+      "Practice crow pose (Bakasana) first to build wrist and core strength.",
+      "Use a block under the forehead for graduated weight shift.",
+      "Try one leg at a time before attempting the full posture."
+    ],
+    "history": "One of the most difficult medieval asanas described in the Hatha Yoga Pradipika. Said to stimulate digestive fire and cure diseases of the stomach.",
+    "skeleton": {
+      "head":      { "x": 480, "y": 285 },
+      "neck":      { "x": 440, "y": 285 },
+      "shoulderL": { "x": 395, "y": 270 },
+      "shoulderR": { "x": 395, "y": 300 },
+      "elbowL":    { "x": 330, "y": 270 },
+      "elbowR":    { "x": 330, "y": 300 },
+      "wristL":    { "x": 280, "y": 270 },
+      "wristR":    { "x": 280, "y": 300 },
+      "hip":       { "x": 230, "y": 285 },
+      "kneeL":     { "x": 155, "y": 275 },
+      "kneeR":     { "x": 155, "y": 295 },
+      "ankleL":    { "x": 80,  "y": 275 },
+      "ankleR":    { "x": 80,  "y": 295 }
+    },
+    "angles": [
+      { "label": "Body horizontal", "color": "#2C8BB0", "type": "line", "x1": 80, "y1": 285, "x2": 480, "y2": 285 },
+      { "label": "Elbow fulcrum",   "color": "#E37E35", "type": "path", "path": "M 315 260 Q 330 285 315 310" }
+    ],
+    "angleLabels": [
+      { "text": "HORIZONTAL",   "x": 130, "y": 270, "color": "#2C8BB0" },
+      { "text": "ELBOW FULCRUM","x": 325, "y": 250, "color": "#E37E35" }
+    ],
+    "modOverlays": [
+      { "type": "circle", "cx": 330, "cy": 285, "r": 22, "color": "#D45B5B" },
+      { "type": "text", "x": 295, "y": 335, "text": "ELBOWS TOGETHER", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_012",
+    "sanskrit_name": "Gomukhasana",
+    "english_name": "Cow Face Pose",
+    "historical_era": "Medieval",
+    "source_text": "Hatha Yoga Pradipika",
+    "category": "Seated",
+    "benefits": [
+      "Deeply opens the hips and outer glutes",
+      "Stretches the shoulders and triceps",
+      "Supports healthy hip and shoulder joint mobility"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/gomukhasana.svg",
+      "primary_alignment": "Knees stacked at midline, one arm reaching up and bending back, opposite arm reaching down and bending up to clasp"
+    },
+    "cues": [
+      "Stack the knees directly on top of each other at the midline.",
+      "Lengthen the upper elbow toward the ceiling before bending.",
+      "If hands don't meet, use a strap between them.",
+      "Keep both sitting bones even — one side will want to lift."
+    ],
+    "modifications": [
+      "Sit in Dandasana with legs extended if knee stacking is uncomfortable.",
+      "Use a strap for the arm bind.",
+      "Practice the arm work independently while seated in a chair."
+    ],
+    "history": "Described in the Hatha Yoga Pradipika. The name means 'cow face' — the stacked legs resemble a cow's face in certain traditional depictions.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 110 },
+      "neck":      { "x": 300, "y": 155 },
+      "shoulderL": { "x": 258, "y": 190 },
+      "shoulderR": { "x": 342, "y": 190 },
+      "elbowL":    { "x": 300, "y": 155 },
+      "elbowR":    { "x": 258, "y": 245 },
+      "wristL":    { "x": 300, "y": 215 },
+      "wristR":    { "x": 300, "y": 215 },
+      "hip":       { "x": 300, "y": 305 },
+      "kneeL":     { "x": 300, "y": 375 },
+      "kneeR":     { "x": 300, "y": 350 },
+      "ankleL":    { "x": 370, "y": 410 },
+      "ankleR":    { "x": 230, "y": 425 }
+    },
+    "angles": [
+      { "label": "Knees stacked",   "color": "#E37E35", "type": "path", "path": "M 285 350 Q 300 365 315 375" },
+      { "label": "Upper arm",        "color": "#2C8BB0", "type": "line", "x1": 342, "y1": 190, "x2": 300, "y2": 155 }
+    ],
+    "angleLabels": [
+      { "text": "KNEES STACKED", "x": 315, "y": 345, "color": "#E37E35" },
+      { "text": "ELBOW UP",      "x": 350, "y": 165, "color": "#2C8BB0" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 300 215 Q 310 215 320 215", "color": "#D45B5B" },
+      { "type": "text", "x": 225, "y": 210, "text": "STRAP IF NEEDED", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_013",
+    "sanskrit_name": "Paschimottanasana",
+    "english_name": "Seated Forward Bend",
+    "historical_era": "Medieval",
+    "source_text": "Hatha Yoga Pradipika",
+    "category": "Seated",
+    "benefits": [
+      "Lengthens the entire posterior chain from heels to head",
+      "Calms the nervous system and reduces anxiety",
+      "Stimulates the kidneys, liver, and digestive organs"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/paschimottanasana.svg",
+      "primary_alignment": "Legs extended, spine lengthening forward, pelvis tilting anteriorly, hinging from the hips rather than rounding the back"
+    },
+    "cues": [
+      "Hinge from the hip sockets, not the lower back.",
+      "Lead with the chest — lengthen the front body first.",
+      "Flex the feet gently to engage the hamstrings from the ankle.",
+      "Use an exhale to deepen; never force the fold."
+    ],
+    "modifications": [
+      "Use a strap around the feet to maintain a long spine.",
+      "Micro-bend the knees to take strain off the hamstrings.",
+      "Sit on a blanket to tilt the pelvis forward more easily."
+    ],
+    "history": "One of the most prescribed poses in the Hatha Yoga Pradipika, said to awaken the Kundalini and kindle the digestive fire.",
+    "skeleton": {
+      "head":      { "x": 420, "y": 295 },
+      "neck":      { "x": 390, "y": 285 },
+      "shoulderL": { "x": 355, "y": 268 },
+      "shoulderR": { "x": 355, "y": 300 },
+      "elbowL":    { "x": 300, "y": 260 },
+      "elbowR":    { "x": 300, "y": 308 },
+      "wristL":    { "x": 230, "y": 255 },
+      "wristR":    { "x": 230, "y": 312 },
+      "hip":       { "x": 200, "y": 285 },
+      "kneeL":     { "x": 110, "y": 268 },
+      "kneeR":     { "x": 110, "y": 302 },
+      "ankleL":    { "x": 50,  "y": 265 },
+      "ankleR":    { "x": 50,  "y": 305 }
+    },
+    "angles": [
+      { "label": "Hip hinge",    "color": "#E37E35", "type": "path", "path": "M 225 245 Q 200 285 225 330" },
+      { "label": "Spine long",   "color": "#2C8BB0", "type": "line", "x1": 200, "y1": 285, "x2": 390, "y2": 285 }
+    ],
+    "angleLabels": [
+      { "text": "HIP HINGE",   "x": 175, "y": 240, "color": "#E37E35" },
+      { "text": "SPINE LONG",  "x": 270, "y": 270, "color": "#2C8BB0" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 230 255 Q 220 285 230 312", "color": "#D45B5B" },
+      { "type": "text", "x": 130, "y": 340, "text": "STRAP / BENT KNEES", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_014",
+    "sanskrit_name": "Vajrasana",
+    "english_name": "Thunderbolt Pose",
+    "historical_era": "Medieval",
+    "source_text": "Gheranda Samhita",
+    "category": "Seated",
+    "benefits": [
+      "Aids digestion when practiced after meals",
+      "Strengthens the pelvic floor",
+      "Provides a stable, grounded seat for pranayama"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/vajrasana.svg",
+      "primary_alignment": "Kneeling with shins on the mat, sitting bones resting on heels, spine vertical, hands on thighs"
+    },
+    "cues": [
+      "Rest sitting bones fully onto heels; big toes may touch.",
+      "Stack the spine directly above the pelvis.",
+      "Rest palms face-down on the thighs, shoulders relaxed.",
+      "Breathe slowly — this is ideal for post-meal digestion."
+    ],
+    "modifications": [
+      "Place a folded blanket between calves and thighs to reduce knee compression.",
+      "Use a rolled blanket under the ankles if dorsiflexion is limited.",
+      "Sit in a chair and practice the upright spine alignment instead."
+    ],
+    "history": "Described in the Gheranda Samhita as a destroyer of fatigue. The only asana recommended by Ayurveda and yoga texts for use immediately after eating.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 112 },
+      "neck":      { "x": 300, "y": 157 },
+      "shoulderL": { "x": 258, "y": 187 },
+      "shoulderR": { "x": 342, "y": 187 },
+      "elbowL":    { "x": 250, "y": 240 },
+      "elbowR":    { "x": 350, "y": 240 },
+      "wristL":    { "x": 245, "y": 285 },
+      "wristR":    { "x": 355, "y": 285 },
+      "hip":       { "x": 300, "y": 335 },
+      "kneeL":     { "x": 265, "y": 395 },
+      "kneeR":     { "x": 335, "y": 395 },
+      "ankleL":    { "x": 270, "y": 460 },
+      "ankleR":    { "x": 330, "y": 460 }
+    },
+    "angles": [
+      { "label": "Spine vertical", "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 157, "x2": 300, "y2": 335 },
+      { "label": "Knee fold",      "color": "#E37E35", "type": "path", "path": "M 275 335 Q 265 365 265 395" }
+    ],
+    "angleLabels": [
+      { "text": "SPINE VERTICAL", "x": 315, "y": 245, "color": "#2C8BB0" },
+      { "text": "HEEL SEAT",      "x": 185, "y": 365, "color": "#E37E35" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 265 395 Q 265 460 270 460", "color": "#D45B5B" },
+      { "type": "text", "x": 150, "y": 435, "text": "BLANKET BETWEEN LEGS", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_015",
+    "sanskrit_name": "Savasana",
+    "english_name": "Corpse Pose",
+    "historical_era": "Medieval",
+    "source_text": "Hatha Yoga Pradipika",
+    "category": "Supine",
+    "benefits": [
+      "Integrates the physical and energetic effects of practice",
+      "Activates the parasympathetic nervous system",
+      "Reduces stress, blood pressure, and mental fatigue"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/savasana.svg",
+      "primary_alignment": "Full body supine, arms slightly away from the torso, palms facing up, legs hip-width apart and fully relaxed"
+    },
+    "cues": [
+      "Let the feet fall open naturally to the sides.",
+      "Move the arms a few inches from the body, palms sky-facing.",
+      "Release all muscular effort — allow the floor to fully support you.",
+      "Stay for a minimum of 5 minutes to allow full nervous system integration."
+    ],
+    "modifications": [
+      "Place a bolster under the knees to release the lower back.",
+      "Use an eye pillow to deepen the sense of withdrawal.",
+      "Cover with a blanket if the room is cool — body temperature drops."
+    ],
+    "history": "Described in the Hatha Yoga Pradipika as the remover of fatigue and the posture that brings the mind to rest. Now understood to activate the parasympathetic nervous system.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 100 },
+      "neck":      { "x": 300, "y": 145 },
+      "shoulderL": { "x": 240, "y": 175 },
+      "shoulderR": { "x": 360, "y": 175 },
+      "elbowL":    { "x": 200, "y": 225 },
+      "elbowR":    { "x": 400, "y": 225 },
+      "wristL":    { "x": 175, "y": 280 },
+      "wristR":    { "x": 425, "y": 280 },
+      "hip":       { "x": 300, "y": 300 },
+      "kneeL":     { "x": 270, "y": 390 },
+      "kneeR":     { "x": 330, "y": 390 },
+      "ankleL":    { "x": 255, "y": 475 },
+      "ankleR":    { "x": 345, "y": 475 }
+    },
+    "angles": [
+      { "label": "Full release",  "color": "#2C8BB0", "type": "line", "x1": 175, "y1": 280, "x2": 425, "y2": 280 }
+    ],
+    "angleLabels": [
+      { "text": "FULL RELEASE", "x": 235, "y": 270, "color": "#2C8BB0" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 255 475 Q 280 500 330 500 Q 360 500 345 475", "color": "#D45B5B" },
+      { "type": "text", "x": 225, "y": 530, "text": "BOLSTER UNDER KNEES", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_016",
+    "sanskrit_name": "Virabhadrasana I",
+    "english_name": "Warrior I",
+    "historical_era": "Modern",
+    "source_text": "20th Century Physical Culture / Krishnamacharya",
+    "category": "Standing",
+    "benefits": [
+      "Strengthens the legs, glutes, and core",
+      "Opens the hip flexors of the back leg",
+      "Builds focus, determination, and postural awareness"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/virabhadrasana1.svg",
+      "primary_alignment": "Front knee stacked over ankle at 90 degrees, back foot grounded at 45 degrees, hips squared forward, arms raised overhead"
+    },
+    "cues": [
+      "Ground the outer edge of the back foot, angled 45 degrees.",
+      "Square the hips forward — front hip back, back hip forward.",
+      "Bend the front knee to 90 degrees, stacked over the ankle.",
+      "Lift through the arms without shrugging the shoulders."
+    ],
+    "modifications": [
+      "Shorten the stance to ease the hip square.",
+      "Use hands on hips if the shoulder lift is fatiguing.",
+      "Practice against a wall to cue the hip square."
+    ],
+    "history": "Named for the mythological warrior Virabhadra. Codified by Krishnamacharya in the 20th century, though the narrative origin traces to ancient Shaiva texts.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 60  },
+      "neck":      { "x": 300, "y": 105 },
+      "shoulderL": { "x": 270, "y": 115 },
+      "shoulderR": { "x": 330, "y": 115 },
+      "elbowL":    { "x": 265, "y": 75  },
+      "elbowR":    { "x": 335, "y": 75  },
+      "wristL":    { "x": 265, "y": 40  },
+      "wristR":    { "x": 335, "y": 40  },
+      "hip":       { "x": 300, "y": 270 },
+      "kneeL":     { "x": 235, "y": 370 },
+      "kneeR":     { "x": 390, "y": 340 },
+      "ankleL":    { "x": 215, "y": 475 },
+      "ankleR":    { "x": 460, "y": 455 }
+    },
+    "angles": [
+      { "label": "Front knee 90°", "color": "#E37E35", "type": "path", "path": "M 265 370 Q 235 370 235 410" },
+      { "label": "Back foot 45°",  "color": "#2C8BB0", "type": "path", "path": "M 430 455 Q 460 455 460 420" },
+      { "label": "Arms overhead",  "color": "#7CB87C", "type": "line", "x1": 265, "y1": 40, "x2": 335, "y2": 40 }
+    ],
+    "angleLabels": [
+      { "text": "KNEE 90°",    "x": 155, "y": 400, "color": "#E37E35" },
+      { "text": "FOOT 45°",    "x": 465, "y": 415, "color": "#2C8BB0" },
+      { "text": "ARMS UP",     "x": 270, "y": 30,  "color": "#7CB87C" }
+    ],
+    "modOverlays": [
+      { "type": "circle", "cx": 235, "cy": 370, "r": 22, "color": "#D45B5B" },
+      { "type": "text", "x": 140, "y": 345, "text": "SHORTEN STANCE", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_017",
+    "sanskrit_name": "Trikonasana",
+    "english_name": "Triangle Pose",
+    "historical_era": "Modern",
+    "source_text": "Light on Yoga / B.K.S. Iyengar",
+    "category": "Standing",
+    "benefits": [
+      "Lengthens the lateral chain and inner thigh",
+      "Strengthens the legs and stabilizes the knee",
+      "Improves balance and spatial awareness"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/trikonasana.svg",
+      "primary_alignment": "Legs wide, front foot turned out 90 degrees, torso extending laterally, bottom hand to shin or block, top arm reaching vertically"
+    },
+    "cues": [
+      "Front foot turns out 90 degrees, back foot 15–30 degrees in.",
+      "Extend the torso laterally over the front leg before descending the hand.",
+      "Stack the top shoulder directly above the bottom shoulder.",
+      "Turn the gaze up toward the top hand, or keep it forward to protect the neck."
+    ],
+    "modifications": [
+      "Place the bottom hand on a block to reduce lateral reach.",
+      "Keep a micro-bend in the front knee to protect the joint.",
+      "Practice against a wall to maintain the flat-plane alignment."
+    ],
+    "history": "Extensively described and photographed by B.K.S. Iyengar in Light on Yoga (1966). One of the most studied standing poses in modern yoga biomechanics.",
+    "skeleton": {
+      "head":      { "x": 375, "y": 115 },
+      "neck":      { "x": 350, "y": 150 },
+      "shoulderL": { "x": 300, "y": 175 },
+      "shoulderR": { "x": 395, "y": 145 },
+      "elbowL":    { "x": 215, "y": 215 },
+      "elbowR":    { "x": 415, "y": 100 },
+      "wristL":    { "x": 155, "y": 255 },
+      "wristR":    { "x": 430, "y": 55  },
+      "hip":       { "x": 300, "y": 290 },
+      "kneeL":     { "x": 205, "y": 375 },
+      "kneeR":     { "x": 430, "y": 350 },
+      "ankleL":    { "x": 165, "y": 470 },
+      "ankleR":    { "x": 490, "y": 455 }
+    },
+    "angles": [
+      { "label": "Lateral extend",  "color": "#E37E35", "type": "line", "x1": 430, "y1": 55, "x2": 155, "y2": 255 },
+      { "label": "Shoulder stack",  "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 175, "x2": 395, "y2": 145 },
+      { "label": "Front foot 90°",  "color": "#7CB87C", "type": "path", "path": "M 185 470 Q 165 470 165 450" }
+    ],
+    "angleLabels": [
+      { "text": "LATERAL LINE",   "x": 250, "y": 115, "color": "#E37E35" },
+      { "text": "SHOULDERS STACK","x": 315, "y": 135, "color": "#2C8BB0" },
+      { "text": "FOOT 90°",       "x": 100, "y": 465, "color": "#7CB87C" }
+    ],
+    "modOverlays": [
+      { "type": "circle", "cx": 155, "cy": 255, "r": 18, "color": "#D45B5B" },
+      { "type": "text", "x": 80, "y": 280, "text": "BLOCK UNDER HAND", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_018",
+    "sanskrit_name": "Adho Mukha Svanasana",
+    "english_name": "Downward-Facing Dog",
+    "historical_era": "Modern",
+    "source_text": "Light on Yoga / B.K.S. Iyengar",
+    "category": "Standing",
+    "benefits": [
+      "Lengthens the posterior chain and shoulders",
+      "Builds upper-body and core strength",
+      "Functions as a restorative transition and mild inversion"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/adho_mukha_svanasana.svg",
+      "primary_alignment": "Hips lifted toward ceiling, heels pressing toward the floor, spine elongated, weight evenly distributed through hands and feet"
+    },
+    "cues": [
+      "Press evenly through all four corners of each palm.",
+      "Internally rotate the upper arms to widen the shoulder blades.",
+      "Reach the sitting bones toward the ceiling — that is the apex.",
+      "Soften the knees if needed; a long spine matters more than straight legs."
+    ],
+    "modifications": [
+      "Bend both knees generously to protect the lower back.",
+      "Hands on blocks reduce wrist load.",
+      "Puppy pose (knees down, hips over knees) as a gentler alternative."
+    ],
+    "history": "Popularized globally by Krishnamacharya's lineage. Described extensively by Iyengar in Light on Yoga as both a forward bend and mild inversion.",
+    "skeleton": {
+      "head":      { "x": 305, "y": 155 },
+      "neck":      { "x": 305, "y": 195 },
+      "shoulderL": { "x": 268, "y": 225 },
+      "shoulderR": { "x": 342, "y": 225 },
+      "elbowL":    { "x": 228, "y": 272 },
+      "elbowR":    { "x": 382, "y": 272 },
+      "wristL":    { "x": 188, "y": 332 },
+      "wristR":    { "x": 422, "y": 332 },
+      "hip":       { "x": 305, "y": 305 },
+      "kneeL":     { "x": 255, "y": 385 },
+      "kneeR":     { "x": 355, "y": 385 },
+      "ankleL":    { "x": 215, "y": 470 },
+      "ankleR":    { "x": 395, "y": 470 }
+    },
+    "angles": [
+      { "label": "Hip hinge ~75°", "color": "#E37E35", "type": "path", "path": "M 325 200 Q 365 160 405 200" },
+      { "label": "Long spine",     "color": "#2C8BB0", "type": "line", "x1": 188, "y1": 425, "x2": 305, "y2": 195 }
+    ],
+    "angleLabels": [
+      { "text": "HIP HINGE ~75°", "x": 335, "y": 150, "color": "#E37E35" },
+      { "text": "LONG SPINE",     "x": 120, "y": 455, "color": "#2C8BB0" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 215 430 Q 285 340 305 220", "color": "#D45B5B" },
+      { "type": "text", "x": 140, "y": 360, "text": "SOFTEN KNEES", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_019",
+    "sanskrit_name": "Tadasana",
+    "english_name": "Mountain Pose",
+    "historical_era": "Modern",
+    "source_text": "Light on Yoga / B.K.S. Iyengar",
+    "category": "Standing",
+    "benefits": [
+      "Establishes postural awareness and neutral alignment",
+      "Activates the feet, legs, and core for stable grounding",
+      "Serves as the foundation from which all standing poses arise"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/tadasana.svg",
+      "primary_alignment": "Feet together or hip-width, weight evenly distributed, legs engaged, spine neutral, arms at sides, crown of head lifting"
+    },
+    "cues": [
+      "Distribute weight evenly across all four corners of both feet.",
+      "Engage the thighs gently without locking the knees.",
+      "Lengthen the tailbone down while the crown lifts up.",
+      "Arms hang freely at the sides, palms lightly facing forward."
+    ],
+    "modifications": [
+      "Stand with feet hip-width apart for more stability.",
+      "Stand with back against a wall to feel neutral spinal alignment.",
+      "Slightly bend the knees if standing fully straight causes lower back strain."
+    ],
+    "history": "The foundational standing pose of the Iyengar system, described in Light on Yoga as the basis from which all standing poses derive their architecture.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 80  },
+      "neck":      { "x": 300, "y": 125 },
+      "shoulderL": { "x": 258, "y": 160 },
+      "shoulderR": { "x": 342, "y": 160 },
+      "elbowL":    { "x": 248, "y": 225 },
+      "elbowR":    { "x": 352, "y": 225 },
+      "wristL":    { "x": 244, "y": 300 },
+      "wristR":    { "x": 356, "y": 300 },
+      "hip":       { "x": 300, "y": 295 },
+      "kneeL":     { "x": 284, "y": 385 },
+      "kneeR":     { "x": 316, "y": 385 },
+      "ankleL":    { "x": 280, "y": 480 },
+      "ankleR":    { "x": 320, "y": 480 }
+    },
+    "angles": [
+      { "label": "Spine neutral",  "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 125, "x2": 300, "y2": 295 },
+      { "label": "Feet grounded",  "color": "#7CB87C", "type": "line", "x1": 265, "y1": 490, "x2": 335, "y2": 490 }
+    ],
+    "angleLabels": [
+      { "text": "SPINE NEUTRAL", "x": 315, "y": 215, "color": "#2C8BB0" },
+      { "text": "FEET GROUNDED", "x": 235, "y": 510, "color": "#7CB87C" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 280 295 Q 300 310 320 295", "color": "#D45B5B" },
+      { "type": "text", "x": 225, "y": 330, "text": "FEET HIP-WIDTH", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_020",
+    "sanskrit_name": "Vrksasana",
+    "english_name": "Tree Pose",
+    "historical_era": "Modern",
+    "source_text": "Light on Yoga / B.K.S. Iyengar",
+    "category": "Balance",
+    "benefits": [
+      "Develops single-leg balance and proprioception",
+      "Strengthens the ankle, knee, and hip stabilizers",
+      "Cultivates mental focus and nervous system coordination"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/vrksasana.svg",
+      "primary_alignment": "Standing leg straight and engaged, sole of foot on inner thigh or calf (never the knee), hips level, hands at heart or overhead"
+    },
+    "cues": [
+      "Root through all four corners of the standing foot.",
+      "Place the raised foot on the inner thigh or calf — never the knee joint.",
+      "Keep both hips level; do not let the hip of the raised leg hike.",
+      "Fix the gaze (Drishti) on a still point to stabilize the balance."
+    ],
+    "modifications": [
+      "Keep the toes of the raised foot touching the floor as a kickstand.",
+      "Use a wall or chair lightly for balance support.",
+      "Bring hands to heart center rather than overhead."
+    ],
+    "history": "Described by Iyengar in Light on Yoga. One of the first balance poses introduced to beginners in the modern Hatha tradition.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 75  },
+      "neck":      { "x": 300, "y": 118 },
+      "shoulderL": { "x": 272, "y": 120 },
+      "shoulderR": { "x": 328, "y": 120 },
+      "elbowL":    { "x": 268, "y": 80  },
+      "elbowR":    { "x": 332, "y": 80  },
+      "wristL":    { "x": 268, "y": 45  },
+      "wristR":    { "x": 332, "y": 45  },
+      "hip":       { "x": 300, "y": 285 },
+      "kneeL":     { "x": 285, "y": 385 },
+      "kneeR":     { "x": 360, "y": 315 },
+      "ankleL":    { "x": 283, "y": 480 },
+      "ankleR":    { "x": 285, "y": 365 }
+    },
+    "angles": [
+      { "label": "Hip level",    "color": "#2C8BB0", "type": "line", "x1": 270, "y1": 285, "x2": 330, "y2": 285 },
+      { "label": "Root leg",     "color": "#E37E35", "type": "line", "x1": 285, "y1": 285, "x2": 285, "y2": 480 },
+      { "label": "Foot placement","color": "#7CB87C", "type": "path", "path": "M 300 285 Q 355 310 360 315" }
+    ],
+    "angleLabels": [
+      { "text": "HIPS LEVEL",    "x": 225, "y": 280, "color": "#2C8BB0" },
+      { "text": "ROOT LEG",      "x": 250, "y": 390, "color": "#E37E35" },
+      { "text": "FOOT: NO KNEE", "x": 365, "y": 300, "color": "#7CB87C" }
+    ],
+    "modOverlays": [
+      { "type": "circle", "cx": 285, "cy": 430, "r": 18, "color": "#D45B5B" },
+      { "type": "text", "x": 195, "y": 455, "text": "TOES DOWN OPTION", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_021",
+    "sanskrit_name": "Utkatasana",
+    "english_name": "Chair Pose",
+    "historical_era": "Modern",
+    "source_text": "Light on Yoga / B.K.S. Iyengar",
+    "category": "Standing",
+    "benefits": [
+      "Strengthens the quadriceps, glutes, and lower back",
+      "Builds heat and energizes the body",
+      "Improves ankle and thoracic mobility under load"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/utkatasana.svg",
+      "primary_alignment": "Feet together, knees bent as if sitting in a chair, torso angled forward, arms raised alongside ears"
+    },
+    "cues": [
+      "Feet together or hip-width; weight shifts into the heels.",
+      "Bend the knees deeply — aim for thighs approaching parallel to the floor.",
+      "Torso tilts forward at roughly 45 degrees to counter the weight.",
+      "Reach the arms alongside the ears; shoulders stay away from the ears."
+    ],
+    "modifications": [
+      "Take feet hip-width apart for more stability.",
+      "Hands on thighs or at heart center to reduce shoulder fatigue.",
+      "Use a wall at the back for support to build quadriceps strength."
+    ],
+    "history": "Widely used in Ashtanga sequences as a powerful heat-building pose. Described in Iyengar's Light on Yoga as both a challenge and a toner for the entire body.",
+    "skeleton": {
+      "head":      { "x": 270, "y": 80  },
+      "neck":      { "x": 275, "y": 122 },
+      "shoulderL": { "x": 248, "y": 115 },
+      "shoulderR": { "x": 302, "y": 115 },
+      "elbowL":    { "x": 238, "y": 75  },
+      "elbowR":    { "x": 312, "y": 75  },
+      "wristL":    { "x": 233, "y": 40  },
+      "wristR":    { "x": 318, "y": 40  },
+      "hip":       { "x": 300, "y": 290 },
+      "kneeL":     { "x": 270, "y": 390 },
+      "kneeR":     { "x": 330, "y": 390 },
+      "ankleL":    { "x": 265, "y": 480 },
+      "ankleR":    { "x": 335, "y": 480 }
+    },
+    "angles": [
+      { "label": "Knee bend",     "color": "#E37E35", "type": "path", "path": "M 285 290 Q 270 340 270 390" },
+      { "label": "Torso 45°",     "color": "#2C8BB0", "type": "line", "x1": 300, "y1": 290, "x2": 275, "y2": 122 },
+      { "label": "Arms overhead", "color": "#7CB87C", "type": "line", "x1": 233, "y1": 40, "x2": 318, "y2": 40 }
+    ],
+    "angleLabels": [
+      { "text": "KNEE BEND",     "x": 185, "y": 360, "color": "#E37E35" },
+      { "text": "TORSO 45°",     "x": 215, "y": 195, "color": "#2C8BB0" },
+      { "text": "ARMS UP",       "x": 225, "y": 30,  "color": "#7CB87C" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 268 390 Q 300 430 332 390", "color": "#D45B5B" },
+      { "type": "text", "x": 215, "y": 445, "text": "WALL SUPPORT", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_022",
+    "sanskrit_name": "Setu Bandha Sarvangasana",
+    "english_name": "Bridge Pose",
+    "historical_era": "Modern",
+    "source_text": "Light on Yoga / B.K.S. Iyengar",
+    "category": "Backbend",
+    "benefits": [
+      "Strengthens the posterior chain including glutes and hamstrings",
+      "Opens the chest and hip flexors",
+      "Supports thyroid function and calms the nervous system"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/setu_bandha_sarvangasana.svg",
+      "primary_alignment": "Feet flat on the mat hip-width apart, hips lifted, arms extended alongside the body or clasped beneath the spine, knees tracking over ankles"
+    },
+    "cues": [
+      "Feet are hip-width apart, toes pointing straight forward.",
+      "Press through the feet to lift the hips; squeeze the glutes gently at the top.",
+      "Roll the shoulders under to clasp the hands beneath the back.",
+      "Knees stay over ankles — prevent the feet from splaying."
+    ],
+    "modifications": [
+      "Place a block under the sacrum for a supported, restorative version.",
+      "Keep arms alongside body (don't clasp) if shoulders are tight.",
+      "Do single-leg variation to reduce lower back load."
+    ],
+    "history": "Thoroughly documented by Iyengar in Light on Yoga (1966) as both a back strengthener and mild inversion with thyroid benefits.",
+    "skeleton": {
+      "head":      { "x": 300, "y": 490 },
+      "neck":      { "x": 300, "y": 450 },
+      "shoulderL": { "x": 245, "y": 430 },
+      "shoulderR": { "x": 355, "y": 430 },
+      "elbowL":    { "x": 218, "y": 460 },
+      "elbowR":    { "x": 382, "y": 460 },
+      "wristL":    { "x": 240, "y": 490 },
+      "wristR":    { "x": 360, "y": 490 },
+      "hip":       { "x": 300, "y": 270 },
+      "kneeL":     { "x": 258, "y": 355 },
+      "kneeR":     { "x": 342, "y": 355 },
+      "ankleL":    { "x": 248, "y": 445 },
+      "ankleR":    { "x": 352, "y": 445 }
+    },
+    "angles": [
+      { "label": "Hip lift",     "color": "#E37E35", "type": "path", "path": "M 260 430 Q 300 260 340 430" },
+      { "label": "Knees over ankles", "color": "#2C8BB0", "type": "line", "x1": 248, "y1": 355, "x2": 248, "y2": 445 }
+    ],
+    "angleLabels": [
+      { "text": "HIP LIFT",         "x": 315, "y": 255, "color": "#E37E35" },
+      { "text": "KNEE → ANKLE",     "x": 155, "y": 400, "color": "#2C8BB0" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 260 270 Q 300 310 340 270", "color": "#D45B5B" },
+      { "type": "text", "x": 220, "y": 245, "text": "BLOCK UNDER SACRUM", "color": "#D45B5B" }
+    ]
+  },
+  {
+    "id": "pose_023",
+    "sanskrit_name": "Balasana",
+    "english_name": "Child's Pose",
+    "historical_era": "Modern",
+    "source_text": "20th Century Postural Yoga",
+    "category": "Restorative",
+    "benefits": [
+      "Gently decompresses the lumbar spine",
+      "Provides a safe resting position between active poses",
+      "Calms the nervous system and supports parasympathetic recovery"
+    ],
+    "visualizer_data": {
+      "svg_url": "/assets/svg/balasana.svg",
+      "primary_alignment": "Hips toward heels, forehead to the mat, arms extended forward or resting alongside the body"
+    },
+    "cues": [
+      "Bring the big toes together and let the knees widen to the edges of the mat.",
+      "Sink the hips toward the heels with each exhale.",
+      "Extend the arms forward fully or let them rest alongside the body.",
+      "Rest the forehead on the mat — the contact point itself calms the nervous system."
+    ],
+    "modifications": [
+      "Place a bolster under the chest for a fully supported version.",
+      "Fold a blanket between thighs and calves if hips don't reach heels.",
+      "Use a block under the forehead for a more restful neck position."
+    ],
+    "history": "Developed within the 20th-century postural yoga tradition as a standardized resting posture between more demanding poses.",
+    "skeleton": {
+      "head":      { "x": 440, "y": 320 },
+      "neck":      { "x": 405, "y": 310 },
+      "shoulderL": { "x": 350, "y": 295 },
+      "shoulderR": { "x": 350, "y": 325 },
+      "elbowL":    { "x": 270, "y": 280 },
+      "elbowR":    { "x": 270, "y": 340 },
+      "wristL":    { "x": 180, "y": 270 },
+      "wristR":    { "x": 180, "y": 350 },
+      "hip":       { "x": 300, "y": 390 },
+      "kneeL":     { "x": 240, "y": 430 },
+      "kneeR":     { "x": 360, "y": 430 },
+      "ankleL":    { "x": 220, "y": 480 },
+      "ankleR":    { "x": 380, "y": 480 }
+    },
+    "angles": [
+      { "label": "Spine rounding", "color": "#2C8BB0", "type": "path", "path": "M 350 295 Q 380 350 300 390" },
+      { "label": "Hip to heel",    "color": "#E37E35", "type": "line", "x1": 300, "y1": 390, "x2": 270, "y2": 460 }
+    ],
+    "angleLabels": [
+      { "text": "SPINE LONG",   "x": 390, "y": 270, "color": "#2C8BB0" },
+      { "text": "HIP TO HEEL",  "x": 200, "y": 450, "color": "#E37E35" }
+    ],
+    "modOverlays": [
+      { "type": "path", "d": "M 240 430 Q 300 475 360 430", "color": "#D45B5B" },
+      { "type": "text", "x": 220, "y": 510, "text": "BOLSTER UNDER CHEST", "color": "#D45B5B" }
+    ]
+  }
+]

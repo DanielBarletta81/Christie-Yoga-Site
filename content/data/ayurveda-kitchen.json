@@ -1,0 +1,362 @@
+{
+  "title": "Sunrise Kitchen",
+  "subtitle": "Ayurvedic apothecary for everyday wellness",
+  "intro": "The Ayurvedic kitchen is a living apothecary. Spices are medicine. Roots are ritual. Each ingredient carries a quality — warming or cooling, heavy or light — and choosing them with intention is one of the oldest forms of self-care.",
+
+  "ingredients": [
+    {
+      "id": "turmeric",
+      "name": "Turmeric",
+      "sanskrit": "Haridra",
+      "latin": "Curcuma longa",
+      "category": "root",
+      "dosha_effect": { "vata": "balances", "pitta": "balances", "kapha": "balances" },
+      "quality": "warming, drying, bitter",
+      "actions": ["anti-inflammatory", "blood purifier", "supports liver", "brightens skin tone"],
+      "use": "Golden milk, curries, morning tonics, face masks",
+      "note": "Best absorbed with black pepper and a fat — the traditional ghee pairing exists for good reason.",
+      "color": "#E8A027"
+    },
+    {
+      "id": "ashwagandha",
+      "name": "Ashwagandha",
+      "sanskrit": "Ashwagandha",
+      "latin": "Withania somnifera",
+      "category": "root",
+      "dosha_effect": { "vata": "balances", "pitta": "neutral", "kapha": "balances" },
+      "quality": "warming, heavy, nourishing",
+      "actions": ["adaptogen", "nervine tonic", "supports adrenal function", "builds ojas"],
+      "use": "Warm milk tonic, smoothies, capsules, moon milk",
+      "note": "Take in the evening — it supports deep rest and helps regulate cortisol overnight.",
+      "color": "#B8860B"
+    },
+    {
+      "id": "shatavari",
+      "name": "Shatavari",
+      "sanskrit": "Shatavari",
+      "latin": "Asparagus racemosus",
+      "category": "root",
+      "dosha_effect": { "vata": "balances", "pitta": "balances", "kapha": "may increase" },
+      "quality": "cooling, sweet, nourishing",
+      "actions": ["reproductive tonic", "supports hormonal rhythm", "soothes mucous membranes", "builds fluids"],
+      "use": "Warm milk, ghee preparations, morning tonic",
+      "note": "A gentle, deeply nourishing ally — especially supportive during transitions in the lunar cycle.",
+      "color": "#8FBC8F"
+    },
+    {
+      "id": "ginger",
+      "name": "Ginger",
+      "sanskrit": "Shunthi (dry) / Ardraka (fresh)",
+      "latin": "Zingiber officinale",
+      "category": "root",
+      "dosha_effect": { "vata": "balances", "pitta": "use sparingly", "kapha": "balances" },
+      "quality": "warming, pungent, stimulating",
+      "actions": ["kindles digestive fire (Agni)", "anti-nausea", "clears congestion", "circulation booster"],
+      "use": "Teas, golden milk, cooking, fire cider",
+      "note": "Fresh ginger is milder; dried is hotter. Pitta types should use fresh and in small amounts.",
+      "color": "#D2691E"
+    },
+    {
+      "id": "cardamom",
+      "name": "Cardamom",
+      "sanskrit": "Ela",
+      "latin": "Elettaria cardamomum",
+      "category": "spice",
+      "dosha_effect": { "vata": "balances", "pitta": "balances", "kapha": "balances" },
+      "quality": "warming, sweet, aromatic",
+      "actions": ["tridoshic digestive", "freshens breath", "calms nausea", "opens the respiratory tract"],
+      "use": "Chai, golden milk, oatmeal, rice dishes, desserts",
+      "note": "One of the few spices that is tridoshic — calming to all three doshas. Use liberally.",
+      "color": "#6B8E23"
+    },
+    {
+      "id": "cinnamon",
+      "name": "Cinnamon",
+      "sanskrit": "Tvak",
+      "latin": "Cinnamomum verum",
+      "category": "spice",
+      "dosha_effect": { "vata": "balances", "pitta": "use sparingly", "kapha": "balances" },
+      "quality": "warming, sweet, pungent",
+      "actions": ["blood sugar regulation", "circulation", "antimicrobial", "warming to the digestion"],
+      "use": "Morning porridge, chai, golden milk, baked goods",
+      "note": "Use Ceylon (true) cinnamon when possible — it is sweeter and gentler than cassia cinnamon.",
+      "color": "#8B4513"
+    },
+    {
+      "id": "triphala",
+      "name": "Triphala",
+      "sanskrit": "Triphala",
+      "latin": "Amalaki + Bibhitaki + Haritaki",
+      "category": "formula",
+      "dosha_effect": { "vata": "balances", "pitta": "balances", "kapha": "balances" },
+      "quality": "tridoshic, astringent, bitter",
+      "actions": ["gentle daily detox", "supports bowel regularity", "antioxidant", "eye tonic"],
+      "use": "Taken as powder in warm water at night, or capsules",
+      "note": "The most famous Ayurvedic formula. Not a laxative — it tones and rejuvenates the digestive tract over time.",
+      "color": "#556B2F"
+    },
+    {
+      "id": "holy-basil",
+      "name": "Holy Basil (Tulsi)",
+      "sanskrit": "Tulsi",
+      "latin": "Ocimum tenuiflorum",
+      "category": "herb",
+      "dosha_effect": { "vata": "balances", "pitta": "balances", "kapha": "balances" },
+      "quality": "warming, pungent, light",
+      "actions": ["adaptogen", "supports immunity", "calms the nervous system", "respiratory support"],
+      "use": "Tulsi tea, fresh in cooking, infusions, fire cider",
+      "note": "Sacred to the Vaishnava tradition. Sipped as tea in the morning, it clears the mind before practice.",
+      "color": "#228B22"
+    },
+    {
+      "id": "ghee",
+      "name": "Ghee",
+      "sanskrit": "Ghrita",
+      "latin": "Clarified butter",
+      "category": "fat",
+      "dosha_effect": { "vata": "balances", "pitta": "balances", "kapha": "use in moderation" },
+      "quality": "oily, heavy, sweet, cooling",
+      "actions": ["builds ojas", "nourishes nervous tissue", "lubricates joints", "fat-soluble herb carrier"],
+      "use": "Cooking, morning tonic with turmeric, drizzled on rice, medicinal preparations",
+      "note": "Considered the most sattvic (pure) of all fats in Ayurveda. Clarifying removes the milk solids, leaving a stable, clean cooking fat.",
+      "color": "#F5DEB3"
+    },
+    {
+      "id": "rose",
+      "name": "Rose",
+      "sanskrit": "Shatapatri",
+      "latin": "Rosa damascena",
+      "category": "flower",
+      "dosha_effect": { "vata": "balances", "pitta": "balances strongly", "kapha": "neutral" },
+      "quality": "cooling, sweet, astringent",
+      "actions": ["cools Pitta", "soothes the heart and emotions", "skin tonic", "anti-inflammatory"],
+      "use": "Rose water, rose petal jam (Gulkand), teas, face mist",
+      "note": "Deeply cooling and opening to the heart. A classic ally for Pitta types or anyone carrying emotional heat.",
+      "color": "#FFB6C1"
+    },
+    {
+      "id": "brahmi",
+      "name": "Brahmi",
+      "sanskrit": "Brahmi",
+      "latin": "Bacopa monnieri",
+      "category": "herb",
+      "dosha_effect": { "vata": "balances", "pitta": "balances", "kapha": "neutral" },
+      "quality": "cooling, bitter, light",
+      "actions": ["supports memory and focus", "calms the nervous system", "scalp and hair tonic", "medhya (brain rejuvenative)"],
+      "use": "Brahmi ghee, teas, scalp oil",
+      "note": "Named for Brahma, the creator. Traditionally used to sharpen clarity and calm mental chatter before meditation.",
+      "color": "#7EC8A4"
+    },
+    {
+      "id": "saffron",
+      "name": "Saffron",
+      "sanskrit": "Kumkuma",
+      "latin": "Crocus sativus",
+      "category": "flower",
+      "dosha_effect": { "vata": "balances", "pitta": "balances", "kapha": "balances" },
+      "quality": "warming, sweet, bitter",
+      "actions": ["mood elevating", "blood nourisher", "supports reproductive tissue", "antidepressant action"],
+      "use": "Warm milk, rice dishes, tonics, golden milk variation",
+      "note": "A few strands in warm milk at night is the classical Ayurvedic Saffron tonic for mood, sleep, and ojas.",
+      "color": "#FF7F00"
+    }
+  ],
+
+  "recipes": [
+    {
+      "id": "golden-milk",
+      "name": "Golden Milk",
+      "subtitle": "The classic tridoshic tonic",
+      "dosha_best_for": ["vata", "kapha"],
+      "time_of_day": "Morning or evening",
+      "season": "Year-round",
+      "prep_time": "5 min",
+      "ingredients_used": ["turmeric", "ginger", "cardamom", "cinnamon", "ghee"],
+      "ingredients": [
+        "2 cups whole milk or oat milk",
+        "1 tsp turmeric powder",
+        "½ tsp fresh grated ginger",
+        "4 cardamom pods, crushed (or ½ tsp ground)",
+        "¼ tsp cinnamon",
+        "Pinch of black pepper",
+        "1 tsp ghee",
+        "1 tsp raw honey (added off heat)"
+      ],
+      "method": [
+        "Warm the milk over low heat — do not boil.",
+        "Add turmeric, ginger, cardamom, cinnamon, and black pepper.",
+        "Whisk gently and simmer for 3–4 minutes.",
+        "Stir in ghee until melted.",
+        "Remove from heat. Add honey only after the milk has cooled slightly — heating honey destroys its enzymes.",
+        "Strain into a mug and drink slowly, mindfully."
+      ],
+      "ritual_note": "Best consumed sitting down, without screens. The warmth settles the nervous system. Let it be a small ceremony.",
+      "color": "#E8A027"
+    },
+    {
+      "id": "tulsi-ginger-tea",
+      "name": "Tulsi & Ginger Morning Tea",
+      "subtitle": "Clarifying, immune-supporting, warming",
+      "dosha_best_for": ["vata", "kapha"],
+      "time_of_day": "First thing in the morning",
+      "season": "Autumn and Winter",
+      "prep_time": "8 min",
+      "ingredients_used": ["holy-basil", "ginger", "cardamom"],
+      "ingredients": [
+        "1½ cups water",
+        "6–8 fresh tulsi leaves (or 1 tsp dried)",
+        "½ inch fresh ginger, sliced thin",
+        "2 cardamom pods, cracked",
+        "Raw honey to taste (optional, added off heat)"
+      ],
+      "method": [
+        "Bring water to a gentle boil with ginger and cardamom.",
+        "Reduce heat and add tulsi leaves.",
+        "Steep for 5 minutes — longer draws more bitterness.",
+        "Strain into a cup.",
+        "Add honey only once the tea has cooled enough to touch the pot."
+      ],
+      "ritual_note": "Drink this before any food. Hold the cup with both hands. Breathe the steam before each sip.",
+      "color": "#228B22"
+    },
+    {
+      "id": "ojas-moon-milk",
+      "name": "Ojas Moon Milk",
+      "subtitle": "A nourishing sleep tonic for Vata and Pitta",
+      "dosha_best_for": ["vata", "pitta"],
+      "time_of_day": "30 minutes before sleep",
+      "season": "Autumn, Winter, and dry seasons",
+      "prep_time": "7 min",
+      "ingredients_used": ["ashwagandha", "shatavari", "cardamom", "saffron", "ghee"],
+      "ingredients": [
+        "1½ cups whole milk or almond milk",
+        "½ tsp ashwagandha powder",
+        "½ tsp shatavari powder",
+        "3 strands saffron",
+        "3 cardamom pods, crushed",
+        "1 tsp ghee",
+        "1 tsp raw honey (off heat only)"
+      ],
+      "method": [
+        "Warm milk gently over low heat with saffron and cardamom.",
+        "Whisk in ashwagandha and shatavari powders.",
+        "Simmer on low for 4–5 minutes, stirring steadily.",
+        "Add ghee and stir until incorporated.",
+        "Remove from heat and add honey when slightly cooled.",
+        "Strain if desired. Drink in the 30 minutes before sleep."
+      ],
+      "ritual_note": "This is a rebuild recipe — meant for seasons of exhaustion, stress, or nervous depletion. It builds ojas, the subtle essence of vitality. Take it consistently for 30 days to feel the shift.",
+      "color": "#FF7F00"
+    },
+    {
+      "id": "kitchari",
+      "name": "Kitchari",
+      "subtitle": "The Ayurvedic cleanse meal",
+      "dosha_best_for": ["vata", "pitta", "kapha"],
+      "time_of_day": "Lunch or dinner",
+      "season": "Year-round cleansing, especially during seasonal transitions",
+      "prep_time": "35 min",
+      "ingredients_used": ["turmeric", "ginger", "ghee"],
+      "ingredients": [
+        "½ cup yellow split mung dal (moong dal)",
+        "¼ cup white basmati rice",
+        "1 tbsp ghee",
+        "½ tsp turmeric",
+        "½ tsp cumin seeds",
+        "½ tsp coriander",
+        "½ tsp fennel seeds",
+        "¼ tsp fresh grated ginger",
+        "Salt to taste",
+        "3–4 cups water",
+        "Optional: seasonal vegetables (zucchini, leafy greens, sweet potato)"
+      ],
+      "method": [
+        "Rinse mung dal and rice together until the water runs clear.",
+        "Warm ghee in a pot over medium heat. Add cumin seeds and fennel seeds — let them pop (about 30 seconds).",
+        "Add turmeric, coriander, and ginger. Stir for 30 seconds.",
+        "Add rinsed dal and rice. Stir to coat with spices.",
+        "Add water. Bring to a boil, then reduce to a gentle simmer.",
+        "Cook for 25–30 minutes until soft and slightly soupy. Add vegetables in the last 10 minutes if using.",
+        "Season with salt. The texture should be soft and easy — like porridge."
+      ],
+      "ritual_note": "Kitchari is the one-pot Ayurvedic reset. Eat it for three days during seasonal transitions or whenever digestion feels compromised. It asks almost nothing of the digestive fire while nourishing deeply.",
+      "color": "#DAA520"
+    },
+    {
+      "id": "rose-cardamom-lassi",
+      "name": "Rose & Cardamom Lassi",
+      "subtitle": "Cooling, probiotic, Pitta-soothing",
+      "dosha_best_for": ["pitta"],
+      "time_of_day": "Midday — never in the evening",
+      "season": "Spring and Summer",
+      "prep_time": "5 min",
+      "ingredients_used": ["rose", "cardamom"],
+      "ingredients": [
+        "¾ cup full-fat plain yogurt",
+        "½ cup cool water",
+        "1 tbsp rose water (or 2 tbsp fresh rose petal water)",
+        "¼ tsp ground cardamom",
+        "1 tsp raw sugar or maple syrup (optional)",
+        "Pinch of mineral salt"
+      ],
+      "method": [
+        "Blend all ingredients until smooth and frothy — about 30 seconds.",
+        "Taste and adjust sweetness.",
+        "Pour into a glass. Garnish with dried rose petals and a dusting of cardamom.",
+        "Drink immediately while frothy."
+      ],
+      "ritual_note": "In Ayurveda, lassi is considered the most digestible dairy preparation. Serve it at lunch, never dinner. The probiotics and cooling rose open digestion and calm the heat of a Pitta-dominant midday.",
+      "color": "#FFB6C1"
+    },
+    {
+      "id": "triphala-tonic",
+      "name": "Triphala Night Tonic",
+      "subtitle": "Gentle nightly detox — the long game",
+      "dosha_best_for": ["vata", "pitta", "kapha"],
+      "time_of_day": "30 minutes before sleep",
+      "season": "Year-round",
+      "prep_time": "3 min",
+      "ingredients_used": ["triphala"],
+      "ingredients": [
+        "1 tsp triphala powder",
+        "8 oz warm water (not boiling)",
+        "Optional: ¼ tsp raw honey"
+      ],
+      "method": [
+        "Stir triphala powder into warm water.",
+        "Let it dissolve for 1 minute.",
+        "Stir again and drink slowly.",
+        "If the taste is too strong, start with ½ tsp and build up over two weeks."
+      ],
+      "ritual_note": "This is not a dramatic cleanse. It is a slow, steady commitment to digestive health. Taken nightly for 90 days, it quietly shifts bowel regularity, clears accumulated waste, and supports the tissues. It works in the background while you sleep.",
+      "color": "#556B2F"
+    }
+  ],
+
+  "rituals": [
+    {
+      "id": "dinacharya-morning",
+      "name": "Sunrise Ritual",
+      "steps": [
+        "Wake before or with sunrise if possible",
+        "Drink one cup warm water with a squeeze of lemon or a slice of ginger",
+        "Tongue scraping — removes Ama (accumulated waste) from overnight",
+        "Oil pulling with sesame (Vata/Kapha) or coconut (Pitta) for 5 minutes",
+        "Nasya — 2 drops warm sesame oil in each nostril to clear the head channel",
+        "10 minutes of seated stillness or meditation before the kitchen"
+      ]
+    },
+    {
+      "id": "seasonal-transition",
+      "name": "Seasonal Transition Reset",
+      "steps": [
+        "3–7 days of kitchari mono-diet to clear the digestive slate",
+        "Increase warm, cooked, simply seasoned foods",
+        "Reduce raw, cold, and dry foods temporarily",
+        "Take triphala nightly through the transition",
+        "Favor earlier, lighter dinners — finish eating by 7pm",
+        "Add 10 minutes of gentle walking after the main meal"
+      ]
+    }
+  ]
+}
